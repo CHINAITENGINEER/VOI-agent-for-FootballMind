@@ -1,0 +1,24 @@
+{
+  "sample_kind": "real_capture_redacted_copy",
+  "source": "football_data",
+  "evidence": {
+    "evidence_id": "82bfac73-8b6e-4584-bb79-0b2e3a8073e7",
+    "name": "football_data_public_catalog",
+    "url": "https://api.football-data.org/v4/competitions",
+    "request_started_at": "2026-09-20T11:53:50.902168+00:00",
+    "credential_sent": false,
+    "purpose": "public_catalog_only",
+    "http_status": 200,
+    "payload_bytes": 73789,
+    "content_type": "application/json;charset=UTF-8",
+    "final_url": "https://api.football-data.org/v4/competitions",
+    "observed_at": "2026-09-20T11:53:57.498724+00:00",
+    "sha256": "1f282727cd0b59859e5295b9326a890ed84a8042bd8b201abcb1ff84aff47380",
+    "payload": "var\\parallel\\collectors\\public-verification\\football_data_public_catalog_82bfac73-8b6e-4584-bb79-0b2e3a8073e7.json"
+  },
+  "original_payload_sha256": "1f282727cd0b59859e5295b9326a890ed84a8042bd8b201abcb1ff84aff47380",
+  "fixture_payload_sha256": "868eaf9804811fe7f587ba18fbb4036a5e6a64b62781bd6658ad8d4bfcc12cea",
+  "transformation": "JSON reserialized; credential-key fields redacted",
+  "payload_file": "public_competitions.json",
+  "production_ingestion_allowed": false
+}

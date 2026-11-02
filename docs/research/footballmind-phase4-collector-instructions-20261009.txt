@@ -1,0 +1,57 @@
+FootballMind Phase 3 最终审阅及下一轮执行指令
+任务编号：FM-PHASE4-G-PANEL-20261009-01
+接收线程：01a11aa5-603c-7d63-883c-b5dc106a5cce
+回传总控：01a11b5c-a98e-7622-8021-fe76e88e2dea
+
+Phase 3 交付按你声明的范围验收通过，无需重封包。总控独立核验 ZIP 摘要/8892846字节、782 manifest文件/784 entries、209份raw payload/93摘要/94 observation IDs、22context成员与时钟、两场原运行/回放一致。Liverpool原运行仍是1目录+3 NO_DATA；离线修复不算原Agent已见正文。
+
+下一轮最高优先级：补齐旧f训练截止之后、跨球队/来源的历史可比较正文面板，直接服务“Agent在当前H下选择下一信息”的g。不是继续补原August四场，不扩前瞻8场，不重跑四策略臂，不做前端。f/g训练与启用由总控承担，你完成数据交接。
+
+关键诊断：
+旧f A=15场，截至2025-12-14；旧g B=5场，截至2026-01-07，交叉验证选择常数g。旧26场全部含Leeds、62文章全部Leeds官网。新增August Brighton–Fulham早于旧f训练，不能直接塞旧B并宣称时间无泄漏。原August面板保留为回溯/提取诊断。
+总控已通过现有HistoricalContextVOIPolicy正常加载冻结模型，对真实菜单执行过离线f/g诊断，无需重建语义系统。模型能改变概率不等于预测改善；g常数也不是“信息有用的概率”。
+
+一、先做零网络复用
+1. 只读已有Phase3 raw、sitemap、results、documents，建立新增索引；原Phase2/3最终包不改。
+2. 当前两篇被标wrong_fixture的Fulham文章实际属于 understat:29004 Fulham–Brighton，2026-01-24T15:00Z：
+document:8cc7cf07-96af-425f-9d3c-6dd60b433ba7:nuxt-v2，Pre-Brighton Press Conference，2026-01-23T16:00:33Z；
+document:1fe649b6-3d54-4f16-af5a-b77af5308349:nuxt-v2，Matchday Preview: Brighton，2026-01-23T13:30:00Z。
+原Nuxt fixture tag g2562121与目标相符，独立Understat标签在同一已归档dates数组id29004。新建派生historical_reconstruction诊断面板，保留旧错目标隔离与原始observed/capture时钟，不补历史available_at或archive snapshot，不计新HTTP/新原始文章。
+这场已查看标签，仅作外部开发诊断，不加入本轮B、不称盲测。对应sitemap discovery:36dc85e5-e5cf-4496-97f5-8eafc2653b65的候选10602/10606 title为空：不能把后读正文标题填回原目录曝光标题。
+3. 优先离线使用已有Fulham sitemap（13209链接）、Liverpool等原始目录定位下面冻结清单的候选；不要重复无关Bing RSS或为凑数更换联赛。
+
+二、新历史试批：固定12场候选，4场先验收路径
+完整冻结注册表在：
+D:/a1-足彩/docs/research/footballmind-phase4-g-panel-registry-20261009.json
+来源已有Understat EPL2025/26原raw；选择2025-12-15T00:00Z至2026-01-08T00:00Z之前已结束、非Leeds的45场，按UTC kickoff/数字ID取前12。没有按比分、正文数量、预测或gain筛选，与旧ABC无重叠。
+IDs依序：28934、28945、28938、28940、28944、28947、28946、28941、28939、28942、28954、28955（全部understat:）。
+所有12场都保留在覆盖报告里；缺正文如实缺失，不能用好采或有正收益的比赛替换。
+
+执行先导4场顺序：28934、28945、28946、28942。该顺序基于最早两场及已具备Liverpool/Fulham来源路径，只改变执行顺序，不改变研究总体或按效果挑比赛。
+至少2/4场各获得至少2篇不同、与本场/赛前时间关联的正文，才继续余下8场。未达到则交出已做4场、全部12场缺失表和具体阻断，不盲扩、不再开另一批。
+本批总真实HTTP上限96，单场8，先导合计32；重定向/重试/来源探测也计数。共享目录只计一次总量，请求前明确归属比赛，不通过shared绕过单场上限。读取归档和重投影0HTTP。首次请求前保存计划/种子/候选抽样规则和预算硬门禁。沿用既有RequestTransport/RawArchive/journal/validator，勿建第二套采集系统。
+
+每场目标2–3篇用于有限候选对比的正文，不是十几篇相同文章版本。来源以已支持官方球队公告/赛前报道/新闻发布会/队伍更新为主，保留原目录中其他候选类型、失败和重复。不要规定伤停总是高价值、不要只保留有用信息。历史候选可按已见URL/时间/目录标签作比赛关联过滤；具体读取名单用事前固定、可复现的URL排序或种子，不由正文价值/赛果决定。单场至多3篇进入主有限面板，其余作为有来源记录的补充材料，不增加独立比赛计数。
+不要求“所有正文句子都独立核实为事实”才交接。source assertion、文章适用性、真实事实与模型效用分开记录；无证据时留未知。
+
+三、必须交给g的最小数据合同
+- 独立fixture：物理ID、主客、联赛、UTC kickoff、来源原始ID（未知保留）、身份raw。
+- pre-reveal候选：URL、真正曝光的title/snippet、目录rank/parent raw/观测时刻、已读状态、实际预算。缺标题就缺标题。若另作“假定赛前标题菜单”的历史重建，单独标注assumed/reconstructed，不冒充原曝光，更不能先看全文再填g输入。
+- reveal：正文/段落定位、原payload摘要、解析器版本、本次真实保存/接收时钟、原发布时间及证据、source_modified_at、historical_version_unknown。目录附带新链接也属于新增可见信息，保留。
+- 关联/重复：绑定目标比赛依据、错场/错赛季/赛后内容隔离、跨文档及旧ABC的raw/body重复簇。不在H/f输入里放本场赛果、赛后xG或Understat forecast。
+- 标签独立文件：复用真实Understat原响应及原observed_at，不重请求、不补造result_available_at。本轮采集输入与结果文件分开；总控派生gain时才连接。
+- 本批全是historical_reconstruction，菜单为明确的有限重建面板，propensity=null、original_policy_trace=false、无历史快照就保持null。不为训练虚构真实Agent菜单/概率/收益；严格prospective g eligible仍按现有门禁。
+历史版本未知不妨碍带假设的离线机制实验，但不能宣传成已证明的前瞻训练数据。没有历史propensity不阻断有限面板监督g，不支持声称IPS/DR或原策略收益。
+
+四、本轮明确不扩的事项
+- Liverpool v11/v13离线修复已接受，本轮不再只为证明HTTP成功而开无f新前瞻；等总控冻结一致f/g输入与journal联调后，再做单场有模型的新运行。
+- 英超本赛季独立终场适配仍是后续必要接口，但本轮不等待未来比赛、不建后台定时任务、不用结果HTTP抢占历史面板预算。未来赛果来了也不能把旧null预测直接变成原在线f收益。
+- 不改旧ABC/现有model-selected，不训练、不调参，不将常数g硬换复杂模型求漂亮结果；若模型桥/journal互斥，报告精确接口，勿删校验绕过。
+- 不新增大型事实推理器、数据库、前端、其他联赛。允许用现有子agent并行做不同比赛/来源的有限任务，预算由同一总账控制，源码文件先划边界。
+
+五、交付与阶段回报
+先导4场处理完即回传覆盖表，达到门槛可自主继续余下8场，不需等批准。最后交付新目录、源文件/版本/真实HTTP账、12场全部覆盖矩阵、每场唯一正文/可比较候选/重复簇/标签状态，以及针对性测试；不要再复制整仓历史生成大包来代替可用样本。
+总控负责冻结f，派生Delta=log f(H after)[y]-log f(H before)[y]、按比赛分组训练/验证g及与常数对比，区分均值gain与负收益概率。f若在新域没有有效响应，会如实暴露，不能用换样本解决。成本单位先用明确的实验loss-equivalent，不冒充真钱。
+回传只报告实际完成/产物/限制，不发泛泛“是否继续”。命令：
+codex queue --thread '01a11b5c-a98e-7622-8021-fe76e88e2dea' --message 'FM-PHASE4-G-PANEL-20261009-01：实际覆盖、HTTP、正文、路径、验证及阻断'
+

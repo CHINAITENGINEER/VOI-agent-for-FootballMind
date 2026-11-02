@@ -1,0 +1,12 @@
+[
+  {
+    "id": "fixture-event-not-real", "sport_key": "soccer_epl", "commence_time": "2025-01-02T12:00:00Z",
+    "home_team": "Fixture A", "away_team": "Fixture B",
+    "bookmakers": [{"key": "fixture-book-not-real", "title": "Synthetic Book", "last_update": "2025-01-01T11:59:00Z",
+      "markets": [
+        {"key": "h2h", "outcomes": [{"name": "Fixture A", "price": 2.0}, {"name": "Draw", "price": 3.0}, {"name": "Fixture B", "price": 4.0}]},
+        {"key": "spreads", "outcomes": [{"name": "Fixture A", "point": -0.5, "price": 1.9}, {"name": "Fixture B", "point": 0.5, "price": 1.95}]},
+        {"key": "totals", "outcomes": [{"name": "Over", "point": 2.5, "price": 1.8}, {"name": "Under", "point": 2.5, "price": 2.05}]}
+      ]}]
+  }
+]

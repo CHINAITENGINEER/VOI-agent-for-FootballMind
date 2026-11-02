@@ -1,0 +1,26 @@
+# FootballMind backend Round182, verified Windows / Python 3.13.
+# Captured installed runtime versions; does not include database or frontend tools.
+annotated-types==0.7.0
+attrs==25.4.0
+beautifulsoup4==4.14.3
+certifi==2025.11.12
+charset-normalizer==3.4.4
+filelock==3.28.0
+idna==3.11
+joblib==1.5.3
+jsonschema==4.25.1
+jsonschema-specifications==2025.9.1
+numpy==2.3.5
+pydantic==2.13.5
+pydantic-core==2.46.5
+referencing==0.37.0
+requests==2.32.5
+rpds-py==0.30.0
+scikit-learn==1.8.0
+scipy==1.16.3
+soupsieve==2.8.1
+threadpoolctl==3.6.0
+typing-extensions==4.15.0
+typing-inspection==0.4.2
+tzdata==2025.3
+urllib3==2.6.2

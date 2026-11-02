@@ -1,0 +1,52 @@
+{
+  "inquiry_protocol": "hypothesis-inquiry-v1",
+  "allowed_hosts": [
+    "www.englandfootball.com",
+    "www.uefa.com",
+    "rfef.es",
+    "www.rfef.es"
+  ],
+  "provider_timeout_seconds": 180,
+  "budget": {
+    "max_requests": 4,
+    "max_llm_calls": 5
+  },
+  "task": {
+    "task_id": "england-spain-2026-09-26-hypothesis-continuation",
+    "objective": "续查上一轮英格兰对西班牙赛前调查留下的信息缺口。自行提出值得核实的假设，选择正文或发现新的来源，逐次判断实际证据解决了什么、还缺什么，再决定下一条查询或暂缓。重点区别集训名单、实际首发、轮换意图、赛事目标的证据范围；此提示没有指定查询顺序或要求必须查询所有种子。保留开放文本预测价值未知的状态。",
+    "deadline": "2026-09-26T18:45:00Z",
+    "initial_facts": [
+      {
+        "statement": "既有 spftll 观测列出英格兰主场对西班牙，欧国联，开球 2026-09-26 18:45 UTC。",
+        "match_id": "spftll:match:2981431",
+        "home_subject": "England",
+        "away_subject": "Spain",
+        "status": "source_claim",
+        "source_observation_id": "24fabe20-01d2-4a25-b771-e7ded26d6e1d",
+        "observed_at": "2026-09-26T11:44:50.680697Z"
+      },
+      {
+        "statement": "上一轮已读英足协赛程正文列出该对阵、日期、时间和 Group A3；来源表述保留语义待核验状态。",
+        "source_quote": "Next Match UEFA Nations League Group A3 ENG vs ESP Wembley Stadium Sat 26, September 2026 | 19:45 BST",
+        "source_document_id": "doc-a2e8abcf-f126-471e-9188-d3c8645e73e5",
+        "source_url": "https://www.englandfootball.com/england/mens-senior-team/fixtures-results",
+        "parent_run_id": "ffc5e4eb-2b2e-44e6-bc19-5523e4ad98d1",
+        "status": "inherited_source_claim_not_new_acquisition",
+        "observed_at": "2026-09-26T16:57:03.675738+00:00",
+        "available_at": "2026-09-26T16:57:03.703321+00:00",
+        "raw_sha256": "22df4e66c3e0243ddd75d75ae5b47fa48bd54a90dbe511251bbc32278947cb0f"
+      },
+      {
+        "statement": "上一轮官方新闻页发现赛事说明、9月和10月集训名单、教练谈选人三条正文链接；这些正文尚未读取，标题仅作发现线索。具体阵容、轮换、伤病、提前出线或战术结论保持未知。",
+        "source_document_id": "doc-a7fc4d21-9369-4fef-b16b-723a2b0388ed",
+        "parent_run_id": "ffc5e4eb-2b2e-44e6-bc19-5523e4ad98d1",
+        "status": "discovery_only"
+      }
+    ],
+    "seed_urls": [
+      "https://www.englandfootball.com/articles/2026/Sep/21/nations-league-explained-for-the-three-lions-20262109",
+      "https://www.englandfootball.com/articles/2026/Sep/18/england-mens-senior-squad-announcement-september-october-20261809",
+      "https://www.englandfootball.com/articles/2026/Sep/18/thomas-tuchel-on-england-squad-selection-20261809"
+    ]
+  }
+}

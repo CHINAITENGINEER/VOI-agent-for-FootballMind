@@ -1,0 +1,17 @@
+{
+  "id": "1ba628a3-fce5-4e02-b674-3d847b55aeda",
+  "source": "public_fixture_probe",
+  "endpoint": "https://www.zhibo8.com/zhibo/zuqiu/2026/match1932319vplayer.htm",
+  "method": "GET",
+  "params": {},
+  "request_id": "f4a20a50-1af5-4782-b6a1-c1733a4f6581",
+  "observed_at": "2026-10-25T08:56:00.193282Z",
+  "http_status": 200,
+  "payload_path": "raw\\public_fixture_probe\\2026-10-25\\085600_193282_1ba628a3-fce5-4e02-b674-3d847b55aeda.body.gz",
+  "content_hash": "fd43b0eaa6f70d39ca274551740ea912edbb1e650c3166172af41b7451e121d2",
+  "payload_format": "html",
+  "response_headers": {},
+  "context": {},
+  "error_class": null,
+  "schema_version": "1.0"
+}

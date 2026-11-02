@@ -1,0 +1,33 @@
+{
+  "sample_kind": "real_capture_redacted_copy",
+  "source": "spftll",
+  "observation": {
+    "id": "eb943dc9-c55c-49fc-baf0-964a574fbb1c",
+    "source": "spftll",
+    "endpoint": "https://justpost.haoyun999.cn/api/match/GetInfo",
+    "method": "GET",
+    "params": {
+      "gameKind": 0,
+      "matchId": "3003895"
+    },
+    "request_id": "e7c4edf5-7814-4dfe-aeaf-32c50669cd7e",
+    "observed_at": "2026-09-20T11:44:17.635710Z",
+    "http_status": 200,
+    "payload_path": "raw\\spftll\\2026-09-20\\114417_635710_eb943dc9-c55c-49fc-baf0-964a574fbb1c.body.gz",
+    "content_hash": "bfb833c25c46e6ff9e8f428a5566612daf02e5236ee3f8b6e37bd33f27c0e82c",
+    "payload_format": "json",
+    "response_headers": {
+      "content-type": "application/json; charset=utf-8"
+    },
+    "context": {
+      "credential_echo_redacted": false
+    },
+    "error_class": null,
+    "schema_version": "1.0"
+  },
+  "original_payload_sha256": "bfb833c25c46e6ff9e8f428a5566612daf02e5236ee3f8b6e37bd33f27c0e82c",
+  "fixture_payload_sha256": "57488940dc288b5faec63aa09c24d45fecd3f68d67acff1ecc34a8f1979869e9",
+  "transformation": "JSON reserialized; credential-key fields redacted",
+  "payload_file": "repeated_detail_2.json",
+  "production_ingestion_allowed": false
+}

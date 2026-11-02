@@ -1,0 +1,334 @@
+{
+  "selected": {
+    "model": "state_ridge",
+    "threshold": 0.0,
+    "budget": 3,
+    "matches": 160,
+    "mean_final_log_loss": 0.9103842255288894,
+    "mean_updates": 0.75625
+  },
+  "all_dev_policy_choices": [
+    {
+      "model": "zero",
+      "threshold": -0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9111659818204692,
+      "mean_updates": 2.025
+    },
+    {
+      "model": "zero",
+      "threshold": -0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9111659818204692,
+      "mean_updates": 2.025
+    },
+    {
+      "model": "zero",
+      "threshold": 0.0,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9104708544807018,
+      "mean_updates": 0.0
+    },
+    {
+      "model": "zero",
+      "threshold": 0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9104708544807018,
+      "mean_updates": 0.0
+    },
+    {
+      "model": "zero",
+      "threshold": 0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9104708544807018,
+      "mean_updates": 0.0
+    },
+    {
+      "model": "train_mean",
+      "threshold": -0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9111659818204692,
+      "mean_updates": 2.025
+    },
+    {
+      "model": "train_mean",
+      "threshold": -0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9111659818204692,
+      "mean_updates": 2.025
+    },
+    {
+      "model": "train_mean",
+      "threshold": 0.0,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9111659818204692,
+      "mean_updates": 2.025
+    },
+    {
+      "model": "train_mean",
+      "threshold": 0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9104708544807018,
+      "mean_updates": 0.0
+    },
+    {
+      "model": "train_mean",
+      "threshold": 0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9104708544807018,
+      "mean_updates": 0.0
+    },
+    {
+      "model": "state_ridge",
+      "threshold": -0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9111621503097218,
+      "mean_updates": 2.025
+    },
+    {
+      "model": "state_ridge",
+      "threshold": -0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9115074472449853,
+      "mean_updates": 1.8375
+    },
+    {
+      "model": "state_ridge",
+      "threshold": 0.0,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9103842255288894,
+      "mean_updates": 0.75625
+    },
+    {
+      "model": "state_ridge",
+      "threshold": 0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9104708544807018,
+      "mean_updates": 0.0
+    },
+    {
+      "model": "state_ridge",
+      "threshold": 0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9104708544807018,
+      "mean_updates": 0.0
+    },
+    {
+      "model": "fulltext_ridge",
+      "threshold": -0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9112795386409334,
+      "mean_updates": 1.58125
+    },
+    {
+      "model": "fulltext_ridge",
+      "threshold": -0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9111279083346652,
+      "mean_updates": 1.23125
+    },
+    {
+      "model": "fulltext_ridge",
+      "threshold": 0.0,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.911252091058364,
+      "mean_updates": 1.1625
+    },
+    {
+      "model": "fulltext_ridge",
+      "threshold": 0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9115668058603564,
+      "mean_updates": 1.0375
+    },
+    {
+      "model": "fulltext_ridge",
+      "threshold": 0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9106126802421513,
+      "mean_updates": 0.6875
+    },
+    {
+      "model": "local_metadata_refit_ridge",
+      "threshold": -0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9111673496772426,
+      "mean_updates": 2.025
+    },
+    {
+      "model": "local_metadata_refit_ridge",
+      "threshold": -0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9115473048647198,
+      "mean_updates": 1.95
+    },
+    {
+      "model": "local_metadata_refit_ridge",
+      "threshold": 0.0,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9113501587705374,
+      "mean_updates": 0.775
+    },
+    {
+      "model": "local_metadata_refit_ridge",
+      "threshold": 0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.911010674258949,
+      "mean_updates": 0.0875
+    },
+    {
+      "model": "local_metadata_refit_ridge",
+      "threshold": 0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9104708544807018,
+      "mean_updates": 0.0
+    },
+    {
+      "model": "fulltext_mlp_seed20261025",
+      "threshold": -0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9106096051640691,
+      "mean_updates": 1.8625
+    },
+    {
+      "model": "fulltext_mlp_seed20261025",
+      "threshold": -0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9110081937924658,
+      "mean_updates": 1.5
+    },
+    {
+      "model": "fulltext_mlp_seed20261025",
+      "threshold": 0.0,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9109089594467829,
+      "mean_updates": 1.06875
+    },
+    {
+      "model": "fulltext_mlp_seed20261025",
+      "threshold": 0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9105053628657979,
+      "mean_updates": 0.4625
+    },
+    {
+      "model": "fulltext_mlp_seed20261025",
+      "threshold": 0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9110774553249248,
+      "mean_updates": 0.14375
+    },
+    {
+      "model": "fulltext_mlp_seed20261026",
+      "threshold": -0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.911309100514394,
+      "mean_updates": 1.925
+    },
+    {
+      "model": "fulltext_mlp_seed20261026",
+      "threshold": -0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9116057551565888,
+      "mean_updates": 1.425
+    },
+    {
+      "model": "fulltext_mlp_seed20261026",
+      "threshold": 0.0,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9105721862388009,
+      "mean_updates": 1.0125
+    },
+    {
+      "model": "fulltext_mlp_seed20261026",
+      "threshold": 0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9108522406416089,
+      "mean_updates": 0.60625
+    },
+    {
+      "model": "fulltext_mlp_seed20261026",
+      "threshold": 0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.910789112259193,
+      "mean_updates": 0.1625
+    },
+    {
+      "model": "fulltext_mlp_seed20261027",
+      "threshold": -0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9109926656712606,
+      "mean_updates": 1.96875
+    },
+    {
+      "model": "fulltext_mlp_seed20261027",
+      "threshold": -0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9112287717787984,
+      "mean_updates": 1.65
+    },
+    {
+      "model": "fulltext_mlp_seed20261027",
+      "threshold": 0.0,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.911417999716052,
+      "mean_updates": 1.1625
+    },
+    {
+      "model": "fulltext_mlp_seed20261027",
+      "threshold": 0.003,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.9111229892967572,
+      "mean_updates": 0.6
+    },
+    {
+      "model": "fulltext_mlp_seed20261027",
+      "threshold": 0.01,
+      "budget": 3,
+      "matches": 160,
+      "mean_final_log_loss": 0.910807933646662,
+      "mean_updates": 0.225
+    }
+  ],
+  "test_used": false,
+  "validation_used": false
+}

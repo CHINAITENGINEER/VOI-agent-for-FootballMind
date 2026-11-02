@@ -1,0 +1,4642 @@
+{
+  "fd:E0:2425:2025-01-01:Brentford:Arsenal": {
+    "physical_match_id": "fd:E0:2425:2025-01-01:Brentford:Arsenal",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7706,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21472,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-04:Brighton:Arsenal": {
+    "physical_match_id": "fd:E0:2425:2025-01-04:Brighton:Arsenal",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7709,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21477,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-04:Crystal Palace:Chelsea": {
+    "physical_match_id": "fd:E0:2425:2025-01-04:Crystal Palace:Chelsea",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7710,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21478,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-04:Southampton:Brentford": {
+    "physical_match_id": "fd:E0:2425:2025-01-04:Southampton:Brentford",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7712,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21480,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-05:Liverpool:Man United": {
+    "physical_match_id": "fd:E0:2425:2025-01-05:Liverpool:Man United",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7715,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21489,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-01-05:Strasbourg:Auxerre": {
+    "physical_match_id": "fd:F1:2425:2025-01-05:Strasbourg:Auxerre",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12106,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21493,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-01-05:Lecce:Genoa": {
+    "physical_match_id": "fd:I1:2425:2025-01-05:Lecce:Genoa",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16610,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21494,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-01-05:Torino:Parma": {
+    "physical_match_id": "fd:I1:2425:2025-01-05:Torino:Parma",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16613,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21497,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-01-10:Auxerre:Lille": {
+    "physical_match_id": "fd:F1:2425:2025-01-10:Auxerre:Lille",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12107,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21500,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:SP1:2425:2025-01-10:Vallecano:Celta": {
+    "physical_match_id": "fd:SP1:2425:2025-01-10:Vallecano:Celta",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 21231,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/SP1.csv",
+            "sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\SP1.csv",
+            "downloaded_at": "2026-10-20T05:10:44.994433+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21503,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/spain/2425-SP1.csv",
+          "source_sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-01-11:Empoli:Lecce": {
+    "physical_match_id": "fd:I1:2425:2025-01-11:Empoli:Lecce",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16615,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21513,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-01-12:Montpellier:Angers": {
+    "physical_match_id": "fd:F1:2425:2025-01-12:Montpellier:Angers",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12113,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21524,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-01-12:Genoa:Parma": {
+    "physical_match_id": "fd:I1:2425:2025-01-12:Genoa:Parma",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16620,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21528,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-14:Brentford:Man City": {
+    "physical_match_id": "fd:E0:2425:2025-01-14:Brentford:Man City",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7717,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21539,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-14:Chelsea:Bournemouth": {
+    "physical_match_id": "fd:E0:2425:2025-01-14:Chelsea:Bournemouth",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7718,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21540,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-14:Nott'm Forest:Liverpool": {
+    "physical_match_id": "fd:E0:2425:2025-01-14:Nott'm Forest:Liverpool",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7719,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21541,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-15:Newcastle:Wolves": {
+    "physical_match_id": "fd:E0:2425:2025-01-15:Newcastle:Wolves",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7724,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21553,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-01-17:Roma:Genoa": {
+    "physical_match_id": "fd:I1:2425:2025-01-17:Roma:Genoa",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16627,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21560,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-18:Brentford:Liverpool": {
+    "physical_match_id": "fd:E0:2425:2025-01-18:Brentford:Liverpool",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7728,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21569,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-19:Nott'm Forest:Southampton": {
+    "physical_match_id": "fd:E0:2425:2025-01-19:Nott'm Forest:Southampton",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7735,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21588,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-01-19:Angers:Auxerre": {
+    "physical_match_id": "fd:F1:2425:2025-01-19:Angers:Auxerre",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12121,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21589,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-01-19:Parma:Venezia": {
+    "physical_match_id": "fd:I1:2425:2025-01-19:Parma:Venezia",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16634,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21596,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-20:Chelsea:Wolves": {
+    "physical_match_id": "fd:E0:2425:2025-01-20:Chelsea:Wolves",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7736,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21602,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-25:Liverpool:Ipswich": {
+    "physical_match_id": "fd:E0:2425:2025-01-25:Liverpool:Ipswich",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7739,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21617,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-25:Man City:Chelsea": {
+    "physical_match_id": "fd:E0:2425:2025-01-25:Man City:Chelsea",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7740,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21618,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-25:Southampton:Newcastle": {
+    "physical_match_id": "fd:E0:2425:2025-01-25:Southampton:Newcastle",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7741,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21619,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-26:Crystal Palace:Brentford": {
+    "physical_match_id": "fd:E0:2425:2025-01-26:Crystal Palace:Brentford",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7744,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21634,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-01-26:Fulham:Man United": {
+    "physical_match_id": "fd:E0:2425:2025-01-26:Fulham:Man United",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7745,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21635,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-01-26:Lens:Angers": {
+    "physical_match_id": "fd:F1:2425:2025-01-26:Lens:Angers",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12130,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21638,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-01-26:Lecce:Inter": {
+    "physical_match_id": "fd:I1:2425:2025-01-26:Lecce:Inter",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16642,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21643,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-01-26:Milan:Parma": {
+    "physical_match_id": "fd:I1:2425:2025-01-26:Milan:Parma",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16643,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21644,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-01-31:Parma:Lecce": {
+    "physical_match_id": "fd:I1:2425:2025-01-31:Parma:Lecce",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16647,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21655,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-01:Bournemouth:Liverpool": {
+    "physical_match_id": "fd:E0:2425:2025-02-01:Bournemouth:Liverpool",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7747,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21663,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-02-01:Monaco:Auxerre": {
+    "physical_match_id": "fd:F1:2425:2025-02-01:Monaco:Auxerre",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12137,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21671,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-02:Brentford:Tottenham": {
+    "physical_match_id": "fd:E0:2425:2025-02-02:Brentford:Tottenham",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7754,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21683,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-02-02:Angers:Le Havre": {
+    "physical_match_id": "fd:F1:2425:2025-02-02:Angers:Le Havre",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12138,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21685,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-02:Fiorentina:Genoa": {
+    "physical_match_id": "fd:I1:2425:2025-02-02:Fiorentina:Genoa",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16652,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21690,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-03:Chelsea:West Ham": {
+    "physical_match_id": "fd:E0:2425:2025-02-03:Chelsea:West Ham",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7756,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21698,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-08:Torino:Genoa": {
+    "physical_match_id": "fd:I1:2425:2025-02-08:Torino:Genoa",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16660,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21717,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-02-09:Auxerre:Toulouse": {
+    "physical_match_id": "fd:F1:2425:2025-02-09:Auxerre:Toulouse",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12149,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21726,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-09:Cagliari:Parma": {
+    "physical_match_id": "fd:I1:2425:2025-02-09:Cagliari:Parma",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16662,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21729,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-09:Lecce:Bologna": {
+    "physical_match_id": "fd:I1:2425:2025-02-09:Lecce:Bologna",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16664,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21731,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-09:Napoli:Udinese": {
+    "physical_match_id": "fd:I1:2425:2025-02-09:Napoli:Udinese",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16665,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21732,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-14:Brighton:Chelsea": {
+    "physical_match_id": "fd:E0:2425:2025-02-14:Brighton:Chelsea",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7758,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21742,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-15:Leicester:Arsenal": {
+    "physical_match_id": "fd:E0:2425:2025-02-15:Leicester:Arsenal",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7762,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21754,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-15:Southampton:Bournemouth": {
+    "physical_match_id": "fd:E0:2425:2025-02-15:Southampton:Bournemouth",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7764,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21756,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-15:West Ham:Brentford": {
+    "physical_match_id": "fd:E0:2425:2025-02-15:West Ham:Brentford",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7765,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21757,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-15:Lazio:Napoli": {
+    "physical_match_id": "fd:I1:2425:2025-02-15:Lazio:Napoli",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16670,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21762,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-16:Tottenham:Man United": {
+    "physical_match_id": "fd:E0:2425:2025-02-16:Tottenham:Man United",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7767,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21772,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-02-16:Reims:Angers": {
+    "physical_match_id": "fd:F1:2425:2025-02-16:Reims:Angers",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12159,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21776,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-16:Monza:Lecce": {
+    "physical_match_id": "fd:I1:2425:2025-02-16:Monza:Lecce",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16674,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21780,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-16:Parma:Roma": {
+    "physical_match_id": "fd:I1:2425:2025-02-16:Parma:Roma",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16675,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21781,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-17:Genoa:Venezia": {
+    "physical_match_id": "fd:I1:2425:2025-02-17:Genoa:Venezia",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16677,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21787,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-19:Aston Villa:Liverpool": {
+    "physical_match_id": "fd:E0:2425:2025-02-19:Aston Villa:Liverpool",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7768,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21789,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-21:Leicester:Brentford": {
+    "physical_match_id": "fd:E0:2425:2025-02-21:Leicester:Brentford",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7769,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21791,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-21:Lecce:Udinese": {
+    "physical_match_id": "fd:I1:2425:2025-02-21:Lecce:Udinese",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16678,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21793,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:SP1:2425:2025-02-21:Celta:Osasuna": {
+    "physical_match_id": "fd:SP1:2425:2025-02-21:Celta:Osasuna",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 21289,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/SP1.csv",
+            "sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\SP1.csv",
+            "downloaded_at": "2026-10-20T05:10:44.994433+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21794,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/spain/2425-SP1.csv",
+          "source_sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-22:Southampton:Brighton": {
+    "physical_match_id": "fd:E0:2425:2025-02-22:Southampton:Brighton",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7776,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21809,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-02-22:St Etienne:Angers": {
+    "physical_match_id": "fd:F1:2425:2025-02-22:St Etienne:Angers",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12164,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21812,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-22:Inter:Genoa": {
+    "physical_match_id": "fd:I1:2425:2025-02-22:Inter:Genoa",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16679,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21813,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-22:Parma:Bologna": {
+    "physical_match_id": "fd:I1:2425:2025-02-22:Parma:Bologna",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16680,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21814,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-23:Cagliari:Juventus": {
+    "physical_match_id": "fd:I1:2425:2025-02-23:Cagliari:Juventus",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16683,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21836,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-25:Chelsea:Southampton": {
+    "physical_match_id": "fd:E0:2425:2025-02-25:Chelsea:Southampton",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7780,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21847,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-26:Brentford:Everton": {
+    "physical_match_id": "fd:E0:2425:2025-02-26:Brentford:Everton",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7783,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21850,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-02-26:Liverpool:Newcastle": {
+    "physical_match_id": "fd:E0:2425:2025-02-26:Liverpool:Newcastle",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7784,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21851,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-02-28:Fiorentina:Lecce": {
+    "physical_match_id": "fd:I1:2425:2025-02-28:Fiorentina:Lecce",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16689,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21861,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-01:Napoli:Inter": {
+    "physical_match_id": "fd:I1:2425:2025-03-01:Napoli:Inter",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16691,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21877,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-01:Udinese:Parma": {
+    "physical_match_id": "fd:I1:2425:2025-03-01:Udinese:Parma",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16692,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21878,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-03-02:Angers:Toulouse": {
+    "physical_match_id": "fd:F1:2425:2025-03-02:Angers:Toulouse",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12174,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21886,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-03-02:Auxerre:Strasbourg": {
+    "physical_match_id": "fd:F1:2425:2025-03-02:Auxerre:Strasbourg",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12175,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21887,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-02:Bologna:Cagliari": {
+    "physical_match_id": "fd:I1:2425:2025-03-02:Bologna:Cagliari",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16693,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21891,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-02:Genoa:Empoli": {
+    "physical_match_id": "fd:I1:2425:2025-03-02:Genoa:Empoli",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16694,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21892,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-07:Cagliari:Genoa": {
+    "physical_match_id": "fd:I1:2425:2025-03-07:Cagliari:Genoa",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16699,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21904,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-03-08:Brentford:Aston Villa": {
+    "physical_match_id": "fd:E0:2425:2025-03-08:Brentford:Aston Villa",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7789,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21911,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-03-08:Liverpool:Southampton": {
+    "physical_match_id": "fd:E0:2425:2025-03-08:Liverpool:Southampton",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7792,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21914,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-08:Lecce:Milan": {
+    "physical_match_id": "fd:I1:2425:2025-03-08:Lecce:Milan",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16702,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21922,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-08:Parma:Torino": {
+    "physical_match_id": "fd:I1:2425:2025-03-08:Parma:Torino",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16703,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21923,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:SP1:2425:2025-03-08:Celta:Leganes": {
+    "physical_match_id": "fd:SP1:2425:2025-03-08:Celta:Leganes",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 21309,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/SP1.csv",
+            "sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\SP1.csv",
+            "downloaded_at": "2026-10-20T05:10:44.994433+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21925,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/spain/2425-SP1.csv",
+          "source_sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-03-09:Chelsea:Leicester": {
+    "physical_match_id": "fd:E0:2425:2025-03-09:Chelsea:Leicester",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7795,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21929,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-03-09:Brest:Angers": {
+    "physical_match_id": "fd:F1:2425:2025-03-09:Brest:Angers",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12183,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21932,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-03-09:Reims:Auxerre": {
+    "physical_match_id": "fd:F1:2425:2025-03-09:Reims:Auxerre",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12187,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21936,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-09:Napoli:Fiorentina": {
+    "physical_match_id": "fd:I1:2425:2025-03-09:Napoli:Fiorentina",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16706,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21939,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-03-14:Nice:Auxerre": {
+    "physical_match_id": "fd:F1:2425:2025-03-14:Nice:Auxerre",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12188,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21950,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-14:Genoa:Lecce": {
+    "physical_match_id": "fd:I1:2425:2025-03-14:Genoa:Lecce",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16709,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21951,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-03-15:Angers:Monaco": {
+    "physical_match_id": "fd:F1:2425:2025-03-15:Angers:Monaco",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12189,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21963,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-15:Monza:Parma": {
+    "physical_match_id": "fd:I1:2425:2025-03-15:Monza:Parma",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16711,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21967,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-16:Roma:Cagliari": {
+    "physical_match_id": "fd:I1:2425:2025-03-16:Roma:Cagliari",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16717,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21988,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-16:Venezia:Napoli": {
+    "physical_match_id": "fd:I1:2425:2025-03-16:Venezia:Napoli",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16718,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 21989,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-29:Juventus:Genoa": {
+    "physical_match_id": "fd:I1:2425:2025-03-29:Juventus:Genoa",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16720,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22016,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-29:Lecce:Roma": {
+    "physical_match_id": "fd:I1:2425:2025-03-29:Lecce:Roma",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16721,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22017,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-03-30:Angers:Rennes": {
+    "physical_match_id": "fd:F1:2425:2025-03-30:Angers:Rennes",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12201,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22025,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-03-30:Auxerre:Montpellier": {
+    "physical_match_id": "fd:F1:2425:2025-03-30:Auxerre:Montpellier",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12202,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22026,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-30:Cagliari:Monza": {
+    "physical_match_id": "fd:I1:2425:2025-03-30:Cagliari:Monza",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16723,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22030,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-30:Napoli:Milan": {
+    "physical_match_id": "fd:I1:2425:2025-03-30:Napoli:Milan",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16726,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22033,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-03-31:Verona:Parma": {
+    "physical_match_id": "fd:I1:2425:2025-03-31:Verona:Parma",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16728,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22040,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:SP1:2425:2025-03-31:Celta:Las Palmas": {
+    "physical_match_id": "fd:SP1:2425:2025-03-31:Celta:Las Palmas",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 21337,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/SP1.csv",
+            "sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\SP1.csv",
+            "downloaded_at": "2026-10-20T05:10:44.994433+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22041,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/spain/2425-SP1.csv",
+          "source_sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-04-02:Liverpool:Everton": {
+    "physical_match_id": "fd:E0:2425:2025-04-02:Liverpool:Everton",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7812,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22055,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-04-02:Newcastle:Brentford": {
+    "physical_match_id": "fd:E0:2425:2025-04-02:Newcastle:Brentford",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7814,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22057,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-04-03:Chelsea:Tottenham": {
+    "physical_match_id": "fd:E0:2425:2025-04-03:Chelsea:Tottenham",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7816,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22059,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-04:Genoa:Udinese": {
+    "physical_match_id": "fd:I1:2425:2025-04-04:Genoa:Udinese",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16729,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22062,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-05:Parma:Inter": {
+    "physical_match_id": "fd:I1:2425:2025-04-05:Parma:Inter",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16732,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22081,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-04-06:Brentford:Chelsea": {
+    "physical_match_id": "fd:E0:2425:2025-04-06:Brentford:Chelsea",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7822,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22095,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-04-06:Tottenham:Southampton": {
+    "physical_match_id": "fd:E0:2425:2025-04-06:Tottenham:Southampton",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7825,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22098,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-04-06:Rennes:Auxerre": {
+    "physical_match_id": "fd:F1:2425:2025-04-06:Rennes:Auxerre",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12214,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22103,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-06:Lecce:Venezia": {
+    "physical_match_id": "fd:I1:2425:2025-04-06:Lecce:Venezia",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16735,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22106,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:D1:2425:2025-04-12:Leverkusen:Union Berlin": {
+    "physical_match_id": "fd:D1:2425:2025-04-12:Leverkusen:Union Berlin",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 3318,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/D1.csv",
+            "sha256": "a295c58033cfe6393cbbc28f7db85671839b960c5f1153fd3678e20ad2adb92e",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\D1.csv",
+            "downloaded_at": "2026-10-20T05:10:41.444984+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22130,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/germany/2425-D1.csv",
+          "source_sha256": "a295c58033cfe6393cbbc28f7db85671839b960c5f1153fd3678e20ad2adb92e"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-12:Inter:Cagliari": {
+    "physical_match_id": "fd:I1:2425:2025-04-12:Inter:Cagliari",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16740,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22140,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:SP1:2425:2025-04-12:Celta:Espanol": {
+    "physical_match_id": "fd:SP1:2425:2025-04-12:Celta:Espanol",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 21349,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/SP1.csv",
+            "sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\SP1.csv",
+            "downloaded_at": "2026-10-20T05:10:44.994433+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22143,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/spain/2425-SP1.csv",
+          "source_sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-04-13:Liverpool:West Ham": {
+    "physical_match_id": "fd:E0:2425:2025-04-13:Liverpool:West Ham",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7833,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22150,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-04-13:Angers:Montpellier": {
+    "physical_match_id": "fd:F1:2425:2025-04-13:Angers:Montpellier",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12219,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22153,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-13:Verona:Genoa": {
+    "physical_match_id": "fd:I1:2425:2025-04-13:Verona:Genoa",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16747,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22161,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-14:Napoli:Empoli": {
+    "physical_match_id": "fd:I1:2425:2025-04-14:Napoli:Empoli",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16748,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22167,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-04-19:West Ham:Southampton": {
+    "physical_match_id": "fd:E0:2425:2025-04-19:West Ham:Southampton",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7842,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22192,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-19:Lecce:Como": {
+    "physical_match_id": "fd:I1:2425:2025-04-19:Lecce:Como",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16749,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22196,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-19:Monza:Napoli": {
+    "physical_match_id": "fd:I1:2425:2025-04-19:Monza:Napoli",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16750,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22197,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:SP1:2425:2025-04-19:Barcelona:Celta": {
+    "physical_match_id": "fd:SP1:2425:2025-04-19:Barcelona:Celta",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 21359,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/SP1.csv",
+            "sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\SP1.csv",
+            "downloaded_at": "2026-10-20T05:10:44.994433+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22199,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/spain/2425-SP1.csv",
+          "source_sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-04-20:Leicester:Liverpool": {
+    "physical_match_id": "fd:E0:2425:2025-04-20:Leicester:Liverpool",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7845,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22214,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-04-20:Nice:Angers": {
+    "physical_match_id": "fd:F1:2425:2025-04-20:Nice:Angers",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12229,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22218,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-23:Cagliari:Fiorentina": {
+    "physical_match_id": "fd:I1:2425:2025-04-23:Cagliari:Fiorentina",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16755,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22235,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-23:Genoa:Lazio": {
+    "physical_match_id": "fd:I1:2425:2025-04-23:Genoa:Lazio",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16756,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22236,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:SP1:2425:2025-04-23:Celta:Villarreal": {
+    "physical_match_id": "fd:SP1:2425:2025-04-23:Celta:Villarreal",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 21372,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/SP1.csv",
+            "sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\SP1.csv",
+            "downloaded_at": "2026-10-20T05:10:44.994433+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22241,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/spain/2425-SP1.csv",
+          "source_sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-04-26:Chelsea:Everton": {
+    "physical_match_id": "fd:E0:2425:2025-04-26:Chelsea:Everton",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7851,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22261,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-04-26:Newcastle:Ipswich": {
+    "physical_match_id": "fd:E0:2425:2025-04-26:Newcastle:Ipswich",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7852,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22262,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-04-26:Southampton:Fulham": {
+    "physical_match_id": "fd:E0:2425:2025-04-26:Southampton:Fulham",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7853,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22263,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-04-27:Angers:Lille": {
+    "physical_match_id": "fd:F1:2425:2025-04-27:Angers:Lille",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12237,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22275,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-04-27:Lens:Auxerre": {
+    "physical_match_id": "fd:F1:2425:2025-04-27:Lens:Auxerre",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12238,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22276,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-27:Atalanta:Lecce": {
+    "physical_match_id": "fd:I1:2425:2025-04-27:Atalanta:Lecce",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16759,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22280,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-27:Como:Genoa": {
+    "physical_match_id": "fd:I1:2425:2025-04-27:Como:Genoa",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16760,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22281,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-27:Napoli:Torino": {
+    "physical_match_id": "fd:I1:2425:2025-04-27:Napoli:Torino",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16764,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22285,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-04-28:Lazio:Parma": {
+    "physical_match_id": "fd:I1:2425:2025-04-28:Lazio:Parma",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16766,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22288,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-01:Nott'm Forest:Brentford": {
+    "physical_match_id": "fd:E0:2425:2025-05-01:Nott'm Forest:Brentford",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7857,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22297,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-05-03:Lecce:Napoli": {
+    "physical_match_id": "fd:I1:2425:2025-05-03:Lecce:Napoli",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16772,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22319,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-05-03:Parma:Como": {
+    "physical_match_id": "fd:I1:2425:2025-05-03:Parma:Como",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16773,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22320,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-04:Brentford:Man United": {
+    "physical_match_id": "fd:E0:2425:2025-05-04:Brentford:Man United",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7863,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22328,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-04:Brighton:Newcastle": {
+    "physical_match_id": "fd:E0:2425:2025-05-04:Brighton:Newcastle",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7864,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22329,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-04:Chelsea:Liverpool": {
+    "physical_match_id": "fd:E0:2425:2025-05-04:Chelsea:Liverpool",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7865,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22330,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-05-04:Nantes:Angers": {
+    "physical_match_id": "fd:F1:2425:2025-05-04:Nantes:Angers",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12250,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22336,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-05-05:Genoa:Milan": {
+    "physical_match_id": "fd:I1:2425:2025-05-05:Genoa:Milan",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16778,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22352,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-10:Ipswich:Brentford": {
+    "physical_match_id": "fd:E0:2425:2025-05-10:Ipswich:Brentford",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7870,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22371,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-10:Southampton:Man City": {
+    "physical_match_id": "fd:E0:2425:2025-05-10:Southampton:Man City",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7871,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22372,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-05-10:Angers:Strasbourg": {
+    "physical_match_id": "fd:F1:2425:2025-05-10:Angers:Strasbourg",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12251,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22374,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-05-10:Auxerre:Nantes": {
+    "physical_match_id": "fd:F1:2425:2025-05-10:Auxerre:Nantes",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12252,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22375,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-05-10:Empoli:Parma": {
+    "physical_match_id": "fd:I1:2425:2025-05-10:Empoli:Parma",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16781,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22384,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-11:Liverpool:Arsenal": {
+    "physical_match_id": "fd:E0:2425:2025-05-11:Liverpool:Arsenal",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7873,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22397,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-05-11:Napoli:Genoa": {
+    "physical_match_id": "fd:I1:2425:2025-05-11:Napoli:Genoa",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16783,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22402,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-05-11:Verona:Lecce": {
+    "physical_match_id": "fd:I1:2425:2025-05-11:Verona:Lecce",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16786,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22405,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-16:Chelsea:Man United": {
+    "physical_match_id": "fd:E0:2425:2025-05-16:Chelsea:Man United",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7879,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22425,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:F1:2425:2025-05-17:Lyon:Angers": {
+    "physical_match_id": "fd:F1:2425:2025-05-17:Lyon:Angers",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 12262,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/F1.csv",
+            "sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\F1.csv",
+            "downloaded_at": "2026-10-20T05:10:46.056366+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22442,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/france/2425-F1.csv",
+          "source_sha256": "fe6ae6a0c30d05f0ac88e0fc4a31452c7203e2b444703dfa941e22f38f20ab63"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-18:Brentford:Fulham": {
+    "physical_match_id": "fd:E0:2425:2025-05-18:Brentford:Fulham",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7881,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22451,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-18:Everton:Southampton": {
+    "physical_match_id": "fd:E0:2425:2025-05-18:Everton:Southampton",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7882,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22452,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-05-18:Lecce:Torino": {
+    "physical_match_id": "fd:I1:2425:2025-05-18:Lecce:Torino",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16794,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22459,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-05-18:Parma:Napoli": {
+    "physical_match_id": "fd:I1:2425:2025-05-18:Parma:Napoli",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16796,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22461,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:SP1:2425:2025-05-18:Celta:Vallecano": {
+    "physical_match_id": "fd:SP1:2425:2025-05-18:Celta:Vallecano",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 21411,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/SP1.csv",
+            "sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\SP1.csv",
+            "downloaded_at": "2026-10-20T05:10:44.994433+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22466,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/spain/2425-SP1.csv",
+          "source_sha256": "c086e96d6a53f6e6c0fce4e35db0d1728c773b4362323da0161a34769e315a36"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-19:Brighton:Liverpool": {
+    "physical_match_id": "fd:E0:2425:2025-05-19:Brighton:Liverpool",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7885,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22474,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-05-23:Napoli:Cagliari": {
+    "physical_match_id": "fd:I1:2425:2025-05-23:Napoli:Cagliari",
+    "outcome_class": 0,
+    "source_refs": [
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16800,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 0,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22478,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-25:Liverpool:Crystal Palace": {
+    "physical_match_id": "fd:E0:2425:2025-05-25:Liverpool:Crystal Palace",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7891,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22491,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-25:Nott'm Forest:Chelsea": {
+    "physical_match_id": "fd:E0:2425:2025-05-25:Nott'm Forest:Chelsea",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7894,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22494,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:E0:2425:2025-05-25:Wolves:Brentford": {
+    "physical_match_id": "fd:E0:2425:2025-05-25:Wolves:Brentford",
+    "outcome_class": 1,
+    "source_refs": [
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 7897,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/E0.csv",
+            "sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\E0.csv",
+            "downloaded_at": "2026-10-20T05:10:39.251453+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 1,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22497,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/england/2425-E0.csv",
+          "source_sha256": "d0c8ce4a96d886cf60cf101f570f4a3893844226f91c7bd769eb568c49edbfa4"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-05-25:Atalanta:Parma": {
+    "physical_match_id": "fd:I1:2425:2025-05-25:Atalanta:Parma",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16803,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22498,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  },
+  "fd:I1:2425:2025-05-25:Lazio:Lecce": {
+    "physical_match_id": "fd:I1:2425:2025-05-25:Lazio:Lecce",
+    "outcome_class": 2,
+    "source_refs": [
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "E:\\FootballMind\\corpus-v3\\structured\\labels\\results.jsonl",
+          "row": 16805,
+          "raw_source": {
+            "url": "https://www.football-data.co.uk/mmz4281/2425/I1.csv",
+            "sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3",
+            "path": "E:\\FootballMind\\corpus-v1\\raw\\football-data\\2425\\I1.csv",
+            "downloaded_at": "2026-10-20T05:10:42.699967+00:00"
+          }
+        }
+      },
+      {
+        "outcome_class": 2,
+        "source": {
+          "path": "D:\\a1-足彩\\var\\external\\football-data-co-uk-20261024-v2\\projected\\labels-results.jsonl",
+          "row": 22500,
+          "source_file": "var/external/football-data-co-uk-20261024-v2/raw/italy/2425-I1.csv",
+          "source_sha256": "79d87a5b18771e066ac7419b7876bfd9771a68ca117a9712375d6bc9685abee3"
+        }
+      }
+    ],
+    "conflicting_results": false
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "schema": "footballmind-sequential-evidence-f-research-v1",
+  "config": {
+    "architecture": "set_residual_mlp",
+    "embedding_dim": 256,
+    "metadata_names": [
+      "log1p_days_before_match",
+      "publication_time_unknown",
+      "historical_version_unknown",
+      "source_is_official",
+      "log1p_body_characters",
+      "historical_reconstruction",
+      "exact_prior_body_duplicate",
+      "candidate_claims_unknown",
+      "adopted_claims_unknown",
+      "repeated_claim_count",
+      "existing_multistatus_count",
+      "candidate_introduced_multistatus_count",
+      "candidate_expanded_multistatus_count",
+      "factual_update_unknown",
+      "source_official_unknown",
+      "exact_home_team_mentions",
+      "exact_away_team_mentions",
+      "target_aliases_unknown",
+      "target_aliases_partial",
+      "source_target_home",
+      "source_target_away",
+      "source_target_unknown"
+    ],
+    "hidden_dim": 64,
+    "dropout": 0.1,
+    "seed": 47,
+    "set_masked_metadata_names": [
+      "exact_prior_body_duplicate",
+      "adopted_claims_unknown",
+      "repeated_claim_count",
+      "existing_multistatus_count",
+      "candidate_introduced_multistatus_count",
+      "candidate_expanded_multistatus_count",
+      "max_similarity_to_adopted",
+      "mean_similarity_to_adopted"
+    ]
+  },
+  "f_model_sha256": "b36b2cf87f379034224c314794efc6ec59266dd4cf4752383965c41fb63661e0",
+  "parameters": {
+    "total": 26823,
+    "trainable": 26819,
+    "base": 4
+  },
+  "production_ready": false,
+  "runtime_enabled": false,
+  "software": {
+    "torch": "2.11.0+cpu",
+    "numpy": "2.3.5"
+  },
+  "probability_order": [
+    "home",
+    "draw",
+    "away"
+  ],
+  "input_vector_transform": "take native prefix then L2 normalize each document",
+  "metadata_normalization": "fit only on f_train documents; stored as checkpoint buffers",
+  "effective_metadata_names": [
+    "log1p_days_before_match",
+    "publication_time_unknown",
+    "historical_version_unknown",
+    "source_is_official",
+    "log1p_body_characters",
+    "historical_reconstruction",
+    "candidate_claims_unknown",
+    "factual_update_unknown",
+    "source_official_unknown",
+    "exact_home_team_mentions",
+    "exact_away_team_mentions",
+    "target_aliases_unknown",
+    "target_aliases_partial",
+    "source_target_home",
+    "source_target_away",
+    "source_target_unknown"
+  ],
+  "masked_history_metadata_for_set_control": [
+    "exact_prior_body_duplicate",
+    "adopted_claims_unknown",
+    "repeated_claim_count",
+    "existing_multistatus_count",
+    "candidate_introduced_multistatus_count",
+    "candidate_expanded_multistatus_count"
+  ],
+  "s0": "calibrated market prior; no text residual",
+  "parameter_updates_during_predict": false,
+  "label_usage": "training and evaluation only; excluded from prediction arguments",
+  "research_metadata": {
+    "selection_role": "f_dev",
+    "selection_metric": "match_balanced_prefix_log_loss",
+    "best_epoch": 1,
+    "training_role": "f_train",
+    "optimizer": "AdamW",
+    "learning_rate": 0.001,
+    "weight_decay": 0.01,
+    "optimizer_betas": [
+      0.9,
+      0.999
+    ],
+    "optimizer_epsilon": 1e-08,
+    "gradient_clip_norm": 5.0,
+    "batch_size_matches": 32,
+    "maximum_epochs": 200,
+    "early_stopping_patience": 25,
+    "early_stopping_minimum_improvement": 1e-07,
+    "checkpoint_rule": "lowest f_dev match-balanced prefix log loss; restore checkpoint before export",
+    "initial_residual_head": "zeros; epoch0 equals frozen calibrated prior",
+    "loss": "cross entropy averaged over all prefixes including s0, then equally over physical matches",
+    "base_frozen_during_text_training": true,
+    "metadata_fit_only_f_train": true,
+    "source_hashes": {
+      "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\matches.jsonl": "4a3a8c14e55ca95f34413b856635ef72ab778138e3a2d05c835ff7b386eef775",
+      "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\outcomes.jsonl": "335bbb2e933df398b15b021bda64a15279c9a20f1f57acb3fd4940efba1ea9a2",
+      "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\documents.jsonl": "9f031638832d45db36204cc95fc0afca993d3c5ec2b623f2104ce1a286da2da8",
+      "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\sequences.jsonl": "7240b5b5d082e60c3ea2dde1b11d270efc699aa53eda802d37bcda12260659d0",
+      "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\schema.json": "3c5fad18c991f16338f2c3ce33786845175cbfad8ca4a17de0771f7233430149",
+      "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\dataset-summary.json": "65cb498783d3a3d3c169c8791ea6dcf6973fab3903f01652b0e0f7ccbe0d3f53",
+      "D:\\a1-足彩\\tools\\train_full_history_sequence_f.py": "76ed234d70c753cd3c6bed08eec6ba291a99d252391acc544bc88c924a57981f",
+      "D:\\a1-足彩\\football_research\\acquisition\\sequential_evidence_f.py": "ff9e42ed72f86c2bc009de6072abaee1d19850276e370c1137c75f57ceb89d78",
+      "D:\\a1-足彩\\football_research\\acquisition\\full_history_sequence_metadata.py": "8f57727df390c6423861e328fb24b0860f1827f6c70f56543f928fffcdd9d90a",
+      "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\f-fit-vectors\\embeddings.npz": "59984056bc1d1d53a49313d6ec73d77a6e73d0dc2cd33dd7ccdea99b4175b694",
+      "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\f-fit-vectors\\encoder-provenance.json": "105b7e4c2c01eafd1331213a3ca837e17404977e97097e1850c6a80938cd14d1"
+    },
+    "encoder_provenance": {
+      "path": "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\f-fit-vectors\\encoder-provenance.json",
+      "sha256": "105b7e4c2c01eafd1331213a3ca837e17404977e97097e1850c6a80938cd14d1",
+      "contract": {
+        "short_contract": {
+          "repository": "Qwen/Qwen3-Embedding-0.6B",
+          "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+          "model_sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+          "dimension": 1024,
+          "pooling": "last_nonpadding_token",
+          "normalization": "l2_then_matryoshka_prefix_then_l2",
+          "text_policy": "verbatim_no_prompt_no_title_injection_no_truncation",
+          "max_input_tokens": 8192,
+          "dtype": "float32",
+          "implementation": "postread-qwen-frozen-v1"
+        },
+        "long_contract": {
+          "repository": "Qwen/Qwen3-Embedding-0.6B",
+          "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+          "model_sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+          "dimension": 1024,
+          "pooling": "last_nonpadding_token",
+          "normalization": "l2_then_matryoshka_prefix_then_l2",
+          "text_policy": "verbatim_no_prompt_no_title_injection_no_truncation",
+          "max_input_tokens": 32768,
+          "dtype": "float32",
+          "implementation": "postread-qwen-full-history-long-v1"
+        },
+        "encoding_plan_path": "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\semantic\\encoding-plan.json",
+        "encoding_plan_sha256": "cdbd3be0df337270f9be5fd81cf44d206017c5c99726704ad82cfda17efbfa3a",
+        "input_representation": "verbatim full body; no target or title injection; existing vectors unchanged",
+        "native_dimension": 1024,
+        "f_dimension": 256,
+        "f_conversion": "prefix256 followed by L2",
+        "long_contract_difference": "only explicit token bound and contract identifier differ; same frozen model weights/pooling/dtype",
+        "model_checkpoint_modified": false
+      }
+    },
+    "f_train_matches": 294,
+    "f_dev_matches": 74,
+    "selected_from": "set_residual_mlp-seed47"
+  }
+}

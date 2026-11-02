@@ -1,0 +1,8 @@
+{
+  "competition": {"id": 9000001, "code": "FIXTURE_ONLY", "name": "Synthetic Cup"},
+  "matches": [
+    {"id": 990001, "utcDate": "2025-01-01T12:00:00Z", "status": "FINISHED", "homeTeam": {"id": 901, "name": "Fixture A"}, "awayTeam": {"id": 902, "name": "Fixture B"}, "score": {"duration": "REGULAR", "fullTime": {"home": 0, "away": 0}, "halfTime": {"home": 0, "away": 0}}},
+    {"id": 990002, "utcDate": "2025-01-02T12:00:00Z", "status": "FINISHED", "homeTeam": {"id": 901, "name": "Fixture A"}, "awayTeam": {"id": 902, "name": "Fixture B"}, "score": {"duration": "EXTRA_TIME", "regularTime": {"home": 1, "away": 1}, "fullTime": {"home": 2, "away": 1}, "halfTime": {"home": 0, "away": 1}}},
+    {"id": 990003, "utcDate": "2025-01-03T12:00:00Z", "status": "POSTPONED", "homeTeam": {"id": 901, "name": "Fixture A"}, "awayTeam": {"id": 902, "name": "Fixture B"}, "score": {"duration": "REGULAR", "fullTime": {"home": null, "away": null}, "halfTime": {"home": null, "away": null}}}
+  ]
+}

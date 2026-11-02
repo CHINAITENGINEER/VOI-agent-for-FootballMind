@@ -1,0 +1,2 @@
+# Optional direct DeepSeek transport, alongside requirements-inquiry.txt.
+httpx[socks]==0.28.1

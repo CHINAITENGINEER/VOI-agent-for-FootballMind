@@ -1,0 +1,24 @@
+{
+  "id": "45129d91-5261-4a3f-910d-5424b40326d2",
+  "source": "open_page",
+  "endpoint": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+  "method": "GET",
+  "params": {},
+  "request_id": "c26cf13b-4a8c-4664-b0d3-e3b92d2c0cbc",
+  "observed_at": "2026-10-07T05:52:40.946297Z",
+  "http_status": 200,
+  "payload_path": "raw\\open_page\\2026-10-07\\055240_946297_45129d91-5261-4a3f-910d-5424b40326d2.body.gz",
+  "content_hash": "84ad799f61532fe9aed3e64f3d41505ec18a673b326f2b9b2e002bf5de9a6ebf",
+  "payload_format": "html",
+  "response_headers": {},
+  "context": {
+    "requested_at": "2026-10-07T05:52:39.221683+00:00",
+    "requested_url": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/",
+    "purpose": "primary_law10_draws_extra_time_and_shootout_semantics",
+    "tls_verification": true,
+    "transport": "windows_schannel_curl",
+    "curl_exit": 0
+  },
+  "error_class": null,
+  "schema_version": "1.0"
+}

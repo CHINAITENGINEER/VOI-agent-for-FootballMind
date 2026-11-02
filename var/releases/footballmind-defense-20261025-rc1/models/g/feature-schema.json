@@ -1,0 +1,169 @@
+{
+  "blocks": [
+    {
+      "name": "current_f_probabilities",
+      "start": 0,
+      "stop": 3,
+      "dimension": 3
+    },
+    {
+      "name": "entropy",
+      "start": 3,
+      "stop": 4,
+      "dimension": 1
+    },
+    {
+      "name": "adopted_count",
+      "start": 4,
+      "stop": 5,
+      "dimension": 1
+    },
+    {
+      "name": "remaining_count",
+      "start": 5,
+      "stop": 6,
+      "dimension": 1
+    },
+    {
+      "name": "remaining_budget",
+      "start": 6,
+      "stop": 7,
+      "dimension": 1
+    },
+    {
+      "name": "adopted_mean_embedding",
+      "start": 7,
+      "stop": 263,
+      "dimension": 256
+    },
+    {
+      "name": "adopted_mean_metadata",
+      "start": 263,
+      "stop": 285,
+      "dimension": 22
+    },
+    {
+      "name": "current_f_hidden_state",
+      "start": 285,
+      "stop": 349,
+      "dimension": 64
+    },
+    {
+      "name": "candidate_embedding",
+      "start": 349,
+      "stop": 605,
+      "dimension": 256
+    },
+    {
+      "name": "absolute_difference",
+      "start": 605,
+      "stop": 861,
+      "dimension": 256
+    },
+    {
+      "name": "elementwise_product",
+      "start": 861,
+      "stop": 1117,
+      "dimension": 256
+    },
+    {
+      "name": "candidate_metadata",
+      "start": 1117,
+      "stop": 1139,
+      "dimension": 22
+    },
+    {
+      "name": "maximum_adopted_cosine",
+      "start": 1139,
+      "stop": 1140,
+      "dimension": 1
+    }
+  ],
+  "total_dimension": 1140,
+  "state_width": 349,
+  "metadata_names": [
+    "log1p_days_before_match",
+    "publication_time_unknown",
+    "historical_version_unknown",
+    "source_is_official",
+    "log1p_body_characters",
+    "historical_reconstruction",
+    "exact_prior_body_duplicate",
+    "candidate_claims_unknown",
+    "adopted_claims_unknown",
+    "repeated_claim_count",
+    "existing_multistatus_count",
+    "candidate_introduced_multistatus_count",
+    "candidate_expanded_multistatus_count",
+    "factual_update_unknown",
+    "source_official_unknown",
+    "exact_home_team_mentions",
+    "exact_away_team_mentions",
+    "target_aliases_unknown",
+    "target_aliases_partial",
+    "source_target_home",
+    "source_target_away",
+    "source_target_unknown"
+  ],
+  "metadata_control_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    1117,
+    1118,
+    1119,
+    1120,
+    1121,
+    1122,
+    1123,
+    1124,
+    1125,
+    1126,
+    1127,
+    1128,
+    1129,
+    1130,
+    1131,
+    1132,
+    1133,
+    1134,
+    1135,
+    1136,
+    1137,
+    1138
+  ],
+  "current_hidden_source": "same frozen f current adopted prefix; no candidate-after state",
+  "forbidden_inputs": [
+    "outcome",
+    "realized_gain",
+    "candidate_after_probability",
+    "candidate_after_hidden_state"
+  ],
+  "text_representation": "frozen Qwen1024 prefix256 then L2 normalization"
+}

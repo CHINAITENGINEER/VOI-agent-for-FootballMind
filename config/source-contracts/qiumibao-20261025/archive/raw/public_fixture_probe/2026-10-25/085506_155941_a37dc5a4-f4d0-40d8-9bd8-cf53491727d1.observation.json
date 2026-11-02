@@ -1,0 +1,17 @@
+{
+  "id": "a37dc5a4-f4d0-40d8-9bd8-cf53491727d1",
+  "source": "public_fixture_probe",
+  "endpoint": "https://bifen4pc.qiumibao.com/json/2026-10-25/list.htm",
+  "method": "GET",
+  "params": {},
+  "request_id": "84a42869-c018-480a-beae-c680507fc8d5",
+  "observed_at": "2026-10-25T08:55:06.155941Z",
+  "http_status": 200,
+  "payload_path": "raw\\public_fixture_probe\\2026-10-25\\085506_155941_a37dc5a4-f4d0-40d8-9bd8-cf53491727d1.body.gz",
+  "content_hash": "ce944e9e4587ca301aa41ee749511efc2796ced0d6216122180acc2ab4079824",
+  "payload_format": "json",
+  "response_headers": {},
+  "context": {},
+  "error_class": null,
+  "schema_version": "1.0"
+}

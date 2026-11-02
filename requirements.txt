@@ -1,0 +1,5 @@
+# Main runtime snapshot: Windows / Python 3.13. Collector extras remain separate.
+-r football_agent/requirements-frozen.txt
+torch==2.11.0
+transformers==5.8.0
+httpx[socks]==0.28.1

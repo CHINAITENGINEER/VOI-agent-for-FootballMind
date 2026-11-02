@@ -1,0 +1,145 @@
+[
+  {
+    "purpose": "比赛列表",
+    "url": "https://slb.haoyun999.cn/api/Game/GetSimpleMatchsAll",
+    "method": "GET",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "X-Requested-With": "XMLHttpRequest",
+      "XMIME-TYPE": "3",
+      "AppType": "0",
+      "DeviceKind": "1",
+      "Referer": "https://xx.spftll.cn/",
+      "token": "null",
+      "rkey": "null"
+    },
+    "params": {
+      "dateFormat": "",
+      "notSingle": false,
+      "mKind": 0,
+      "reqtype": 0
+    },
+    "response_format": "JSON",
+    "response_example": {
+      "code": 0,
+      "info": "2026-09-20 周日",
+      "data": [
+        {
+          "dateFormat": "2026-09-20 周日",
+          "list": [
+            {
+              "matchId": 2929733,
+              "matchTime": "2026-09-20T18:00:00",
+              "leagueChs": "韩职",
+              "homeChs": "仁川联",
+              "awayChs": "大田市民",
+              "homeRank": "8",
+              "awayRank": "6",
+              "footMatchState": 0,
+              "spfWinFoot": 2.88,
+              "spfEqualFoot": 3.05,
+              "spfLoseFoot": 2.2,
+              "goalFoot": 1,
+              "rspfWinFoot": 1.51,
+              "rspfEqualFoot": 3.85,
+              "rspfLoseFoot": 4.85
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "purpose": "比赛详情与历史",
+    "url": "https://justpost.haoyun999.cn/api/match/GetInfo",
+    "method": "GET",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "X-Requested-With": "XMLHttpRequest",
+      "XMIME-TYPE": "3",
+      "AppType": "0",
+      "DeviceKind": "1",
+      "Referer": "https://xx.spftll.cn/",
+      "token": "null",
+      "rkey": "null"
+    },
+    "params": {
+      "gameKind": 0,
+      "matchId": 2929733
+    },
+    "response_format": "JSON",
+    "response_example": {
+      "code": 0,
+      "data": {
+        "matchId": 2929733,
+        "matchTime": "2026-09-20T18:00:00",
+        "home": "仁川联",
+        "away": "大田市民",
+        "homeHalfScore": null,
+        "awayHalfScore": null,
+        "homeScore": null,
+        "awayScore": null,
+        "league": "韩职",
+        "footMatchState": 0,
+        "finishedTitle": "未开",
+        "battleList": [
+          {
+            "matchId": 2929623,
+            "matchTime": "2026-05-05T15:30:00",
+            "home": "大田市民",
+            "away": "仁川联",
+            "homeScore": 0,
+            "awayScore": 0,
+            "league": "韩K联"
+          }
+        ],
+        "homeBattleList": [],
+        "awayBattleList": []
+      }
+    }
+  },
+  {
+    "purpose": "补充赔率与排名",
+    "url": "https://slb.haoyun999.cn/api/Game/GetMoreSpInfo",
+    "method": "GET",
+    "headers": {
+      "Accept": "application/json, text/plain, */*",
+      "X-Requested-With": "XMLHttpRequest",
+      "XMIME-TYPE": "3",
+      "AppType": "0",
+      "DeviceKind": "1",
+      "Referer": "https://xx.spftll.cn/",
+      "token": "null",
+      "rkey": "null"
+    },
+    "params": {
+      "matchId": 2929733,
+      "mKind": 0
+    },
+    "response_format": "JSON",
+    "response_example": {
+      "code": 0,
+      "data": {
+        "footballMoreSpInfo": {
+          "matchId": 2929733,
+          "hometeamchs": "仁川联",
+          "awayteamchs": "大田市民",
+          "homerank": "8",
+          "awayrank": "6",
+          "spf_win": 2.88,
+          "spf_draw": 3.05,
+          "spf_lost": 2.2,
+          "rfspf_goal": "+1",
+          "rfspf_win": 1.51,
+          "rfspf_draw": 3.85,
+          "rfspf_lost": 4.85,
+          "t0": 11,
+          "t1": 4.8,
+          "t2": 3.3,
+          "t3": 3.6
+        }
+      }
+    }
+  }
+]
+

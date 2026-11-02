@@ -1,0 +1,35 @@
+{
+  "allowed_hosts": [
+    "www.englandfootball.com",
+    "www.uefa.com",
+    "rfef.es",
+    "www.rfef.es",
+    "justpost.haoyun999.cn",
+    "slb.haoyun999.cn"
+  ],
+  "provider_timeout_seconds": 120,
+  "budget": {"max_requests": 4, "max_llm_calls": 5},
+  "task": {
+    "task_id": "england-spain-2026-09-26-operational-inquiry",
+    "objective": "调查英格兰对西班牙这场比赛的赛前信息缺口：确定哪些阵容、人员或赛事目标问题值得进一步核实，并依据实际证据决定后续调查或停止。自行决定问题与查询顺序，保留尚未确认的事项。",
+    "deadline": "2026-09-26T18:45:00Z",
+    "initial_facts": [
+      {
+        "statement": "已有 spftll 归档列出英格兰主场对西班牙，欧国联，来源比赛 ID 2981431，开球 2026-09-26 18:45 UTC。",
+        "status": "source_claim",
+        "source_observation_id": "24fabe20-01d2-4a25-b771-e7ded26d6e1d",
+        "observed_at": "2026-09-26T11:44:50.680697Z",
+        "identity_scope": "source_native_fixture_independent_confirmation_pending"
+      },
+      {
+        "statement": "本次运行开始前，实际阵容、轮换、排名目标和战术都保持未知。历史赔率未作为当前报价，现有杯赛假设不作为事实。",
+        "status": "unknown"
+      }
+    ],
+    "seed_urls": [
+      "https://www.englandfootball.com/england/mens-senior-team/fixtures-results",
+      "https://www.uefa.com/uefanationsleague/match/2048018--england-vs-spain/matchinfo/",
+      "https://justpost.haoyun999.cn/api/match/GetInfo?gameKind=0&matchId=2981431"
+    ]
+  }
+}

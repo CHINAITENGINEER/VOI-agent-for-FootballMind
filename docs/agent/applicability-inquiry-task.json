@@ -1,0 +1,37 @@
+{
+  "inquiry_protocol": "applicability-inquiry-v1",
+  "allowed_hosts": ["www.englandfootball.com", "www.uefa.com", "rfef.es", "www.rfef.es"],
+  "provider_timeout_seconds": 180,
+  "budget": {"max_requests": 2, "max_llm_calls": 6},
+  "inherit_evidence": {
+    "parent_root": "var/parallel/agent/round17/hypothesis-inquiry-v1",
+    "parent_run_id": "05c2f62a-aed4-44d2-bd30-5e19dc546a99",
+    "parent_head_hash": "6124a33ba323ae3331e0db16c6e0a1d8922265ce3e5a6eb8d25d48daaa3bf623",
+    "document_ids": ["doc-f6467bb6-8985-457f-93b8-72c1949db21a", "doc-ff94d6c1-a9a9-47cb-a082-83aaa02f79f5"]
+  },
+  "task": {
+    "task_id": "england-spain-2026-09-26-applicability-continuation",
+    "objective": "继续英格兰对西班牙的赛前信息调查。已继承的教练正文与赛事说明保留原始观察时间，可直接阅读。厘清赛事级背景能否作为本场判断的前提，并让剩余缺口决定下一步查什么；先通过 reflect 查看已提取适用关系的计算结果，再自主选择外部查询、暂缓或停止。关注赛事阶段、晋级目标与人员安排之间哪些关系有依据、哪些仍是待核实推断。自行生成具体问题和查询顺序，已有规则无需机械重查，刷新或交叉核实需要明确目的。输入齐全后仍需推理，保留未知和冲突，不宣称未估计的数值收益。",
+    "deadline": "2026-09-26T18:45:00Z",
+    "initial_facts": [
+      {
+        "statement": "既有 spftll 观测列出英格兰主场对西班牙，欧国联，开球 2026-09-26 18:45 UTC；上一轮官方正文也提供本场赛程。",
+        "match_id": "spftll:match:2981431",
+        "home_subject": "England",
+        "away_subject": "Spain",
+        "status": "source_claim",
+        "source_observation_id": "24fabe20-01d2-4a25-b771-e7ded26d6e1d",
+        "observed_at": "2026-09-26T11:44:50.680697Z"
+      },
+      {
+        "statement": "本次是同一案例的续查。此前得到集训与赛事背景，但本场首发、实际轮换和战术尚未核实；继承文档不等于重新确认时效。",
+        "parent_run_id": "05c2f62a-aed4-44d2-bd30-5e19dc546a99",
+        "status": "open_questions"
+      }
+    ],
+    "seed_urls": [
+      "https://www.englandfootball.com/articles/2026/Sep/21/nations-league-explained-for-the-three-lions-20262109",
+      "https://www.englandfootball.com/articles/2026/Sep/18/thomas-tuchel-on-england-squad-selection-20261809"
+    ]
+  }
+}

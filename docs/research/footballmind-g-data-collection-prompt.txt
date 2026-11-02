@@ -1,0 +1,131 @@
+# FootballMind：用于自主信息价值学习的赛前信息流采集任务
+
+你负责提供原始数据，不负责决定信息价值、生成胜率或训练模型。
+研究问题是：用户给出一场比赛，Agent 根据当前可见状态 H，预测获取候选信息 a 的期望风险改善，再决定是否获取。
+数据要支持读取前/读取后比较，并保留当时实际可见的候选、消息版本、时间和失败。
+
+一、范围与交付节奏
+
+1. 优先单一数据较充足的联赛，默认沿用英超。覆盖双方及多个俱乐部，不再只收集一个球队。
+2. 先交付3—5场格式验证样本和来源可得性说明，再交第一批20—30场。
+3. 如果渠道支持可靠批量导出，再争取80—150场独立比赛；这是数据量规划，不是统计有效性保证，不为凑数牺牲时间依据或正文质量。
+4. 历史资料用于较快开展训练可行性实验；同时对少量未来比赛前瞻保存消息流。不等待大量未来赛果后才开始工作。
+5. 10月18日前形成冻结训练资料候选；实际训练/验证切分由研究主线程冻结。10月19日后取得的数据另存，不根据评估结果回填训练集。
+6. 比赛按预先写下的联赛、日期范围和来源可用性纳入，不按赛果、爆冷、预测正确与否或“新闻看起来很有价值”挑选。
+
+二、三种时间性质必须分开
+
+A. 实际赛前采集：保存真实请求/响应和捕获时间。这能证明该版本在捕获后已经可见。
+B. 有历史快照：保存归档快照及快照时间、正文版本、来源依据。只能按可证明的快照时间使用该版本。
+C. 后来抓取的历史文章：即使文章标有赛前发布日期，也只标 historical_reconstruction；不能声称当前正文就是当时版本。
+
+不同模式分别统计。不得把 captured_at 改成 published_at，不得用网页日期伪造历史抓取时钟。没有归档也允许交付历史重建资料，不将寻找完美快照作为阻塞条件。
+
+三、采集内容
+
+每场优先覆盖赛前72小时至开球的公开信息；资料丰富时可延伸到7天。
+优先保存以下实际材料，但不要把列表做成下游 Agent 的固定查询顺序：
+- 双方赛前发布会及可核对的文字记录；
+- 伤停、停赛、恢复训练、出场存疑与后续澄清；
+- 预计阵容与官方首发，明确区分；
+- 比赛动机、晋级条件、积分约束、轮换或战术的具体报道；
+- 赛程、旅行、休息天数；
+- 已有公开的其他相关或无关候选、矛盾报道、转载及更正。
+
+每场争取3—8个具有独立信息内容的版本/材料，但不把该数量作为排除标准；不足时记录缺口，不生成填充文本。同一事实十篇转载不算十个独立消息。
+首版只做赛前。临场首发可以保留，但不能进入更早的T-24h预测状态。不同决策时点分别记录。
+
+四、最低原始字段
+
+fixtures.jsonl 每行：
+physical_match_id, competition, season, home_team, away_team,
+kickoff_at（带时区）, fixture_source_url。
+
+documents.jsonl 每个正文版本一行：
+document_id, version_id, physical_match_ids, canonical_url, publisher,
+title, body_text, language,
+source_published_at, source_modified_at, captured_at,
+source_time_raw, timezone_basis, time_precision, time_evidence,
+information_mode（prospective_capture / archived_snapshot / historical_reconstruction）,
+archive_snapshot_at, archive_snapshot_url, historical_snapshot_proven,
+raw_path, raw_sha256, previous_version_id,
+document_type, match_binding_basis, duplicate_cluster_id。
+
+要求：
+- 来源时区/具体时分不明时保留原文与精度，相应精确时间字段填null；不默认零点、不自行猜时区。
+- source_modified_at未知填null；不能假装“没查到修改时间”等于“从未修改”。
+- physical_match_ids可为空或多场；赛前适用性不明则记录uncertain，不强行绑定。
+- body_text是实际正文；标题、摘要、生成的新闻总结不能替代原文。
+- HTML/JSON/公开文字记录保存到raw/，计算hash。动态网页可另存截图作为辅助，不能只留下截图而丢正文。
+- 新版本另存，禁止覆盖旧版本；更正与辟谣保留前后版本。
+
+discovery.jsonl 每次来源目录/搜索曝光一行：
+discovery_id, physical_match_id, observed_at, query或parent_url,
+provider, raw_path, raw_sha256,
+visible_candidates[{candidate_id, url, title, snippet, rank}],
+status, truncation_or_cap。
+
+要求：
+- 保存实际返回的候选顺序、标题及摘要，不只保留最后选中的新闻。
+- 如果历史目录不可得，标记reconstructed_menu；不能把事后搜出的URL写成当时搜索结果。
+- 若标题/摘要当时已可见，保留；我们会把它们纳入H，不能把摘要已透露的事实再次当成读取正文的全部收益。
+- 没有搜索接口也可从官方目录/RSS/公开页面开始，记录来源实际能力，不要求购买服务。
+
+attempts.jsonl 每次真实搜索/读取尝试一行：
+attempt_id, physical_match_id, discovery_id, candidate_id,
+tool, request参数或url, started_at, completed_at,
+status（ok / no_results / timeout / http_error / parse_error等）,
+http_status, error_code, returned_version_ids,
+request_count, latency_ms, token_usage_if_available, monetary_cost_if_known。
+
+要求：
+- 搜索失败、无结果、空正文、重复与低相关返回同样保存；不得只交成功/有用记录。
+- 返回耗时按真实请求记录；未知费用填null，不填0。
+- 如实际记录了行为策略，另存policy_version、当时候选集合和选择原因；只有真实按已知概率随机选择时才写selection_probability。未知填null，不事后补造。
+- 真正Agent轨迹的H、前后预测由运行器导出；若只是数据采集，不伪造Agent动作与选择概率。
+
+五、基础信息和标签分开
+
+context_snapshots.jsonl：
+保存能获得的赛前排名、历史比赛、阵容背景或赔率快照，带来源和as_of/captured_at。
+赔率可选；若有则带bookmaker、market、decimal_odds、quote_at和captured_at。只有收盘赔率时明确标记，不能塞进更早状态。
+没有这些字段不阻塞原始新闻交付。初始概率由研究主线程构建，不让LLM编造胜率。
+
+labels/results.jsonl：
+physical_match_id, regulation_home_goals, regulation_away_goals,
+result_status, result_source_url, result_published_at（未知则null）,
+result_observed_at, raw_path, raw_sha256, timing_basis。
+常规时间含伤停补时，不混入加时/点球比分。延期/腰斩单独标记。
+没有实际结束/发布时间时，不用“开球后3小时”伪造观测时间。
+赛果与赛后报道放在独立labels/目录，不能进入赛前Agent输入。
+
+六、原始材料与算法训练的边界
+
+1. 采集方不要标注“预计提高胜率多少”“VoI=多少”或用最终赛果判断某消息有用。
+2. 允许描述主体、事实、来源和不确定性，不需要记者明确写出胜率影响；事实影响大小由概率模型承担，不要求原文替模型作推断。
+3. 不编造缺失新闻、时间戳、来源、失败记录、历史候选菜单或预测值。
+4. 历史正文、发布时间、当时可访问版本是不同概念，必须保留区别。
+5. 离线研究可以在完整归档面板中逐条揭示正文来构造H→H+o，但那是归档面板实验，不是当年Agent实际轨迹；原始库即使收集齐全，候选正文也不能泄露给读取前的g。
+6. 独立统计单位是比赛，不是文章、状态子集或转载。原始数据全部保留，训练时由主线程按比赛和时间切分。
+7. 只使用可合法取得的公开或已授权材料，不绕过登录、付费墙或反爬限制。需要付费资源时先提供可审阅样本、导出能力和报价，不自动购买。
+
+七、交付目录
+
+footballmind-information-stream/
+  manifest.json
+  fixtures.jsonl
+  documents.jsonl
+  discovery.jsonl
+  attempts.jsonl
+  context_snapshots.jsonl
+  labels/results.jsonl
+  raw/
+  quality-report.txt
+
+manifest写明来源、覆盖日期、选择规则、实际采集区间、字段定义和各文件hash。
+quality-report写明独立比赛/俱乐部数量、双边覆盖、正文数、重复比例、时间精度、历史快照/重建/前瞻样本数、失败数及缺失项。
+缺少某类文件时可以交空文件并解释。第一批优先完成3—5场完整包，输出实际数据、来源与复现方法，不只输出采集代码或计划。
+
+研究主线程将负责后续：从原始流构造H和候选a，冻结/交叉拟合f，计算
+delta = log f(H+o)[y] - log f(H)[y]，以独立比赛和时间外切分训练g，并检验常数基线、条件排序和停止决策。
+一个赛果对应的delta只是有噪声的训练样本，不是这条信息真实价值的独立真值。

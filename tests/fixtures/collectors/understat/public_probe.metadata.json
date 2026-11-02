@@ -1,0 +1,30 @@
+{
+  "sample_kind": "real_capture_redacted_copy",
+  "source": "understat",
+  "observation": {
+    "id": "b7212198-7610-44d4-9f52-4a51dae38c05",
+    "source": "understat_probe",
+    "endpoint": "https://understat.com/league/EPL/2025",
+    "method": "GET",
+    "params": {},
+    "request_id": "14ebf530-b5af-4200-989c-72635511f869",
+    "observed_at": "2026-09-20T11:00:28.434075Z",
+    "http_status": 200,
+    "payload_path": "raw\\understat_probe\\2026-09-20\\110028_434075_b7212198-7610-44d4-9f52-4a51dae38c05.body.gz",
+    "content_hash": "fe53b5fa8996c831548ea5456a9b7fdce98390589af3f1dad5deb5fcaf279ea3",
+    "payload_format": "html",
+    "response_headers": {
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "context": {
+      "research_only": true
+    },
+    "error_class": null,
+    "schema_version": "1.0"
+  },
+  "original_payload_sha256": "fe53b5fa8996c831548ea5456a9b7fdce98390589af3f1dad5deb5fcaf279ea3",
+  "fixture_payload_sha256": "8fb524fdb47e5f7bc0a9900a57b7bd5238ed3d4c531010af34bdd6e097ab5797",
+  "transformation": "Visible HTML text only; scripts, styles, attributes and challenge tokens omitted; original retained privately",
+  "payload_file": "public_probe.txt",
+  "production_ingestion_allowed": false
+}

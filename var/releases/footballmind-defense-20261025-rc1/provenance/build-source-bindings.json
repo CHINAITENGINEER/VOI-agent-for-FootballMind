@@ -1,0 +1,12 @@
+{
+  "source_files": {
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\f-models\\selected-set_residual_mlp\\model.pt": "b36b2cf87f379034224c314794efc6ec59266dd4cf4752383965c41fb63661e0",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\g-models\\set\\g-models.joblib": "5af947711279765838adb02e7dc09c2a9525a89e90db3e23e4f68a865ed88eff",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\sequences.jsonl": "7240b5b5d082e60c3ea2dde1b11d270efc699aa53eda802d37bcda12260659d0",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\gpu-import-v1\\embeddings.npz": "f32b6ec1b8b3156b8c69c64193d2d928d6d48a2c9e45f679aef671d0b5afcb3b"
+  },
+  "build_script_sha256": "153a54cdb626071eb3b8beca5c48d46fa48c1c51f03ce471e09521a24aad141c",
+  "source_paths_required_for_inference": false,
+  "new_training": false,
+  "network_requests": 0
+}

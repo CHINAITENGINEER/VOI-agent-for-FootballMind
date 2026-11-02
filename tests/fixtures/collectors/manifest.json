@@ -1,0 +1,125 @@
+{
+  "purpose": "Role A handoff fixtures; never import these copies as fresh production observations",
+  "origin": "existing_real_archives",
+  "network_requests_during_export": 0,
+  "samples": [
+    {
+      "source": "spftll",
+      "name": "list",
+      "observed_at": "2026-09-20T11:44:22.251447Z",
+      "observation_id": "2439bdfe-6ab1-4209-91a8-37cfd132493b",
+      "http_status": 200,
+      "error_class": null,
+      "metadata": "tests\\fixtures\\collectors\\spftll\\list.metadata.json",
+      "fixture_payload_sha256": "fbaa465c95b27ddb8efad1b0253911e6a275a07845b4f6af60b63dfad01ec66b"
+    },
+    {
+      "source": "spftll",
+      "name": "recent",
+      "observed_at": "2026-09-20T11:44:25.169899Z",
+      "observation_id": "e2e9785d-bd6c-4018-aad6-54f0e0c60e93",
+      "http_status": 200,
+      "error_class": null,
+      "metadata": "tests\\fixtures\\collectors\\spftll\\recent.metadata.json",
+      "fixture_payload_sha256": "1370f9b90f9629ad1fe65324ce1e83a3ce33004e97d4c640b900b697d9338a1f"
+    },
+    {
+      "source": "spftll",
+      "name": "detail",
+      "observed_at": "2026-09-20T11:44:27.725604Z",
+      "observation_id": "0041fd4d-cd1b-41ab-80fc-d14345c1e6df",
+      "http_status": 200,
+      "error_class": null,
+      "metadata": "tests\\fixtures\\collectors\\spftll\\detail.metadata.json",
+      "fixture_payload_sha256": "796c9940d75106508701dd15ff6c6546a466fce4c16af7930c99c3f2abc4c35e"
+    },
+    {
+      "source": "spftll",
+      "name": "odds",
+      "observed_at": "2026-09-20T11:44:29.982436Z",
+      "observation_id": "687cc6d1-0c9a-4190-802f-3acfd907346b",
+      "http_status": 200,
+      "error_class": null,
+      "metadata": "tests\\fixtures\\collectors\\spftll\\odds.metadata.json",
+      "fixture_payload_sha256": "4b9cf84e26105b84a77cee6d95d045e07a6b5813991ac06ca89f06d6d2fc05e4"
+    },
+    {
+      "source": "spftll",
+      "name": "repeated_detail_1",
+      "observed_at": "2026-09-20T11:44:09.294583Z",
+      "observation_id": "ee1f85ab-db2f-40ad-841a-3cf2ac0cd7f0",
+      "http_status": 200,
+      "error_class": null,
+      "metadata": "tests\\fixtures\\collectors\\spftll\\repeated_detail_1.metadata.json",
+      "fixture_payload_sha256": "57488940dc288b5faec63aa09c24d45fecd3f68d67acff1ecc34a8f1979869e9"
+    },
+    {
+      "source": "spftll",
+      "name": "repeated_detail_2",
+      "observed_at": "2026-09-20T11:44:17.635710Z",
+      "observation_id": "eb943dc9-c55c-49fc-baf0-964a574fbb1c",
+      "http_status": 200,
+      "error_class": null,
+      "metadata": "tests\\fixtures\\collectors\\spftll\\repeated_detail_2.metadata.json",
+      "fixture_payload_sha256": "57488940dc288b5faec63aa09c24d45fecd3f68d67acff1ecc34a8f1979869e9"
+    },
+    {
+      "source": "spftll",
+      "name": "transport_failure",
+      "observed_at": "2026-09-20T11:16:59.352389Z",
+      "observation_id": "922422d2-dbc9-4073-841a-3bdfe6940977",
+      "http_status": null,
+      "error_class": "SSLError",
+      "metadata": "tests\\fixtures\\collectors\\spftll\\transport_failure.metadata.json",
+      "fixture_payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "understat",
+      "name": "public_probe",
+      "observed_at": "2026-09-20T11:00:28.434075Z",
+      "observation_id": "b7212198-7610-44d4-9f52-4a51dae38c05",
+      "http_status": 200,
+      "error_class": null,
+      "metadata": "tests\\fixtures\\collectors\\understat\\public_probe.metadata.json",
+      "fixture_payload_sha256": "8fb524fdb47e5f7bc0a9900a57b7bd5238ed3d4c531010af34bdd6e097ab5797"
+    },
+    {
+      "source": "clubelo",
+      "name": "public_probe",
+      "observed_at": "2026-09-20T11:00:35.438845Z",
+      "observation_id": "1ca72075-3710-4121-b988-7a14454d01aa",
+      "http_status": 502,
+      "error_class": null,
+      "metadata": "tests\\fixtures\\collectors\\clubelo\\public_probe.metadata.json",
+      "fixture_payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "source": "fbref",
+      "name": "public_probe",
+      "observed_at": "2026-09-20T11:00:40.923587Z",
+      "observation_id": "ca4c8c99-a760-4ad6-bb6f-71f2566b853f",
+      "http_status": 403,
+      "error_class": null,
+      "metadata": "tests\\fixtures\\collectors\\fbref\\public_probe.metadata.json",
+      "fixture_payload_sha256": "05f8bdf19ca64ec98ac31c13061fb810966197580390f0688c67e092c21b5a3f"
+    },
+    {
+      "source": "football_data",
+      "name": "public_competitions",
+      "observed_at": "2026-09-20T11:53:57.498724+00:00",
+      "evidence_id": "82bfac73-8b6e-4584-bb79-0b2e3a8073e7",
+      "http_status": 200,
+      "metadata": "tests\\fixtures\\collectors\\football_data\\public_competitions.metadata.json",
+      "fixture_payload_sha256": "868eaf9804811fe7f587ba18fbb4036a5e6a64b62781bd6658ad8d4bfcc12cea"
+    },
+    {
+      "source": "understat",
+      "name": "epl_2025",
+      "observed_at": "2026-09-20T11:59:41.602689+00:00",
+      "evidence_id": "a9447ae0-3252-4207-a437-63bfc700f3a5",
+      "http_status": 200,
+      "metadata": "tests\\fixtures\\collectors\\understat\\epl_2025.metadata.json",
+      "fixture_payload_sha256": "3057c799bedba4c08ad7128d7236790457147a931e78f7d8a76f4e8b3fae4f47"
+    }
+  ]
+}

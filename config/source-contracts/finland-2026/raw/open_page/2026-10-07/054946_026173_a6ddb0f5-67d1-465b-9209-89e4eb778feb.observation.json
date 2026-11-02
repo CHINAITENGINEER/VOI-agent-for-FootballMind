@@ -1,0 +1,24 @@
+{
+  "id": "a6ddb0f5-67d1-465b-9209-89e4eb778feb",
+  "source": "open_page",
+  "endpoint": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
+  "method": "GET",
+  "params": {},
+  "request_id": "0007d5e2-0860-46aa-93ef-b31a75b07c3e",
+  "observed_at": "2026-10-07T05:49:46.026173Z",
+  "http_status": 200,
+  "payload_path": "raw\\open_page\\2026-10-07\\054946_026173_a6ddb0f5-67d1-465b-9209-89e4eb778feb.body.gz",
+  "content_hash": "127edc2970a257b22d23ec79ade3029e08d4e5913280a6e5f140602b07bed4cf",
+  "payload_format": "html",
+  "response_headers": {},
+  "context": {
+    "requested_at": "2026-10-07T05:49:43.283356+00:00",
+    "requested_url": "https://www.theifab.com/laws/latest/the-duration-of-the-match/",
+    "purpose": "primary_law7_regulation_duration",
+    "tls_verification": true,
+    "transport": "windows_schannel_curl",
+    "curl_exit": 0
+  },
+  "error_class": null,
+  "schema_version": "1.0"
+}

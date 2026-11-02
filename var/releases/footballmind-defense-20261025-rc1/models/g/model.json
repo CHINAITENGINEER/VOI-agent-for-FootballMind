@@ -1,0 +1,168 @@
+{
+  "schema": "sequential-postread-g-v1",
+  "f_model_sha256": "b36b2cf87f379034224c314794efc6ec59266dd4cf4752383965c41fb63661e0",
+  "g_model_sha256": "5af947711279765838adb02e7dc09c2a9525a89e90db3e23e4f68a865ed88eff",
+  "selected": {
+    "model": "state_ridge",
+    "threshold": 0.0,
+    "budget": 3,
+    "matches": 160,
+    "mean_final_log_loss": 0.9103842255288894,
+    "mean_updates": 0.75625
+  },
+  "configurations": {
+    "zero": {
+      "parameters": 0
+    },
+    "train_mean": {
+      "parameters": 1
+    },
+    "state_ridge": {
+      "parameters": 350,
+      "alpha": 10.0,
+      "input_dimension": 349,
+      "train_only_standardization": true
+    },
+    "fulltext_ridge": {
+      "parameters": 1141,
+      "alpha": 10.0,
+      "input_dimension": 1140,
+      "train_only_standardization": true
+    },
+    "local_metadata_refit_ridge": {
+      "parameters": 52,
+      "alpha": 10.0,
+      "input_dimension": 51,
+      "train_only_standardization": true
+    },
+    "fulltext_mlp_seed20261025": {
+      "selected_epoch": 43,
+      "epochs_run": 68,
+      "parameters": 154369,
+      "hidden": [
+        128,
+        64
+      ],
+      "seed": 20261025
+    },
+    "fulltext_mlp_seed20261026": {
+      "selected_epoch": 1,
+      "epochs_run": 26,
+      "parameters": 154369,
+      "hidden": [
+        128,
+        64
+      ],
+      "seed": 20261026
+    },
+    "fulltext_mlp_seed20261027": {
+      "selected_epoch": 42,
+      "epochs_run": 67,
+      "parameters": 154369,
+      "hidden": [
+        128,
+        64
+      ],
+      "seed": 20261027
+    }
+  },
+  "feature_order": [
+    "current_f_probabilities",
+    "entropy",
+    "adopted_count",
+    "remaining_count",
+    "remaining_budget",
+    "adopted_mean_embedding",
+    "adopted_mean_metadata",
+    "current_f_hidden_state",
+    "candidate_embedding",
+    "absolute_difference",
+    "elementwise_product",
+    "candidate_metadata",
+    "maximum_adopted_cosine"
+  ],
+  "feature_dimension": 1140,
+  "state_width": 349,
+  "rows": 10446,
+  "matches": 639,
+  "positive": 5904,
+  "zero": 0,
+  "negative": 4542,
+  "failure_rows": 4540,
+  "candidate_coverage": "all eligible candidates have s0 transitions; three bounded source/random prefix orders depth<=3",
+  "f_calls": 4075,
+  "f_seconds": 5.763972799824842,
+  "elapsed_seconds": 235.30410069999925,
+  "zero_or_negative_labels_retained": true,
+  "original_old_g_status": "not_reused_across_incompatible_f_binding",
+  "source_requests": 0,
+  "production_ready": false,
+  "source_sha256": {
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\matches.jsonl": "4a3a8c14e55ca95f34413b856635ef72ab778138e3a2d05c835ff7b386eef775",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\documents.jsonl": "9f031638832d45db36204cc95fc0afca993d3c5ec2b623f2104ce1a286da2da8",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\sequences.jsonl": "7240b5b5d082e60c3ea2dde1b11d270efc699aa53eda802d37bcda12260659d0",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\outcomes.jsonl": "335bbb2e933df398b15b021bda64a15279c9a20f1f57acb3fd4940efba1ea9a2",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\schema.json": "3c5fad18c991f16338f2c3ce33786845175cbfad8ca4a17de0771f7233430149",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\dataset-summary.json": "65cb498783d3a3d3c169c8791ea6dcf6973fab3903f01652b0e0f7ccbe0d3f53",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\gpu-import-v1\\embeddings.npz": "f32b6ec1b8b3156b8c69c64193d2d928d6d48a2c9e45f679aef671d0b5afcb3b"
+  },
+  "current_hidden_dimension": 64,
+  "metadata_control_columns": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    1117,
+    1118,
+    1119,
+    1120,
+    1121,
+    1122,
+    1123,
+    1124,
+    1125,
+    1126,
+    1127,
+    1128,
+    1129,
+    1130,
+    1131,
+    1132,
+    1133,
+    1134,
+    1135,
+    1136,
+    1137,
+    1138
+  ],
+  "limitations": [
+    "Historical version assumptions inherited",
+    "Shared outcome file is filtered by role before any labels are used; validation/test labels do not enter training or model selection",
+    "No new blind-test claim for previously examined matches"
+  ]
+}

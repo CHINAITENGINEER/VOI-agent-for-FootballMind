@@ -1,0 +1,49 @@
+{
+  "inquiry_protocol": "return-forecast-inquiry-v1",
+  "allowed_hosts": [
+    "www.englandfootball.com",
+    "www.uefa.com",
+    "rfef.es",
+    "www.rfef.es"
+  ],
+  "provider_timeout_seconds": 180,
+  "budget": {
+    "max_requests": 2,
+    "max_llm_calls": 6
+  },
+  "inherit_evidence": {
+    "parent_root": "var/parallel/agent/round18/applicability-inquiry-v1",
+    "parent_run_id": "f509943f-84f2-4891-9c48-db286808aa1b",
+    "parent_head_hash": "6c123e337a0bc43f96629f8ce97f355ec96a930927702dd270c95c99e3b19cfb",
+    "document_ids": [
+      "doc-f6467bb6-8985-457f-93b8-72c1949db21a",
+      "doc-ff94d6c1-a9a9-47cb-a082-83aaa02f79f5",
+      "doc-92e277f1-87d4-46c6-aa91-660e610cac68"
+    ]
+  },
+  "task": {
+    "task_id": "england-spain-2026-09-26-return-forecast-continuation",
+    "objective": "继续英格兰对西班牙的赛前信息调查，自主决定哪些未知值得下一次查询。已有教练访谈、赛事说明和新闻入口可以直接使用，仍保留原始时间。围绕赛事阶段、晋级目标、人员安排及战术判断，提出你认为关键的具体问题；自行选择查询顺序，或在依据不足时暂缓。每个候选查询在请求前写明不同返回下预期还缺哪些输入、下一步会采取什么行动，随后根据实际返回修正；偏离原计划需要解释，不要为了匹配计划拉伸证据范围。可用 reflect 先查看已整理的前提状态，但不强制固定步骤。查询必须具有明确的决策用途，新闻索引、集训名单和赛事规则各自保留其证据范围。前提齐全仍需推理，保留未知与冲突，不填造分支概率、风险改善或数值 VoI。",
+    "deadline": "2026-09-26T18:45:00Z",
+    "initial_facts": [
+      {
+        "statement": "既有 spftll 观测列出英格兰主场对西班牙，欧国联，开球 2026-09-26 18:45 UTC；上一轮官方正文也提供本场赛程。",
+        "match_id": "spftll:match:2981431",
+        "home_subject": "England",
+        "away_subject": "Spain",
+        "status": "source_claim",
+        "source_observation_id": "24fabe20-01d2-4a25-b771-e7ded26d6e1d",
+        "observed_at": "2026-09-26T11:44:50.680697Z"
+      },
+      {
+        "statement": "这是同一案例的续查。已继承正文和新闻入口，但本场首发、实际轮换和战术尚未核实；继承不等于重新确认时效，也不继承此前模型结论。",
+        "parent_run_id": "f509943f-84f2-4891-9c48-db286808aa1b",
+        "status": "open_questions"
+      }
+    ],
+    "seed_urls": [
+      "https://www.englandfootball.com/articles/2026/Sep/21/nations-league-explained-for-the-three-lions-20262109",
+      "https://www.englandfootball.com/articles/2026/Sep/18/thomas-tuchel-on-england-squad-selection-20261809"
+    ]
+  }
+}

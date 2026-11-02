@@ -1,0 +1,18 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.cmd text eol=crlf
+# Preserve byte-level hashes of the frozen release on every checkout.
+var/releases/footballmind-defense-20261025-rc1/** -text
+tests/fixtures/** -text
+config/source-contracts/** -text
+*.pt binary
+*.joblib binary
+*.npz binary
+*.npy binary
+*.gz binary
+*.bin binary

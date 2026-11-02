@@ -1,0 +1,135 @@
+{
+  "schema": "footballmind-phase4-incremental-panel-registry-v1",
+  "task_id": "FM-PHASE4-G-PANEL-20261009-01",
+  "created_at": "2026-10-09T12:59:54.772Z",
+  "purpose": "historical_reconstruction_candidate_pool_for_fixed_f_g_supervision_not_prospective_capture",
+  "source_raw_path": "D:/a1-足彩/var/fm3-delivery-20261009-v2/fm3/historical/panel-v3/raw/understat/2026-09-20/115941_602689_a9447ae0-3252-4207-a437-63bfc700f3a5.body.gz",
+  "source_payload_sha256": "d401b18a3386d8168f03727b43b1ab5dc9092e0469e77a1561136baf25151f42",
+  "selection": {
+    "competition": "EPL",
+    "season": "2025/26",
+    "finished_only": true,
+    "start_inclusive": "2025-12-15T00:00:00Z",
+    "end_exclusive": "2026-01-08T00:00:00Z",
+    "exclude_team": "Leeds",
+    "order": [
+      "kickoff_utc",
+      "numeric_understat_id"
+    ],
+    "take": 12,
+    "pool_size": 45,
+    "used_score_class": false,
+    "used_article_coverage": false,
+    "used_gain": false
+  },
+  "frozen_model_path": "D:/a1-足彩/var/submission/p8-g-stream-v3/model-selected/model.json",
+  "frozen_model_sha256": "d8d23100ec93fc593cfd277b45d707739c6e00fd75382928be5e6c1671b0e1e8",
+  "f_training_as_of": "2025-12-14T19:30:00+00:00",
+  "legacy_ABC_overlap": [],
+  "legacy_holdout_unchanged": true,
+  "pilot_order": [
+    "understat:28934",
+    "understat:28945",
+    "understat:28946",
+    "understat:28942"
+  ],
+  "pilot_basis": "two earliest fixtures plus Liverpool and Fulham coverage already present in archived source routes; execution order only, not cohort replacement or outcome selection",
+  "budget": {
+    "total_actual_http_max": 96,
+    "per_fixture_actual_http_max": 8,
+    "pilot_http_max": 32,
+    "redirects_and_retries_count": true,
+    "shared_source_requests": "charge once to total and assign a declared owning fixture before request"
+  },
+  "expansion_rule": "After four pilot fixtures, continue remaining eight only if at least two pilot fixtures have at least two distinct, fixture-bound prematch article bodies under explicit historical-version assumptions; otherwise deliver attempted coverage and blocking evidence without replacement fixtures.",
+  "independent_sample_unit": "physical_match_id",
+  "historical_snapshot_proven": false,
+  "unavailable_fixtures_retained": true,
+  "fixtures": [
+    {
+      "physical_match_id": "understat:28934",
+      "source_id": "28934",
+      "kickoff": "2025-12-15T20:00:00Z",
+      "home_team": "Manchester United",
+      "away_team": "Bournemouth"
+    },
+    {
+      "physical_match_id": "understat:28945",
+      "source_id": "28945",
+      "kickoff": "2025-12-20T12:30:00Z",
+      "home_team": "Newcastle United",
+      "away_team": "Chelsea"
+    },
+    {
+      "physical_match_id": "understat:28938",
+      "source_id": "28938",
+      "kickoff": "2025-12-20T15:00:00Z",
+      "home_team": "Bournemouth",
+      "away_team": "Burnley"
+    },
+    {
+      "physical_match_id": "understat:28940",
+      "source_id": "28940",
+      "kickoff": "2025-12-20T15:00:00Z",
+      "home_team": "Brighton",
+      "away_team": "Sunderland"
+    },
+    {
+      "physical_match_id": "understat:28944",
+      "source_id": "28944",
+      "kickoff": "2025-12-20T15:00:00Z",
+      "home_team": "Manchester City",
+      "away_team": "West Ham"
+    },
+    {
+      "physical_match_id": "understat:28947",
+      "source_id": "28947",
+      "kickoff": "2025-12-20T15:00:00Z",
+      "home_team": "Wolverhampton Wanderers",
+      "away_team": "Brentford"
+    },
+    {
+      "physical_match_id": "understat:28946",
+      "source_id": "28946",
+      "kickoff": "2025-12-20T17:30:00Z",
+      "home_team": "Tottenham",
+      "away_team": "Liverpool"
+    },
+    {
+      "physical_match_id": "understat:28941",
+      "source_id": "28941",
+      "kickoff": "2025-12-20T20:00:00Z",
+      "home_team": "Everton",
+      "away_team": "Arsenal"
+    },
+    {
+      "physical_match_id": "understat:28939",
+      "source_id": "28939",
+      "kickoff": "2025-12-21T16:30:00Z",
+      "home_team": "Aston Villa",
+      "away_team": "Manchester United"
+    },
+    {
+      "physical_match_id": "understat:28942",
+      "source_id": "28942",
+      "kickoff": "2025-12-22T20:00:00Z",
+      "home_team": "Fulham",
+      "away_team": "Nottingham Forest"
+    },
+    {
+      "physical_match_id": "understat:28954",
+      "source_id": "28954",
+      "kickoff": "2025-12-26T20:00:00Z",
+      "home_team": "Manchester United",
+      "away_team": "Newcastle United"
+    },
+    {
+      "physical_match_id": "understat:28955",
+      "source_id": "28955",
+      "kickoff": "2025-12-27T12:30:00Z",
+      "home_team": "Nottingham Forest",
+      "away_team": "Manchester City"
+    }
+  ]
+}
+

@@ -1,0 +1,78 @@
+EPL xG Table and Scorers for the 2025/2026 season | Understat.com
+EPL
+La liga
+Bundesliga
+Serie A
+Ligue 1
+RFPL
+2026/2027
+2025/2026
+2024/2025
+2023/2024
+2022/2023
+2021/2022
+2020/2021
+2019/2020
+2018/2019
+2017/2018
+2016/2017
+2015/2016
+2014/2015
+Main page
+Personal cabinet
+Home
+EPL
+prev week
+next week
+Set time zone
+On
+Off
+Table
+Charts
+Overall
+Home
+Away
+parameter
+W
+D
+L
+G
+GA
+PTS
+xG
+NPxG
+xGA
+NPxGA
+NPxGD
+PPDA
+OPPDA
+DC
+ODC
+xPTS
+Start date:
+End date:
+Positions
+GK
+D
+M
+F
+S
+Last games
+All
+3
+5
+10
+Start date:
+End date:
+Select file format
+csv
+json
+xlsx
+EPL
+La liga
+Bundesliga
+Serie A
+Ligue 1
+RFPL
+support@understat.com
+© understat 2017—2026

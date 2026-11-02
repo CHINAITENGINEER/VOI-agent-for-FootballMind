@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang='zh-CN'>
+<head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>FootballMind · 自主比赛分析</title><link rel='stylesheet' href='/style.css'><script src='/app.js' defer></script></head>
+<body>
+<header><div class='brand'><span class='brand-icon'>F</span><div><strong>FootballMind</strong><span>比赛驱动 · 自主信息获取</span></div></div><div id='connection' role='status'>正在连接本地服务…</div></header>
+<main>
+<section class='intro'><div><p class='eyebrow'>ONE MATCH. ADAPTIVE ANALYSIS.</p><h1>给出一场比赛，<br>让系统决定下一步查什么。</h1><p>系统自行识别比赛、发现关键未知、选择信息并更新分析。你无需预设研究问题或指定查询顺序。</p></div><aside><b>用户提供比赛，系统负责分析</b><p>哪些未知可能改变判断？<br>下一条信息是否值得获取？<br>何时已经值得停止？</p><small>真实公开来源 · 本地留存全过程</small></aside></section>
+<div id='notice' class='notice' role='alert' hidden></div>
+<div class='layout'>
+<aside class='sidebar'>
+<section class='card'><h2>分析一场比赛</h2><form id='task-form'><label for='match'>哪场比赛？</label><textarea id='match' rows='3' maxlength='600' required placeholder='主队 vs 客队，可附赛事和比赛日期'></textarea>
+<p class='muted small'>只需提供比赛。附上赛事或日期有助于区分同名球队和多次交锋；分析哪些信息由系统决定。</p>
+<details><summary>预算与推理设置</summary><div class='settings'><label>来源请求上限<input id='http-budget' type='number' min='1' max='16' value='8' required></label><label>选择调用上限<input id='model-budget' type='number' min='2' max='8' value='5' required></label><label>总时间（分钟）<input id='time-budget' type='number' min='1' max='30' value='10' required></label><label>推理强度<select id='effort'><option value='low'>快速 · low</option><option value='medium'>均衡 · medium</option><option value='high'>深入 · high</option></select></label></div><p class='muted'>只影响本任务的请求参数。每次选择最多等待 60 秒；失败也计入预算，不会自动重试。</p></details>
+<button class='primary full' id='start' type='submit'>开始自主分析 <span>→</span></button><p class='muted small'>使用当前已登录的 Codex CLI 和公开网页。开始后会实际调用模型与外部来源。</p></form></section>
+<section class='card history'><div class='section-line'><h2>最近任务</h2><button id='refresh-history' class='text-button'>刷新</button></div><div id='history'><p class='muted'>暂无任务</p></div></section>
+</aside>
+<div class='workarea'>
+<section id='welcome' class='card empty'><span class='orbit'>◎</span><h2>从比赛出发，自主形成分析</h2><p>系统会根据这场比赛自行提出需要验证的假设，选择有用信息，并在新证据返回后调整方向。</p><ol><li>提供比赛，不预设分析维度</li><li>系统识别比赛并生成关键未知</li><li>自主查询、更新分析并决定停止</li></ol></section>
+<section id='workspace' hidden>
+<div class='card run-top'><div class='section-line'><span id='mode-badge' class='pill'>真实任务</span><span id='status' class='status'></span></div><h2 id='run-question'></h2><p id='run-id' class='muted small'></p><div class='metrics'><div><b id='http-used'>0 / 8</b><span>来源请求</span></div><div><b id='model-used'>0 / 5</b><span>选择调用</span></div><div><b id='elapsed'>0 秒</b><span id='time-caption'>距截止时间</span></div><div><b id='evidence-used'>0</b><span>来源返回</span></div></div><p id='pending' role='status'></p><div class='actions'><button id='continue' class='primary'>继续自动运行</button><button id='step'>只推进一步</button><button id='cancel' class='danger'>停止本任务</button><a id='export' class='button' download>导出完整记录</a></div><p id='run-error' class='error' hidden></p></div>
+<form id='answer-form' class='card answer' hidden><h2>确认是哪场比赛</h2><p id='agent-question'></p><label for='answer'>比赛身份信息</label><textarea id='answer' rows='3' maxlength='2500' required></textarea><button class='primary' type='submit'>确认比赛并继续</button><p class='muted small'>仅用于区分比赛；分析问题、来源和查询顺序仍由系统决定。沿用当前预算与截止时间。</p></form>
+<section id='analysis-plan-card' class='card' hidden><div class='section-line'><h2>系统自主发现的关键未知</h2><span id='identity-status' class='tag'></span></div><p class='muted small'>这些问题由系统针对当前比赛生成，并随证据调整；你无需选择研究维度。</p><div id='analysis-plan'></div></section>
+<section class='card'><div class='section-line'><h2>当前判断</h2><span id='assessment-label' class='tag'></span></div><p id='assessment' class='assessment'></p><p id='assessment-stale' class='muted' hidden>新返回尚未完成复判，当前判断对应上一轮证据。</p><div id='claims'></div><div id='unknowns'></div></section>
+<section class='card'><div class='section-line'><h2>系统为什么选择这条信息</h2><span class='tag'>模型定性选择</span></div><div id='choice'><p class='muted'>等待第一次选择。</p></div><p class='muted small'>当前运行的是 LLM 定性选择基线。校准的数值 VoI 尚未接入，文字理由不等于算法计算出的预期风险收益。</p></section>
+<section class='card'><div class='section-line'><h2>执行时间线</h2><span id='event-count' class='muted'></span></div><div id='timeline' class='timeline'></div></section>
+<section class='card'><h2>来源与可见证据</h2><div id='documents'></div></section>
+<section class='card feedback'><h2>告诉我哪里需要修</h2><p class='muted'>反馈会绑定任务、当时状态和你选中的步骤，下一轮可直接按记录修复。</p><form id='feedback-form'><div class='settings'><label>问题类型<select id='category'><option value='wrong_source'>来源选得不对</option><option value='missed_information'>遗漏了重要信息</option><option value='bad_stop'>停止时机不合理</option><option value='wrong_claim'>证据或结论有误</option><option value='slow'>执行太慢</option><option value='ui'>页面体验问题</option><option value='other'>其他</option></select></label><label>关联步骤<select id='feedback-event'><option value=''>整个任务</option></select></label></div><label for='comment'>发生了什么？你期望它怎么做？</label><textarea id='comment' rows='3' maxlength='4000' required placeholder='例如：确认已出线后应继续查首发，而不是据此判断实力下降。'></textarea><button type='submit' class='primary'>保存反馈</button><span id='feedback-status' role='status'></span></form></section>
+</section>
+</div></div>
+<footer>FootballMind · Match Analysis v2 <span>自主提出分析问题与选择来源；数值 VoI 与校准赛果概率尚未接入。</span></footer>
+</main></body></html>

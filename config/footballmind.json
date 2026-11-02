@@ -1,0 +1,182 @@
+{
+  "collection": {
+    "allowed_hosts": [
+      "www.uefa.com"
+    ],
+    "news_provider": "bing_rss",
+    "requests_per_match": 3,
+    "route": "environment",
+    "seed": 180,
+    "seed_urls": []
+  },
+  "identity_archive": "var/parallel/agent/round180/identity/archive",
+  "identity_bundle": {
+    "path": "var/parallel/agent/round180/identity/identity-bundle.json",
+    "sha256": "ed5c3f65a06db24247201eeaf5a14545e3e2a5f7867950a0a036632605b0690f"
+  },
+  "initializations": {
+    "path": "var/parallel/agent/round179/prospective/initializations.json",
+    "sha256": "8124e26be5b828dd86ed4ed5cccc8b24e8a6b67a744599cc95f5bd6580311ff8"
+  },
+  "mechanism": {
+    "base_model": {
+      "path": "var/parallel/agent/round181/mechanism-base/joint-base-model.json",
+      "sha256": "a530ca199bd55a2c84db20f1665415b4885b83b4f4beb1ba81463fa1b855efda"
+    },
+    "cases": {
+      "actual-no-link": {
+        "files": [
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/actual-no-link/original/run.json",
+            "sha256": "0d172b991981fd974ed473427d75e09ab9ea6ae42a1dd60ef24c04f792fac860"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/actual-no-link/original/configuration.json",
+            "sha256": "010cc2cad42b3202a8a13914582f34c2d1d683cba22456c3e976dbaaf66265df"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/actual-no-link/original/text-response-model.json",
+            "sha256": "9f5488bc38748ccebd07f65d6541e40287eaa755a45b82f4ecfd664a1264c017"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/actual-no-link/original/discovery-response-model.json",
+            "sha256": "01a7a456ae316d5459fea9b18544b504cdb9469748c86d6ee3a026633aef2a24"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/actual-no-link/project/var/parallel/agent/round175/frozen-next-period.json",
+            "sha256": "7142a973d806460e9867ba2f7bedd6c5bb50accfaa4e08c0578b0ac972574a14"
+          }
+        ],
+        "project_root": "var/parallel/agent/round179/integration-request-class/actual-no-link/project",
+        "run_path": "var/parallel/agent/round179/integration-request-class/actual-no-link/original"
+      },
+      "one-request": {
+        "files": [
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/one-request/original/run.json",
+            "sha256": "a85d4784e81e0414c04222973967503f81b40e2201f5478528a7499f90b48dea"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/one-request/original/configuration.json",
+            "sha256": "6c40e546b0f352011a00a269bf4baec0033066ae391cf5a271f8b18cd6d13d76"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/one-request/original/text-response-model.json",
+            "sha256": "9f5488bc38748ccebd07f65d6541e40287eaa755a45b82f4ecfd664a1264c017"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/one-request/original/discovery-response-model.json",
+            "sha256": "01a7a456ae316d5459fea9b18544b504cdb9469748c86d6ee3a026633aef2a24"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/one-request/project/var/parallel/agent/round175/frozen-next-period.json",
+            "sha256": "7142a973d806460e9867ba2f7bedd6c5bb50accfaa4e08c0578b0ac972574a14"
+          }
+        ],
+        "project_root": "var/parallel/agent/round179/integration-request-class/one-request/project",
+        "run_path": "var/parallel/agent/round179/integration-request-class/one-request/original"
+      },
+      "one-step": {
+        "files": [
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/one-step/original/run.json",
+            "sha256": "ad396f31020c268238f904755bc6c52d01cb8d8bb2c93ae1b7843fd8f668594f"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/one-step/original/configuration.json",
+            "sha256": "da22223e8d666250bc9030f0a778f088bd5fe4ba4c0f1fd74abe06214b4a356b"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/one-step/original/text-response-model.json",
+            "sha256": "9f5488bc38748ccebd07f65d6541e40287eaa755a45b82f4ecfd664a1264c017"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/one-step/project/var/parallel/agent/round175/frozen-next-period.json",
+            "sha256": "7142a973d806460e9867ba2f7bedd6c5bb50accfaa4e08c0578b0ac972574a14"
+          }
+        ],
+        "project_root": "var/parallel/agent/round179/integration-request-class/one-step/project",
+        "run_path": "var/parallel/agent/round179/integration-request-class/one-step/original"
+      },
+      "two-step": {
+        "files": [
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/two-step/original/run.json",
+            "sha256": "20f7480668180bd62a21028553d825d3855518bf3af706c1806b75d559e0356c"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/two-step/original/configuration.json",
+            "sha256": "010cc2cad42b3202a8a13914582f34c2d1d683cba22456c3e976dbaaf66265df"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/two-step/original/text-response-model.json",
+            "sha256": "9f5488bc38748ccebd07f65d6541e40287eaa755a45b82f4ecfd664a1264c017"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/two-step/original/discovery-response-model.json",
+            "sha256": "01a7a456ae316d5459fea9b18544b504cdb9469748c86d6ee3a026633aef2a24"
+          },
+          {
+            "path": "var/parallel/agent/round179/integration-request-class/two-step/project/var/parallel/agent/round175/frozen-next-period.json",
+            "sha256": "7142a973d806460e9867ba2f7bedd6c5bb50accfaa4e08c0578b0ac972574a14"
+          }
+        ],
+        "project_root": "var/parallel/agent/round179/integration-request-class/two-step/project",
+        "run_path": "var/parallel/agent/round179/integration-request-class/two-step/original"
+      }
+    },
+    "recovery_inputs": [
+      {
+        "path": "var/parallel/agent/round181/recover_mechanism_base.py",
+        "sha256": "61e3fae6fd0333f269828d0f08f4f68b91510fef5406455af196647676fc56d6"
+      },
+      {
+        "path": "var/parallel/agent/round181/mechanism-base/recovered-training-fixture.json",
+        "sha256": "31db7fcb73a2b51481011f5200c7583b6fcf51b3849c2eab0c81422302347aa5"
+      },
+      {
+        "path": "tests/research/acquisition/test_joint_returns.py",
+        "sha256": "8a3e87bc4739816bfa784ad723032a29c6144cbfa964387a5ad072b600c02b51"
+      },
+      {
+        "path": "var/parallel/agent/round179/integration-request-class/initial-model/id_mappings.jsonl",
+        "sha256": "a36df365caae44bb4e73cc19b9d809275f6be6b64efe0eb97008c3b63ed2d0b3"
+      }
+    ],
+    "recovery_report": {
+      "path": "var/parallel/agent/round181/mechanism-base/acceptance.json",
+      "sha256": "d5838de234cbd0dfd951014a0676a3b62205c3f40ec40bf35c0c60e5795efd4b"
+    },
+    "scope": "synthetic_mechanism_only"
+  },
+  "prior_archive": "var/parallel/agent/round179/prospective/capture",
+  "runs": [
+    {
+      "configuration_sha256": "f42c8c3db7617b08bd66352fe988fdcc47a05f031d1586108e7b20f57606f82e",
+      "match_id": "spftll:match:2981455",
+      "path": "var/parallel/agent/round180/live-batch/match-2981455",
+      "prior_bindings_sha256": "e40f1075b9974716acfb9a3321b30d296818ab84c30cedff8d9c1c01732dd519",
+      "run_sha256": "bd03b27fde291621d4b4135f075c10dadf46541916988995423ec2fc2944c8d9"
+    },
+    {
+      "configuration_sha256": "2cdfd8c40884b20806b5fd1a6d07d75f0d16ccf71c4835d6db2a469c12ebc002",
+      "match_id": "spftll:match:2981506",
+      "path": "var/parallel/agent/round180/live-batch/match-2981506",
+      "prior_bindings_sha256": "d455ea5f4513f4ef2ef8747f2e3b19af7599060ca059b9f5872ff9dc5152bc34",
+      "run_sha256": "e169221e59884825696367d70ed5d25ded168589da68a58f5474b93978e49f07"
+    },
+    {
+      "configuration_sha256": "55231ff3e490b57ee0155dbe4b09e58d0ca0c4aa499778ed8239a8ac65c8e1f2",
+      "match_id": "spftll:match:2981549",
+      "path": "var/parallel/agent/round180/live-batch/match-2981549",
+      "prior_bindings_sha256": "fd300e9798406aa3c904afdcd2f623f7349ab3e7ffed21ad8e0cc7f4ebb137e5",
+      "run_sha256": "7ddb630b61edf6c4a44a4b480fb36ab737a790b1c11b37415af8c578ee862842"
+    }
+  ],
+  "schema": "footballmind-deployment-v1",
+  "scope": "verified_three_fixture_deployment_not_arbitrary_matches",
+  "settlement": {
+    "max_http_requests": 4,
+    "route": "direct"
+  }
+}

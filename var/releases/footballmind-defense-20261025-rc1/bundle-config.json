@@ -1,0 +1,217 @@
+{
+  "schema": "footballmind-defense-frozen-bundle-v1",
+  "bundle_id": "footballmind-defense-20261025-rc1",
+  "f_model_path": "models/f",
+  "g_model_path": "models/g/g-models.joblib",
+  "g_model_sha256": "5af947711279765838adb02e7dc09c2a9525a89e90db3e23e4f68a865ed88eff",
+  "f_model_sha256": "b36b2cf87f379034224c314794efc6ec59266dd4cf4752383965c41fb63661e0",
+  "presentation_default": {
+    "model_name": "fulltext_mlp_seed20261027",
+    "threshold": 0.01,
+    "budget": 3,
+    "role": "presentation_fulltext_research_candidate",
+    "input": "full",
+    "candidate_body_embedding_used": true,
+    "configuration": {
+      "selected_epoch": 42,
+      "epochs_run": 67,
+      "parameters": 154369,
+      "hidden": [
+        128,
+        64
+      ],
+      "seed": 20261027
+    },
+    "threshold_basis": "already-saved g_dev policy results; no new tuning",
+    "choice_basis": "best previously recorded g_dev gain MSE among three MLP seeds; not overall best policy"
+  },
+  "development_selected_policy": {
+    "model_name": "state_ridge",
+    "threshold": 0.0,
+    "budget": 3,
+    "role": "development_selected_policy",
+    "input": "state",
+    "candidate_body_embedding_used": false,
+    "configuration": {
+      "parameters": 350,
+      "alpha": 10.0,
+      "input_dimension": 349,
+      "train_only_standardization": true
+    },
+    "threshold_basis": "already-saved g_dev policy results; no new tuning"
+  },
+  "models": {
+    "zero": {
+      "model_name": "zero",
+      "threshold": 0.0,
+      "budget": 3,
+      "role": "research_comparison_head",
+      "input": "constant",
+      "candidate_body_embedding_used": false,
+      "configuration": {
+        "parameters": 0
+      },
+      "threshold_basis": "already-saved g_dev policy results; no new tuning"
+    },
+    "train_mean": {
+      "model_name": "train_mean",
+      "threshold": 0.003,
+      "budget": 3,
+      "role": "research_comparison_head",
+      "input": "constant",
+      "candidate_body_embedding_used": false,
+      "configuration": {
+        "parameters": 1
+      },
+      "threshold_basis": "already-saved g_dev policy results; no new tuning"
+    },
+    "state_ridge": {
+      "model_name": "state_ridge",
+      "threshold": 0.0,
+      "budget": 3,
+      "role": "development_selected_policy",
+      "input": "state",
+      "candidate_body_embedding_used": false,
+      "configuration": {
+        "parameters": 350,
+        "alpha": 10.0,
+        "input_dimension": 349,
+        "train_only_standardization": true
+      },
+      "threshold_basis": "already-saved g_dev policy results; no new tuning"
+    },
+    "fulltext_ridge": {
+      "model_name": "fulltext_ridge",
+      "threshold": 0.01,
+      "budget": 3,
+      "role": "research_comparison_head",
+      "input": "full",
+      "candidate_body_embedding_used": true,
+      "configuration": {
+        "parameters": 1141,
+        "alpha": 10.0,
+        "input_dimension": 1140,
+        "train_only_standardization": true
+      },
+      "threshold_basis": "already-saved g_dev policy results; no new tuning"
+    },
+    "local_metadata_refit_ridge": {
+      "model_name": "local_metadata_refit_ridge",
+      "threshold": 0.01,
+      "budget": 3,
+      "role": "research_comparison_head",
+      "input": "metadata",
+      "candidate_body_embedding_used": false,
+      "configuration": {
+        "parameters": 52,
+        "alpha": 10.0,
+        "input_dimension": 51,
+        "train_only_standardization": true
+      },
+      "threshold_basis": "already-saved g_dev policy results; no new tuning"
+    },
+    "fulltext_mlp_seed20261025": {
+      "model_name": "fulltext_mlp_seed20261025",
+      "threshold": 0.003,
+      "budget": 3,
+      "role": "research_comparison_head",
+      "input": "full",
+      "candidate_body_embedding_used": true,
+      "configuration": {
+        "selected_epoch": 43,
+        "epochs_run": 68,
+        "parameters": 154369,
+        "hidden": [
+          128,
+          64
+        ],
+        "seed": 20261025
+      },
+      "threshold_basis": "already-saved g_dev policy results; no new tuning"
+    },
+    "fulltext_mlp_seed20261026": {
+      "model_name": "fulltext_mlp_seed20261026",
+      "threshold": 0.0,
+      "budget": 3,
+      "role": "research_comparison_head",
+      "input": "full",
+      "candidate_body_embedding_used": true,
+      "configuration": {
+        "selected_epoch": 1,
+        "epochs_run": 26,
+        "parameters": 154369,
+        "hidden": [
+          128,
+          64
+        ],
+        "seed": 20261026
+      },
+      "threshold_basis": "already-saved g_dev policy results; no new tuning"
+    },
+    "fulltext_mlp_seed20261027": {
+      "model_name": "fulltext_mlp_seed20261027",
+      "threshold": 0.01,
+      "budget": 3,
+      "role": "research_comparison_head",
+      "input": "full",
+      "candidate_body_embedding_used": true,
+      "configuration": {
+        "selected_epoch": 42,
+        "epochs_run": 67,
+        "parameters": 154369,
+        "hidden": [
+          128,
+          64
+        ],
+        "seed": 20261027
+      },
+      "threshold_basis": "already-saved g_dev policy results; no new tuning"
+    },
+    "fixed_order": {
+      "model_name": "fixed_order",
+      "role": "explicit_non_g_baseline",
+      "input": "source_order",
+      "budget": 3,
+      "threshold": null,
+      "candidate_body_embedding_used": false
+    },
+    "all_evidence": {
+      "model_name": "all_evidence",
+      "role": "explicit_non_g_baseline",
+      "input": "source_order_all",
+      "budget": 3,
+      "threshold": null,
+      "candidate_body_embedding_used": false
+    }
+  },
+  "dependency_versions": {
+    "numpy": "2.3.5",
+    "torch": "2.11.0",
+    "scikit-learn": "1.8.0",
+    "scipy": "1.16.3",
+    "joblib": "1.5.3",
+    "threadpoolctl": "3.6.0"
+  },
+  "python_version": "3.13.9",
+  "encoder": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "native_dimension": 1024,
+    "prefix_dimension": 256,
+    "text_policy": "full body; frozen cached vectors, no runtime encoding"
+  },
+  "case_selection": "all 160 g_dev matches, sorted match_date then physical_match_id; no outcome filtering",
+  "cases": 160,
+  "unique_bodies": 342,
+  "default_case_id": "fd:E0:2425:2025-01-01:Brentford:Arsenal",
+  "research_only": true,
+  "production_enabled": false,
+  "limitations": [
+    "历史归档研究演示，非实时未来比赛预测。",
+    "默认全文MLP是研究候选，未证实优于随机或基线；阈值0.01及预算3沿用原开发集冻结值。",
+    "state_ridge是原开发集完整策略优选，仅按当前状态估计采用/停止；同状态候选同分，按冻结来源顺序破平，不是全文排序模型。",
+    "已保存正文全部可供g读取，f仅使用所选正文；正文与向量获取成本已发生，不能声称由g节省。",
+    "历史正文版本及报价时钟存在未知，来源时间不补造；赛果只在显式结算层使用。",
+    "模型原始metadata中的绝对路径仅保留血缘，不参与便携推理；所有运行所需文件在本包内。"
+  ]
+}

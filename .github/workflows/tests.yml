@@ -1,0 +1,13 @@
+name: Offline regression
+on: [push, pull_request]
+jobs:
+  smoke:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+      - run: python -m pip install -r requirements-dev.txt
+      - run: python -m pytest -q tests/demo/test_defense_budget.py tests/demo/test_live_candidate_time.py tests/demo/test_live_postread_model.py

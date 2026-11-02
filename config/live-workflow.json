@@ -1,0 +1,24 @@
+{
+  "schema": "footballmind-live-settings-v1",
+  "purpose": "f_train",
+  "preparation_http_budget": 6,
+  "actor_requests_per_match": 4,
+  "seed": 193,
+  "route": "direct",
+  "official_evidence_fallback": true,
+  "news_projection_version": 6,
+  "settlement_delay_minutes": 130,
+  "settlement_retry_minutes": 60,
+  "settlement_max_attempts": 2,
+  "task_root": "var/live-tasks",
+  "previous_learning_plans": [
+    "var/parallel/agent/round189/existing-training-exposure.json",
+    "var/parallel/agent/round190/canada-learning-plan.json",
+    "var/parallel/agent/round191/learning-plan.json",
+    "var/parallel/agent/round194/live-match/learning-plan.json",
+    "var/parallel/agent/round196/learning-plan.json"
+  ],
+  "news_route_overrides": {
+    "www.veikkausliiga.com": "system_tls"
+  }
+}

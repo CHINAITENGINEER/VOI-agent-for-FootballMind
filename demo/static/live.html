@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>FootballMind · 未来比赛</title>
+  <link rel="stylesheet" href="/live.css">
+  <script src="/live-progress.js" defer></script>
+  <script src="/live.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/live.html" aria-label="FootballMind 未来比赛首页">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><rect x="6" y="3" width="20" height="26" rx="3"/><path d="M6 16h20M12 3v5h8V3M12 29v-5h8v5"/><circle cx="16" cy="16" r="4"/></svg></span>
+      <span><strong>FootballMind</strong><small>足球智能分析终端</small></span>
+    </a>
+    <nav class="topnav" aria-label="主导航">
+      <a href="/defense.html">冻结研究演示</a>
+      <a href="/live.html" class="active" aria-current="page">在线采集</a>
+      <a href="/?workspace=research">历史研究</a>
+      <a href="/?workspace=legacy">旧档案</a>
+    </nav>
+    <div class="top-meta"><span>北京时间 UTC+8</span><span class="connection"><i id="connection-dot"></i><span id="connection">正在连接</span></span></div>
+  </header>
+  <div class="workspace-note"><span id="pipeline-badge" class="pill">在线模型待核验</span><span id="pipeline-description">读取后端实际模型模式后展示处理流程；已保存的旧记录按原模型回放。</span><a href="/defense.html">查看新版冻结全文研究演示 →</a></div>
+  <main class="app-shell">
+    <aside class="match-sidebar" aria-label="赛程与筛选">
+      <section class="card catalog-card">
+        <div class="section-heading"><h1>赛程与筛选</h1><button id="refresh" class="icon-button" type="button" title="刷新赛程与市场先验" aria-label="刷新赛程与市场先验">↻</button></div>
+        <div id="coverage-summary" class="coverage-summary" aria-label="赛程覆盖统计">
+          <div><strong id="coverage-total">—</strong><span>已发现</span></div>
+          <div><strong id="coverage-ready">—</strong><span>目录可启动</span></div>
+          <div><strong id="coverage-leagues">—</strong><span>赛事</span></div>
+        </div>
+        <label class="field-label" for="match-search">查找比赛</label>
+        <div class="search-row"><input id="match-search" type="search" placeholder="球队、对阵或比赛 ID" aria-describedby="search-mode" autocomplete="off"><button id="clear-search" type="button" aria-label="清除比赛搜索">清除</button></div>
+        <div class="filter-row">
+          <label>北京时间<select id="date-range"><option value="today">今天</option><option value="tomorrow">明天</option><option value="week">未来 7 天</option></select></label>
+          <label>赛事范围<select id="competition-scope"><option value="major">常看 + 足彩</option><option value="all">全部公开赛事</option></select></label>
+        </div>
+        <details id="schedule-filters" class="compact-details"><summary>更多筛选 <span id="active-filter-count"></span></summary><div class="filter-row">
+          <label>赛事<select id="competition"><option value="">全部赛事</option></select></label>
+          <label>启动条件<select id="availability"><option value="all">全部已发现比赛</option><option value="ready">当前可启动</option><option value="waiting">暂不可启动</option></select></label>
+        </div></details>
+        <p id="search-mode" class="micro-note">搜索可跨日期和赛事查找。</p>
+        <div class="list-heading"><p id="filter-count" role="status">正在读取赛程</p><span>未开赛优先</span></div>
+        <div id="matches" class="match-list" role="listbox" tabindex="0" aria-label="比赛列表，使用上下方向键浏览，回车选择"></div>
+        <details class="catalog-details compact-details"><summary>数据更新与来源</summary><p id="catalog-status" class="micro-note">正在连接后端</p><p id="source-status" class="micro-note"></p><p class="micro-note">公开赛程与分析先验分别获取。可浏览不代表可启动；启动时会重新核验报价和来源身份。</p></details>
+      </section>
+      <details class="card history-card"><summary>在线运行记录 <span id="history-count"></span></summary><div id="history"></div></details>
+    </aside>
+    <section class="detail-column" aria-label="比赛与实验" tabindex="-1" id="experiment-content">
+      <section class="card match-hero-card">
+        <div class="hero-meta"><div class="tag-row"><span id="competition-label" class="pill">未来比赛</span><span id="fixture-state" class="pill">待选择</span></div><span id="experiment-status" class="status-chip" role="status">待检查</span></div>
+        <h2 id="fixture" tabindex="-1">选择一场比赛开始研究</h2>
+        <p id="kickoff" class="hero-time"></p>
+        <div id="scope-tags" class="tag-row scope-tags"></div>
+        <p id="match-scope" class="micro-note"></p>
+        <details class="compact-details source-details"><summary>赛程身份与来源</summary><p id="source-detail" class="micro-note"></p><a id="source-link" target="_blank" rel="noopener noreferrer" hidden>查看来源赛程</a></details>
+        <section class="baseline-panel" aria-labelledby="baseline-title">
+          <div class="section-heading"><h3 id="baseline-title">市场基线</h3><span class="label-note">外部报价 · 非 f 输出</span></div>
+          <div class="probs baseline-probs" id="market-probabilities"></div>
+          <p id="market-source" class="micro-note">尚未选择比赛。</p>
+          <div class="freshness-row"><span id="market-freshness" class="pill">来源时间未知</span><span id="market-time" class="micro-note"></span></div>
+          <p id="market-initialization" class="micro-note" hidden></p>
+        </section>
+        <section class="analysis-panel" aria-labelledby="analysis-title">
+          <div class="section-heading"><h3 id="analysis-title">FootballMind 分析</h3><span id="model-output-status" class="pill">尚未生成</span></div>
+          <div id="model-empty" class="empty-state"><span class="empty-symbol" aria-hidden="true">f</span><div><strong id="model-empty-title">等待自主分析</strong><p id="model-empty-description">开始运行后，在这里查看 f 的实际输出及正文更新。</p></div></div>
+          <div class="probs model-probs" id="probabilities" hidden></div>
+          <p id="forecast" class="micro-note"></p><p id="prediction-note" class="micro-note"></p>
+          <div id="body-pipeline" class="micro-note" role="status" aria-label="正文实际处理链路"></div>
+        </section>
+        <section id="readiness" class="readiness" aria-label="实验启动状态">
+          <div class="readiness-heading"><span id="readiness-dot" class="status-dot"></span><div><h3 id="readiness-title">正在读取启动条件</h3><p id="readiness-description" class="micro-note"></p></div></div>
+          <details id="preflight-details" class="compact-details"><summary>查看启动条件</summary><ul id="preflight-checks" class="check-list"></ul></details>
+        </section>
+        <div class="action-row"><button id="start" class="primary-button" type="button" disabled>正在读取</button><a id="download" class="primary-button" hidden>查看完整运行报告</a><button id="new" class="secondary-button" type="button" hidden>新建运行</button><a class="text-button" href="#research-config">运行配置</a></div>
+        <p id="notice" class="notice" role="alert" hidden></p>
+      </section>
+      <section class="card trace-card" aria-labelledby="trace-title">
+        <div class="section-heading"><h2 id="trace-title">决策回放</h2><span id="trace-count" class="label-note">尚无运行</span></div>
+        <p id="stage" class="stage-summary" role="status">启动后按真实记录展示：发现候选 → g 选择 → 正文验证 → f 更新 → 重新规划。</p>
+        <div id="replay-controls" class="replay-controls" hidden><button id="replay-prev" class="icon-button" type="button" aria-label="上一轮决策">←</button><select id="replay-select" aria-label="选择回放轮次"></select><button id="replay-next" class="icon-button" type="button" aria-label="下一轮决策">→</button><button id="replay-latest" class="text-button" type="button">跟随最新</button></div>
+        <div id="round-replay"></div>
+        <details id="request-log" class="request-log compact-details"><summary>完整来源请求 <span id="request-count"></span></summary><div id="timeline"></div></details>
+      </section>
+      <section id="postread-pool-card" class="card evidence-card" aria-labelledby="postread-pool-title" hidden><div class="section-heading"><h2 id="postread-pool-title">已获取正文与本地编码</h2><span id="postread-pool-count" class="label-note">0 篇候选</span></div><p class="micro-note">先取得正文并编码，再由 g 评分。已获取、已编码、已评分和 f 已采用分别记录；失败不会变成零收益。</p><div id="postread-pool"></div></section>
+      <section class="card evidence-card" aria-labelledby="evidence-title">
+        <div class="section-heading"><h2 id="evidence-title">f 采用的正文与证据</h2><span id="evidence-count" class="label-note">0 次更新</span></div>
+        <p id="evidence-explanation" class="micro-note">可查看实际输入文本、模型绑定和 before / after。概率变化仅表示模型响应，预测改善须由独立赛果评估。</p><div id="evidence" class="evidence-list"></div>
+      </section>
+    </section>
+    <aside class="research-column" aria-label="决策控制与研究配置">
+      <section class="card agent-card">
+        <div class="section-heading"><h2>g · 决策控制</h2><span id="decision-mode" class="pill">待启动</span></div><p id="decision" class="decision-title">等待启动</p><p id="decision-context" class="micro-note">启动后显示真实候选排序、价值估计与停止原因。</p><div id="scores"></div>
+        <details class="compact-details"><summary>决策依据与数值定义</summary><p id="decision-formula" class="micro-note">预期净价值 = 即时损失降低 − 当前查询成本 + 后续净价值。数值由已加载的 g 估计；损失降低量越大越好。实际收益需要独立赛果。</p><p id="decision-input-note" class="micro-note">面板按后端声明显示实际输入方式，不把旧记录冒充新版全文模型。</p></details>
+      </section>
+      <section class="card usage-card"><div class="section-heading"><h2>本轮实际调用</h2><span id="usage-state" class="label-note">未启动</span></div><div id="counts" class="usage-grid"></div><p id="usage-note" class="micro-note">赛程刷新与身份初始化请求另见完整运行报告。处理计数以本轮保存的记录为准。</p></section>
+      <section id="research-config" class="card config-card">
+        <h2>研究配置</h2>
+        <details class="compact-details"><summary>阅读预算与成本</summary><label id="postread-model-label" hidden>本轮冻结策略<select id="postread-model"></select></label><p id="postread-model-note" class="micro-note" hidden></p><label><span id="budget-label">最多采用正文</span><select id="budget"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>11</option><option>12</option><option>13</option><option>14</option><option>15</option><option>16</option><option>17</option><option>18</option><option>19</option><option selected>20</option></select></label><label id="cost-label">单次查询成本<input id="cost" type="number" min="0" max="0.01" step="0.0001" value="0.001"></label><p id="cost-note" class="micro-note">成本单位为声明的 log loss 换算值，非真实美元。</p><p id="budget-description" class="micro-note">新版默认最多尝试 20 个正文链接；失败、空正文和重复正文也占尝试次数，不保证取得 20 篇有效正文。f 采用上限可选 1–20 篇，g 可以提前停止；实际配置以本轮后端记录为准。</p></details>
+        <details class="compact-details"><summary>模型绑定</summary><pre id="models"></pre></details>
+        <details class="compact-details"><summary>来源策略与域名审核</summary><p class="micro-note">优先球队目录，候选不足时补充公开搜索。未知域名先审核，再进入菜单；网络失败、过滤为空和没有可用正文分别记录。</p><div id="host-review"></div></details>
+        <details class="compact-details"><summary>研究边界</summary><ul id="limits"></ul></details>
+      </section>
+    </aside>
+  </main>
+</body>
+</html>

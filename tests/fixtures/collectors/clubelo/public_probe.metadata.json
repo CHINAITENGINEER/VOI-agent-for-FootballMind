@@ -1,0 +1,28 @@
+{
+  "sample_kind": "real_capture_redacted_copy",
+  "source": "clubelo",
+  "observation": {
+    "id": "1ca72075-3710-4121-b988-7a14454d01aa",
+    "source": "clubelo_probe",
+    "endpoint": "http://api.clubelo.com/2026-09-19",
+    "method": "GET",
+    "params": {},
+    "request_id": "f841c65a-84df-45fb-a004-d8d9852b8e10",
+    "observed_at": "2026-09-20T11:00:35.438845Z",
+    "http_status": 502,
+    "payload_path": "raw\\clubelo_probe\\2026-09-20\\110035_438845_1ca72075-3710-4121-b988-7a14454d01aa.body.gz",
+    "content_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "payload_format": "bytes",
+    "response_headers": {},
+    "context": {
+      "research_only": true
+    },
+    "error_class": null,
+    "schema_version": "1.0"
+  },
+  "original_payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "fixture_payload_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "transformation": "unchanged bytes",
+  "payload_file": "public_probe.bin",
+  "production_ingestion_allowed": false
+}

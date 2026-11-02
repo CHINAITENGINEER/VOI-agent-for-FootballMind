@@ -1,0 +1,30 @@
+{
+  "sample_kind": "real_capture_redacted_copy",
+  "source": "fbref",
+  "observation": {
+    "id": "ca4c8c99-a760-4ad6-bb6f-71f2566b853f",
+    "source": "fbref_probe",
+    "endpoint": "https://fbref.com/en/comps/9/Premier-League-Stats",
+    "method": "GET",
+    "params": {},
+    "request_id": "7642a84f-229c-494d-b5e4-03ed8114c9f4",
+    "observed_at": "2026-09-20T11:00:40.923587Z",
+    "http_status": 403,
+    "payload_path": "raw\\fbref_probe\\2026-09-20\\110040_923587_ca4c8c99-a760-4ad6-bb6f-71f2566b853f.body.gz",
+    "content_hash": "4e4c6051633001801bee41460fa82058cb9d4dd10dc487b1dac1b19420b71fb1",
+    "payload_format": "html",
+    "response_headers": {
+      "content-type": "text/html; charset=UTF-8"
+    },
+    "context": {
+      "research_only": true
+    },
+    "error_class": null,
+    "schema_version": "1.0"
+  },
+  "original_payload_sha256": "4e4c6051633001801bee41460fa82058cb9d4dd10dc487b1dac1b19420b71fb1",
+  "fixture_payload_sha256": "05f8bdf19ca64ec98ac31c13061fb810966197580390f0688c67e092c21b5a3f",
+  "transformation": "Visible HTML text only; scripts, styles, attributes and challenge tokens omitted; original retained privately",
+  "payload_file": "public_probe.txt",
+  "production_ingestion_allowed": false
+}

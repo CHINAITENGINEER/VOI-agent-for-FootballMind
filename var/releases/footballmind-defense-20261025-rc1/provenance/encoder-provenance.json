@@ -1,0 +1,34 @@
+{
+  "short_contract": {
+    "repository": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "model_sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+    "dimension": 1024,
+    "pooling": "last_nonpadding_token",
+    "normalization": "l2_then_matryoshka_prefix_then_l2",
+    "text_policy": "verbatim_no_prompt_no_title_injection_no_truncation",
+    "max_input_tokens": 8192,
+    "dtype": "float32",
+    "implementation": "postread-qwen-frozen-v1"
+  },
+  "long_contract": {
+    "repository": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "model_sha256": "0437e45c94563b09e13cb7a64478fc406947a93cb34a7e05870fc8dcd48e23fd",
+    "dimension": 1024,
+    "pooling": "last_nonpadding_token",
+    "normalization": "l2_then_matryoshka_prefix_then_l2",
+    "text_policy": "verbatim_no_prompt_no_title_injection_no_truncation",
+    "max_input_tokens": 32768,
+    "dtype": "float32",
+    "implementation": "postread-qwen-full-history-long-v1"
+  },
+  "encoding_plan_path": "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\semantic\\encoding-plan.json",
+  "encoding_plan_sha256": "cdbd3be0df337270f9be5fd81cf44d206017c5c99726704ad82cfda17efbfa3a",
+  "input_representation": "verbatim full body; no target or title injection; existing vectors unchanged",
+  "native_dimension": 1024,
+  "f_dimension": 256,
+  "f_conversion": "prefix256 followed by L2",
+  "long_contract_difference": "only explicit token bound and contract identifier differ; same frozen model weights/pooling/dtype",
+  "model_checkpoint_modified": false
+}

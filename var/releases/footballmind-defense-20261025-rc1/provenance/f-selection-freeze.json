@@ -1,0 +1,26 @@
+{
+  "selected_model": "set_residual_mlp-seed47",
+  "selection_uses_only": "f_dev",
+  "models": {
+    "selected": "b36b2cf87f379034224c314794efc6ec59266dd4cf4752383965c41fb63661e0",
+    "selected-set_residual_mlp": "b36b2cf87f379034224c314794efc6ec59266dd4cf4752383965c41fb63661e0",
+    "selected-gru": "41e8beea1c625c50ba1f43a1d33ab13d289e87d580150044defe80273102f8b0"
+  },
+  "source_hashes": {
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\matches.jsonl": "4a3a8c14e55ca95f34413b856635ef72ab778138e3a2d05c835ff7b386eef775",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\outcomes.jsonl": "335bbb2e933df398b15b021bda64a15279c9a20f1f57acb3fd4940efba1ea9a2",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\documents.jsonl": "9f031638832d45db36204cc95fc0afca993d3c5ec2b623f2104ce1a286da2da8",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\sequences.jsonl": "7240b5b5d082e60c3ea2dde1b11d270efc699aa53eda802d37bcda12260659d0",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\schema.json": "3c5fad18c991f16338f2c3ce33786845175cbfad8ca4a17de0771f7233430149",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\data\\dataset-summary.json": "65cb498783d3a3d3c169c8791ea6dcf6973fab3903f01652b0e0f7ccbe0d3f53",
+    "D:\\a1-足彩\\tools\\train_full_history_sequence_f.py": "76ed234d70c753cd3c6bed08eec6ba291a99d252391acc544bc88c924a57981f",
+    "D:\\a1-足彩\\football_research\\acquisition\\sequential_evidence_f.py": "ff9e42ed72f86c2bc009de6072abaee1d19850276e370c1137c75f57ceb89d78",
+    "D:\\a1-足彩\\football_research\\acquisition\\full_history_sequence_metadata.py": "8f57727df390c6423861e328fb24b0860f1827f6c70f56543f928fffcdd9d90a",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\f-fit-vectors\\embeddings.npz": "59984056bc1d1d53a49313d6ec73d77a6e73d0dc2cd33dd7ccdea99b4175b694",
+    "E:\\FootballMind\\experiments\\full-history-sequential-fg-20261025-v1\\f-fit-vectors\\encoder-provenance.json": "105b7e4c2c01eafd1331213a3ca837e17404977e97097e1850c6a80938cd14d1"
+  },
+  "held_out_evaluation_completed": false,
+  "legacy_reference_path": "legacy-f-v1-reference-v2\\legacy-prefix-predictions.jsonl",
+  "legacy_reference_sha256": "cb293987e9f58661fc4f923d02de09bc75251c2bce56b573746f0562f6dddf9f",
+  "architecture_comparison_caveat": "Set control masks history-dependent metadata; GRU retains it. Differences cannot be attributed to recurrent architecture alone."
+}

@@ -1,0 +1,26 @@
+{
+  "sample_kind": "real_capture_redacted_copy",
+  "source": "understat",
+  "evidence": {
+    "evidence_id": "a9447ae0-3252-4207-a437-63bfc700f3a5",
+    "name": "understat_league_data",
+    "url": "https://understat.com/getLeagueData/EPL/2025",
+    "request_started_at": "2026-09-20T11:59:34.339682+00:00",
+    "credential_sent": false,
+    "purpose": "discovered_xhr_league_data",
+    "http_status": 200,
+    "payload_bytes": 529950,
+    "content_type": "text/javascript;charset=UTF-8",
+    "final_url": "https://understat.com/getLeagueData/EPL/2025",
+    "observed_at": "2026-09-20T11:59:41.602689+00:00",
+    "sha256": "d401b18a3386d8168f03727b43b1ab5dc9092e0469e77a1561136baf25151f42",
+    "payload": "var\\parallel\\collectors\\understat-research\\understat_league_data_a9447ae0-3252-4207-a437-63bfc700f3a5.js",
+    "discovered_from_evidence": "0b866180-92e1-4cc5-9c00-740097129626",
+    "page_observation_id": "b7212198-7610-44d4-9f52-4a51dae38c05"
+  },
+  "original_payload_sha256": "d401b18a3386d8168f03727b43b1ab5dc9092e0469e77a1561136baf25151f42",
+  "fixture_payload_sha256": "3057c799bedba4c08ad7128d7236790457147a931e78f7d8a76f4e8b3fae4f47",
+  "transformation": "JSON reserialized; credential-key fields redacted",
+  "payload_file": "epl_2025.json",
+  "production_ingestion_allowed": false
+}

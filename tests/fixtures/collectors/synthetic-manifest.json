@@ -1,0 +1,11 @@
+{
+  "sample_kind": "synthetic_test_only",
+  "production_ingestion_allowed": false,
+  "real_network_acceptance": false,
+  "observed_at": null,
+  "reason": "No authenticated provider credentials; test data never counts as real response",
+  "samples": [
+    {"source": "football_data", "path": "football_data/synthetic_matches.json", "scenarios": ["valid zero score", "extra-time separate from regular time", "postponed null score"]},
+    {"source": "odds_api", "path": "odds_api/synthetic_current.json", "scenarios": ["provider/bookmaker distinction", "negative handicap", "three-way and two-way markets"]}
+  ]
+}

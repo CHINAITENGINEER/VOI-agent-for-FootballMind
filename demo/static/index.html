@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>FootballMind · 自主检索型足彩预测 Agent</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/data-adapter.js" defer></script>
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><rect x="6" y="3" width="20" height="26" rx="3"/><path d="M6 16h20M12 3v5h8V3M12 29v-5h8v5"/><circle cx="16" cy="16" r="4"/></svg></div>
+      <div><strong>FootballMind</strong><span>足球智能分析终端</span></div>
+    </div>
+    <nav class="topnav" aria-label="主导航">
+      <a class="nav-link" href="/defense.html">冻结研究演示 · Qwen</a>
+      <button class="nav-link active" data-nav="matches">比赛</button>
+      <button class="nav-link" data-nav="analysis">分析</button>
+      <button class="nav-link" data-nav="research">AI 研究</button>
+      <button class="nav-link" data-nav="data">数据</button>
+      <button class="nav-link" data-nav="system">系统状态</button>
+    </nav>
+    <div class="top-meta">
+      <span id="as-of">数据截止 —</span>
+      <span class="connection"><i id="connection-dot"></i><span id="connection">连接中</span></span>
+      <button id="refresh-all" class="icon-button" title="刷新真实数据" aria-label="刷新真实数据">↻</button>
+    </div>
+  </header>
+
+  <div id="notice" class="notice" role="alert" hidden></div>
+  <main class="app-shell">
+    <aside class="match-sidebar" aria-label="比赛列表">
+      <div class="sidebar-head">
+        <div><h1>比赛列表</h1></div>
+        <span id="fixture-count" class="count-badge">读取中</span>
+      </div>
+      <label class="workspace-picker">工作区<select id="workspace-mode"><option value="live">未来比赛 · 在线分析</option><option value="research">旧版历史研究 g · 查询前选择</option><option value="legacy">旧档案实验 · 独立记录</option></select></label>
+      <div id="research-history-wrap" class="workspace-picker"><label for="research-history">本浏览器研究记录</label><select id="research-history"><option value="">尚无研究运行</option></select></div>
+      <div id="legacy-open" class="workspace-picker" hidden><label for="legacy-run-id">读取旧档案 run_id</label><input id="legacy-run-id" placeholder="旧运行 ID"><button id="open-legacy-run" class="secondary-button">只读打开</button></div>
+      <div class="match-tools">
+        <label class="search-wrap"><span aria-hidden="true">⌕</span><input id="match-search" aria-label="搜索球队或联赛" type="search" placeholder="搜索球队或联赛"></label>
+        <div class="filter-row"><select id="league-filter" aria-label="按联赛筛选"><option value="all">全部联赛</option></select><select id="sort-filter" aria-label="按时间排序"><option value="asc">时间早 → 晚</option><option value="desc">时间晚 → 早</option></select></div>
+      </div>
+      <div id="data-mode" class="data-mode"><span class="status-dot"></span><span>正在读取真实档案</span></div>
+      <div id="match-list" class="match-list" aria-live="polite" tabindex="0" aria-label="比赛列表，可滚动"></div>
+      <div id="match-empty" class="empty-state" hidden><strong>没有可显示的比赛</strong><p>当前接口没有返回可用比赛，点击刷新重试。</p><button id="retry-matches" class="secondary-button">重试读取</button></div>
+      <div class="sidebar-foot"><span>来源</span><b id="source-label">—</b><span>更新时间</span><b id="matches-updated">—</b></div>
+    </aside>
+
+    <section class="detail-column" aria-label="比赛详情">
+      <div id="detail-loading" class="panel loading-panel"><span class="spinner"></span><div><strong>正在准备比赛分析</strong><p>读取比赛身份、市场先验和 Agent 研究状态…</p></div></div>
+      <div id="detail-error" class="panel error-panel" hidden><div class="error-icon">!</div><div><strong>详情读取失败</strong><p id="detail-error-text"></p><button id="retry-detail" class="secondary-button">重试详情</button></div></div>
+      <div id="detail-content" hidden>
+        <p id="research-scope" class="research-scope" hidden>旧版历史研究 · 查询前 g 与配套实体 f · 不使用新版 Qwen 全文向量</p>
+        <section class="panel match-hero">
+          <div class="hero-meta"><div><span id="hero-league" class="league-chip">—</span><span id="hero-status" class="status-chip">—</span></div><div class="hero-time"><span>开球</span><strong id="hero-kickoff">—</strong></div></div>
+          <div class="teams"><div class="team home-team"><span class="team-role">主队</span><div id="home-badge" class="team-badge">H</div><strong id="home-name">—</strong><span id="home-id" class="muted">—</span></div><div class="versus"><b>VS</b><span id="match-id">—</span></div><div class="team away-team"><span class="team-role">客队</span><div id="away-badge" class="team-badge away">A</div><strong id="away-name">—</strong><span id="away-id" class="muted">—</span></div></div>
+          <div class="hero-footer"><span id="identity-status">比赛身份待核验</span><span>截止 <b id="hero-cutoff">—</b></span><span>最后更新 <b id="hero-updated">—</b></span></div>
+        </section>
+
+        <div class="section-tabs" role="tablist" aria-label="比赛分析标签"><button class="tab active" data-tab="overview" id="tab-button-overview" role="tab" aria-controls="tab-overview" aria-selected="true" tabindex="0">预测概览</button><button class="tab" data-tab="evidence" id="tab-button-evidence" role="tab" aria-controls="tab-evidence" aria-selected="false" tabindex="-1">证据</button><button class="tab" data-tab="models" id="tab-button-models" role="tab" aria-controls="tab-models" aria-selected="false" tabindex="-1">模型一致性</button><button class="tab" data-tab="uncertainty" id="tab-button-uncertainty" role="tab" aria-controls="tab-uncertainty" aria-selected="false" tabindex="-1">不确定性</button></div>
+
+        <div id="tab-overview" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-overview">
+          <section class="panel probability-panel" id="probability-panel">
+            <div class="panel-heading"><div><h2>模型预测概率</h2><p class="section-description">胜 / 平 / 负 · 当前模型输出</p></div><button class="text-button compare-button" id="toggle-prediction" aria-expanded="false" aria-controls="prediction-breakdown">对比 before / after <span aria-hidden="true">↗</span></button></div>
+            <div class="prob-grid">
+              <div class="prob-item home"><span class="outcome-label"><i></i>主胜 <small class="prob-rank" hidden>最高项</small></span><strong id="prob-home">—</strong><span class="prob-caption">主队获胜</span></div>
+              <div class="prob-item draw"><span class="outcome-label"><i></i>平局 <small class="prob-rank" hidden>最高项</small></span><strong id="prob-draw">—</strong><span class="prob-caption">双方战平</span></div>
+              <div class="prob-item away"><span class="outcome-label"><i></i>客胜 <small class="prob-rank" hidden>最高项</small></span><strong id="prob-away">—</strong><span class="prob-caption">客队获胜</span></div>
+            </div>
+            <div class="prob-distribution" aria-hidden="true"><i id="bar-home"></i><i id="bar-draw"></i><i id="bar-away"></i></div>
+            <div class="prediction-provenance"><span id="prediction-source">模型来源未返回</span><span id="prediction-time">数据截止未知</span></div>
+            <div id="prediction-explain" class="explain-box"><span class="explain-label">变化说明</span><p>等待 Agent 完成预测工具调用。</p></div>
+            <div id="prediction-breakdown" class="breakdown" hidden><div><span>prediction_before · 市场先验</span><b id="before-value">—</b></div><div><span>prediction_after · f 更新后</span><b id="after-value">—</b></div><div><span>变化量</span><b id="delta-value">—</b></div><div><span>f 状态</span><b id="f-state">—</b></div></div>
+            <div class="analysis-links"><button class="analysis-link" data-tab-jump="evidence"><span>支撑来源</span><b id="support-count">等待返回</b><span aria-hidden="true">↗</span></button><button class="analysis-link" data-tab-jump="models"><span>模型分歧</span><b>查看可用输出</b><span aria-hidden="true">↗</span></button></div>
+          </section>
+
+          <section class="panel chart-panel"><div class="panel-heading"><div><h2>概率变化趋势</h2></div><span id="trend-badge" class="small-badge">等待有效时间序列</span></div><div class="chart-legend" aria-label="图例"><span class="home"><i></i>主胜</span><span class="draw"><i></i>平局</span><span class="away"><i></i>客胜</span><span class="chart-unit">模型预测概率 / %</span></div><div id="trend-chart" class="trend-chart"></div><p id="trend-empty" class="empty-inline">当前只有一个有效预测时间点，暂无可绘制的历史趋势</p></section>
+
+          <div class="two-col"><section class="panel"><div class="panel-heading"><div><h2>赔率与市场信息</h2></div><span id="odds-status" class="small-badge">暂无数据</span></div><div id="odds-grid" class="odds-grid"></div><div id="odds-note" class="micro-note">赔率来源、归一化状态和更新时间将在证据返回后显示。</div></section><section class="panel"><div class="panel-heading"><div><h2>预期进球与比分分布</h2></div><span class="small-badge muted-badge">xG</span></div><div class="empty-module"><div class="empty-glyph">∅</div><strong>暂无可核验 xG 数据</strong><p>后端当前没有提供本场 xG 或比分分布；不会用演示数字填充。</p></div></section></div>
+
+          <section id="research-report" class="panel" hidden><div class="panel-heading"><div><h2>研究结果 · 事后评估</h2><p class="section-description">与候选预期评分分开；仅在停止后展示</p></div><button id="download-research-report" class="text-button" disabled>下载 JSON</button></div><div id="research-evaluation"></div></section>
+          <section class="panel models-panel"><div class="panel-heading"><div><h2>模型一致性</h2></div><button class="text-button" data-tab-jump="models">查看全部模型</button></div><p class="section-description model-caveat">跨模型分歧指标未返回；缺失输出不代表模型一致。</p><div id="models-row" class="models-row"></div></section>
+        </div>
+
+        <div id="tab-evidence" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-evidence" hidden><section class="panel"><div class="panel-heading"><div><h2>来源与证据状态</h2></div><div class="segmented" id="evidence-filter"><button class="active" data-filter="all">全部</button><button data-filter="verified">已核实</button><button data-filter="model_inferred">模型推断</button><button data-filter="unknown">不确定</button></div></div><div id="evidence-list" class="evidence-list"></div></section></div>
+
+        <div id="tab-models" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-models" hidden><section class="panel"><div class="panel-heading"><div><h2>模型一致性明细</h2></div><span class="small-badge">仅显示真实返回</span></div><div id="models-detail"></div></section></div>
+
+        <div id="tab-uncertainty" class="tab-panel" role="tabpanel" aria-labelledby="tab-button-uncertainty" hidden><section class="panel"><div class="panel-heading"><div><h2>仍有不确定性</h2></div><span id="uncertainty-count" class="small-badge warning">—</span></div><div id="uncertainty-list" class="uncertainty-list"></div></section></div>
+      </div>
+    </section>
+
+    <aside class="research-column" aria-label="Agent 研究过程">
+      <section class="panel agent-panel"><div class="panel-heading"><div><h2>Agent 执行追踪</h2></div><span id="agent-status" class="run-status"><i></i>未开始</span></div><p id="agent-summary" class="agent-summary">选择比赛后，Agent 会从比赛身份和市场先验开始，判断下一步最值得获取的信息。</p><div class="agent-outcome" id="agent-outcome" hidden><span id="agent-outcome-label">运行原因</span><strong id="agent-reason"></strong><code id="agent-reason-code"></code></div><div class="log-heading"><span>执行记录</span><span id="agent-log-count">—</span></div><div id="timeline" class="agent-timeline" tabindex="0" aria-label="Agent 执行日志，可滚动"></div><details id="research-options" class="research-options"><summary>高级选项 · 策略与逐步演示</summary><div class="research-option-fields"><label>策略<select id="research-strategy"><option value="g_two_step">两步 g（默认）</option><option value="g_one_step">一步 g</option><option value="fixed_order">固定顺序对照</option></select></label><label>最多读取篇数<input id="research-max-reads" type="number" min="1" max="3" step="1" value="3"></label><label>每篇成本 · loss 单位<input id="research-cost" type="number" min="0" max="0.01" step="0.001" value="0.001"></label><label class="checkbox-label"><input id="research-step-mode" type="checkbox">逐步演示（仍由 g 选择文章）</label><p class="micro-note">成本是自然对数损失换算量，不是货币或实付 API 费用。更换策略需新建独立运行。</p></div></details><button id="run-agent" class="primary-button full-button">开始 / 继续分析</button><div id="research-controls" class="research-controls"><button id="research-next" class="secondary-button" disabled>g 自主执行一步</button><button id="research-stop" class="secondary-button" disabled>停止本轮</button><button id="research-refresh" class="text-button">核对状态</button><button id="research-new" class="text-button" disabled>准备新运行</button></div><p id="research-run-meta" class="research-run-meta"></p><p id="agent-next-step" class="agent-next-step">展开步骤可查看工具返回与原始记录。</p></section>
+      <section class="panel actions-panel"><div class="panel-heading"><div><h2>候选动作</h2></div><span id="g-status" class="small-badge warning">g UNKNOWN</span></div><p id="g-explanation" class="micro-note">g 负责选择下一步信息；当前运行未提供 empirical g 数值时，界面保持 UNKNOWN。</p><div id="candidate-actions" class="candidate-table"></div></section>
+      <section class="panel process-panel"><div class="panel-heading"><div><h2>准入与状态</h2></div></div><div id="status-checks" class="status-checks"></div></section>
+    </aside>
+  </main>
+  <footer><span>FootballMind · 数据与推理边界可追溯</span><span>f：特征与概率更新 · g：下一步信息选择 · DeepSeek：语义抽取器</span></footer>
+</body>
+</html>

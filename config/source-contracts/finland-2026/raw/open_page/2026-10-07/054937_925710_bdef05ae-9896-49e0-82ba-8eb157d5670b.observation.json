@@ -1,0 +1,24 @@
+{
+  "id": "bdef05ae-9896-49e0-82ba-8eb157d5670b",
+  "source": "open_page",
+  "endpoint": "https://www.veikkausliiga.com/veikkausliiga/sarjajarjestelma",
+  "method": "GET",
+  "params": {},
+  "request_id": "8610903b-d124-4a86-9e61-898b2ae55f37",
+  "observed_at": "2026-10-07T05:49:37.925710Z",
+  "http_status": 200,
+  "payload_path": "raw\\open_page\\2026-10-07\\054937_925710_bdef05ae-9896-49e0-82ba-8eb157d5670b.body.gz",
+  "content_hash": "597d04281093ee7da5f4c8509caa57bb0ab836c82665526beb06c49fd80fab95",
+  "payload_format": "html",
+  "response_headers": {},
+  "context": {
+    "requested_at": "2026-10-07T05:49:35.452397+00:00",
+    "requested_url": "https://www.veikkausliiga.com/veikkausliiga/sarjajarjestelma",
+    "purpose": "observed_official_format_link",
+    "tls_verification": true,
+    "transport": "windows_schannel_curl",
+    "curl_exit": 0
+  },
+  "error_class": null,
+  "schema_version": "1.0"
+}

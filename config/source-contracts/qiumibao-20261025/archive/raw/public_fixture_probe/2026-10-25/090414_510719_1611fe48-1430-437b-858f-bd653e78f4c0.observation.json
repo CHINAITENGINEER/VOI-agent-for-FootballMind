@@ -1,0 +1,17 @@
+{
+  "id": "1611fe48-1430-437b-858f-bd653e78f4c0",
+  "source": "public_fixture_probe",
+  "endpoint": "https://s.qiumibao.com/json/match/1932319.htm",
+  "method": "GET",
+  "params": {},
+  "request_id": "3cc007e6-5bfb-4917-81bf-b51f8216030d",
+  "observed_at": "2026-10-25T09:04:14.510719Z",
+  "http_status": 200,
+  "payload_path": "raw\\public_fixture_probe\\2026-10-25\\090414_510719_1611fe48-1430-437b-858f-bd653e78f4c0.body.gz",
+  "content_hash": "64d75d8f240db73894405dac22e94ced5c83a6c1b6f59dd2f5d91975ec09c5e3",
+  "payload_format": "json",
+  "response_headers": {},
+  "context": {},
+  "error_class": null,
+  "schema_version": "1.0"
+}

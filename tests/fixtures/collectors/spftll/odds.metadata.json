@@ -1,0 +1,33 @@
+{
+  "sample_kind": "real_capture_redacted_copy",
+  "source": "spftll",
+  "observation": {
+    "id": "687cc6d1-0c9a-4190-802f-3acfd907346b",
+    "source": "spftll",
+    "endpoint": "https://slb.haoyun999.cn/api/Game/GetMoreSpInfo",
+    "method": "GET",
+    "params": {
+      "mKind": 0,
+      "matchId": "2996160"
+    },
+    "request_id": "675cc8ff-7bc4-4cfd-b5a9-d69cf48e49d2",
+    "observed_at": "2026-09-20T11:44:29.982436Z",
+    "http_status": 200,
+    "payload_path": "raw\\spftll\\2026-09-20\\114429_982436_687cc6d1-0c9a-4190-802f-3acfd907346b.body.gz",
+    "content_hash": "991a794837e79534a0ac23a2deba822725b439074252bac2d41f08fa6661127a",
+    "payload_format": "json",
+    "response_headers": {
+      "content-type": "application/json; charset=utf-8"
+    },
+    "context": {
+      "credential_echo_redacted": false
+    },
+    "error_class": null,
+    "schema_version": "1.0"
+  },
+  "original_payload_sha256": "991a794837e79534a0ac23a2deba822725b439074252bac2d41f08fa6661127a",
+  "fixture_payload_sha256": "4b9cf84e26105b84a77cee6d95d045e07a6b5813991ac06ca89f06d6d2fc05e4",
+  "transformation": "JSON reserialized; credential-key fields redacted",
+  "payload_file": "odds.json",
+  "production_ingestion_allowed": false
+}

@@ -1,0 +1,41 @@
+{
+  "created_at": "2026-10-07T05:58:41.657207+00:00",
+  "network_requests_for_package_creation": 0,
+  "observations": [
+    {
+      "metadata_path": "raw/open_page/2026-10-07/054937_925710_bdef05ae-9896-49e0-82ba-8eb157d5670b.observation.json",
+      "metadata_sha256": "e16ac83c74c8b3f54de4dfbe12ecf9d1ac2616e310a45cf5af3f118335167131",
+      "observation_id": "bdef05ae-9896-49e0-82ba-8eb157d5670b",
+      "observed_at": "2026-10-07T05:49:37.925710+00:00",
+      "payload_path": "raw/open_page/2026-10-07/054937_925710_bdef05ae-9896-49e0-82ba-8eb157d5670b.body.gz",
+      "payload_sha256": "bf6d893095c7ea9851f1e46dca05c3040e4fa49912c27795e6697d623e5495c4",
+      "raw_sha256": "597d04281093ee7da5f4c8509caa57bb0ab836c82665526beb06c49fd80fab95",
+      "url": "https://www.veikkausliiga.com/veikkausliiga/sarjajarjestelma"
+    },
+    {
+      "metadata_path": "raw/open_page/2026-10-07/054946_026173_a6ddb0f5-67d1-465b-9209-89e4eb778feb.observation.json",
+      "metadata_sha256": "4b0f2eb923f574070ca4358fc2b94a61d5a319d0ad89a0f3d548af2545eb2e2e",
+      "observation_id": "a6ddb0f5-67d1-465b-9209-89e4eb778feb",
+      "observed_at": "2026-10-07T05:49:46.026173+00:00",
+      "payload_path": "raw/open_page/2026-10-07/054946_026173_a6ddb0f5-67d1-465b-9209-89e4eb778feb.body.gz",
+      "payload_sha256": "9ac3052116f5d2709a462a9213692214843541e60b1c1655153a7b2c6038ee6a",
+      "raw_sha256": "127edc2970a257b22d23ec79ade3029e08d4e5913280a6e5f140602b07bed4cf",
+      "url": "https://www.theifab.com/laws/latest/the-duration-of-the-match/"
+    },
+    {
+      "metadata_path": "raw/open_page/2026-10-07/055240_946297_45129d91-5261-4a3f-910d-5424b40326d2.observation.json",
+      "metadata_sha256": "5cacdaae201d0c64db5affc1da400e56f7690b8887c7507be5a4f7faa47ac3ad",
+      "observation_id": "45129d91-5261-4a3f-910d-5424b40326d2",
+      "observed_at": "2026-10-07T05:52:40.946297+00:00",
+      "payload_path": "raw/open_page/2026-10-07/055240_946297_45129d91-5261-4a3f-910d-5424b40326d2.body.gz",
+      "payload_sha256": "a17385f04c6f72ef69547d2b0f616d51b4aff47e74a2e53190b1b3aa4aa0caa6",
+      "raw_sha256": "84ad799f61532fe9aed3e64f3d41505ec18a673b326f2b9b2e002bf5de9a6ebf",
+      "url": "https://www.theifab.com/laws/latest/determining-the-outcome-of-a-match/"
+    }
+  ],
+  "old_observation_clocks_preserved": true,
+  "rule_version": "veikkausliiga-2026-mestaruussarja-observed-two-halves-v1",
+  "schema": "finland-2026-rule-package-v1",
+  "scope": "2026 senior-men Veikkausliiga Mestaruussarja plus explicitly observed finished two-half match timeline",
+  "source_publication_times": null
+}
