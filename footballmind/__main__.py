@@ -21,6 +21,10 @@ def main(argv=None):
     exp.add_argument('--config', default=argparse.SUPPRESS)
     exp.add_argument('action', choices=('plan', 'run'))
     exp.add_argument('experiment_config', type=Path)
+    verify = sub.add_parser('verify', help='Compare replay predictions with the shipped numerical reference')
+    verify.add_argument('--config', default=argparse.SUPPRESS)
+    verify.add_argument('predictions', type=Path)
+    verify.add_argument('--reference', type=Path)
     serve = sub.add_parser('serve', help='Start the local interface using the configured workspace')
     serve.add_argument('--config', default=argparse.SUPPRESS)
     serve.add_argument('--page', choices=('live', 'defense'), default='defense')
@@ -29,6 +33,11 @@ def main(argv=None):
     args = parser.parse_args(argv)
     try:
         workspace = load_config(args.config)
+        if args.command == 'verify':
+            from .reproduction import verify_predictions
+            result = verify_predictions(args.predictions, args.reference)
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+            return 0 if result['status'] == 'PASS' else 1
         if args.command == 'doctor':
             from .doctor import diagnose
             result = diagnose(workspace, deep=args.deep)

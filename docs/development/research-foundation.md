@@ -4,7 +4,7 @@
 
 ## 工作副本
 
-使用 Git 仓库根目录执行下列命令。原比赛材料和 E 盘语料仍保持原样。当前分支为 `feature/research-foundation-v1`，不要在旧非 Git 目录继续产生另一套源码修改。
+使用 Git 仓库根目录执行下列命令。原比赛材料和 E 盘语料仍保持原样。本阶段最初在 `feature/research-foundation-v1` 开发，独立交接版统一以 `handoff-20261103-v1` 为准。独立开发流程见根目录 DEVELOPMENT.md。
 
 ## 配置
 
@@ -48,6 +48,7 @@ doctor 总是检查冻结包文件摘要和运行依赖。`--deep` 额外读取�
 ```powershell
 python -m footballmind experiment plan config/experiments/frozen-replay.example.json
 python -m footballmind experiment run config/experiments/frozen-replay.example.json
+python -m footballmind verify var/experiments/frozen-development-replay-v1/predictions.jsonl
 ```
 
 plan 只核验配置、固定 manifest SHA、完整输入文件摘要及比赛角色，不加载模型，不生成输出。示例使用 Brentford–Arsenal 的既有 g_dev 材料，三个策略、最多采用3篇，默认不结算。

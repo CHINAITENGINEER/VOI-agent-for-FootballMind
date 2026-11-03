@@ -2,7 +2,9 @@
 
 面向足球胜平负研究的信息价值智能体：发现来源、获取正文、语义编码、评估候选、采用证据、更新预测，并决定继续或停止。
 
-本仓库是现有项目的协作开发快照，包含前后端、采集适配器、研究与训练代码、测试，以及可离线运行的冻结演示包。没有重新训练或替换模型。
+本仓库包含前后端、采集适配器、研究与训练代码、测试，以及可离线运行的冻结演示包。独立开发者请先阅读 **[独立开发交接文档 DEVELOPMENT.md](DEVELOPMENT.md)**，无需参与原项目协作即可在自己的仓库继续开发。
+
+固定交接版本为 **`handoff-20261103-v1`**。仓库自包含160场开发样本的冻结推理复现；原全量训练语料未随Git分发，具体能力与资源条件见交接文档第1节。
 
 长期开发的统一配置、环境诊断和冻结实验入口见 [研究底座使用说明](docs/development/research-foundation.md)。本机差异写进被 Git 忽略的 `config/workspace.local.json`，路径不再依赖修改在线模型源码。
 
@@ -11,12 +13,14 @@
 推荐 Python 3.13，当前开发环境为 Windows。首次安装 PyTorch 等依赖需要下载较大的软件包。
 
 ```powershell
-git clone https://github.com/CHINAITENGINEER/VOI-agent-for-FootballMind.git
+git clone --branch handoff-20261103-v1 https://github.com/CHINAITENGINEER/VOI-agent-for-FootballMind.git
 cd VOI-agent-for-FootballMind
 python -m venv .venv
-.\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
-.\.venv\Scripts\python.exe -m footballmind doctor --mode offline
-.\.venv\Scripts\python.exe -m footballmind serve --page defense
+.\.venv\Scripts\python.exe -m pip install -r requirements-replay.txt pytest==9.1.1
+.\.venv\Scripts\python.exe -m footballmind --config config/workspace.example.json doctor --mode offline
+.\.venv\Scripts\python.exe -m footballmind --config config/workspace.example.json experiment run config/experiments/frozen-replay.example.json
+.\.venv\Scripts\python.exe -m footballmind --config config/workspace.example.json verify var/experiments/frozen-development-replay-v1/predictions.jsonl
+.\.venv\Scripts\python.exe -m footballmind --config config/workspace.example.json serve --page defense
 ```
 
 默认打开 http://127.0.0.1:8766/defense.html 。历史模式使用仓库内冻结模型、正文和已编码向量，不需要重新抓取新闻或下载 Qwen 权重。启动器自动检查冻结包，端口占用时可改用后续端口，以启动输出为准。
@@ -24,6 +28,7 @@ python -m venv .venv
 ## 在线全文分析
 
 ```powershell
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
 .\.venv\Scripts\python.exe -m footballmind doctor --mode online
 .\.venv\Scripts\python.exe -m footballmind serve --page live
 ```
@@ -71,4 +76,4 @@ python -m demo --help
 
 没有上传 `.env`、密钥、数据库、完整 E 盘数据、Qwen 权重、后台日志或演示视频。冻结演示包保留少量原始来源正文与出处，供项目研究复现，不将第三方正文声明为本项目原创。完整语料和训练资源由团队单独管理。
 
-协作分支、复现步骤和环境限制见 [docs/COLLABORATION.md](docs/COLLABORATION.md)。
+独立开发以 [DEVELOPMENT.md](DEVELOPMENT.md) 为入口。原团队协作说明保存在 [docs/COLLABORATION.md](docs/COLLABORATION.md)，不构成独立使用的前置要求。

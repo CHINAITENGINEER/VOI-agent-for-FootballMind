@@ -1,0 +1,118 @@
+{
+  "schema": "footballmind-reference-predictions-v1",
+  "basis": "existing pinned frozen release replay; 160-match regression of 2026-11-03",
+  "release_manifest_sha256": "da8779e7341275007f2222d66ef768852abc09fa55c2665e21732e126cf7951b",
+  "scope": "g_dev example; numerical regression only; outcomes not used",
+  "predictions": [
+    {
+      "case_id": "fd:E0:2425:2025-01-01:Brentford:Arsenal",
+      "head": "state_ridge",
+      "prediction": {
+        "p_before": [
+          0.12954601645469666,
+          0.19393886625766754,
+          0.6765151619911194
+        ],
+        "p_after": [
+          0.12954601645469666,
+          0.19393886625766754,
+          0.6765151619911194
+        ],
+        "selected_ids": [],
+        "unselected_ids": [
+          "sha256:6462f3f9047c854694573ba24ae87f3ea3c955a979ea04f4dc448af94edb8c8d",
+          "sha256:84a19abe57e23a022be9db4a35655a43efdf48b385506d93a930451b97d007e8",
+          "sha256:7153ed6db6a98dd31c540f06a9acc89723cf77df543b5975e73f801bd5d89783",
+          "sha256:38de591bd0de1195c85e9d92678acc9b51353f114e9108c5099f2ab1b5404154",
+          "sha256:b2b58e96d3a733ab59ae4780cf369c19cca22094a490edf616f19d9e34591819"
+        ],
+        "stop_reason": "predicted_gain_below_frozen_threshold",
+        "budget": 3,
+        "threshold": 0.0,
+        "body_adoptions": 0,
+        "physical_match_id": "fd:E0:2425:2025-01-01:Brentford:Arsenal",
+        "f_used_ids": [],
+        "model_bindings": {
+          "f_sha256": "b36b2cf87f379034224c314794efc6ec59266dd4cf4752383965c41fb63661e0",
+          "g_archive_sha256": "5af947711279765838adb02e7dc09c2a9525a89e90db3e23e4f68a865ed88eff"
+        }
+      }
+    },
+    {
+      "case_id": "fd:E0:2425:2025-01-01:Brentford:Arsenal",
+      "head": "fixed_order",
+      "prediction": {
+        "p_before": [
+          0.12954601645469666,
+          0.19393886625766754,
+          0.6765151619911194
+        ],
+        "p_after": [
+          0.13526608049869537,
+          0.2003333419561386,
+          0.664400577545166
+        ],
+        "selected_ids": [
+          "sha256:6462f3f9047c854694573ba24ae87f3ea3c955a979ea04f4dc448af94edb8c8d",
+          "sha256:84a19abe57e23a022be9db4a35655a43efdf48b385506d93a930451b97d007e8",
+          "sha256:7153ed6db6a98dd31c540f06a9acc89723cf77df543b5975e73f801bd5d89783"
+        ],
+        "unselected_ids": [
+          "sha256:38de591bd0de1195c85e9d92678acc9b51353f114e9108c5099f2ab1b5404154",
+          "sha256:b2b58e96d3a733ab59ae4780cf369c19cca22094a490edf616f19d9e34591819"
+        ],
+        "stop_reason": "budget_exhausted",
+        "budget": 3,
+        "threshold": null,
+        "body_adoptions": 3,
+        "physical_match_id": "fd:E0:2425:2025-01-01:Brentford:Arsenal",
+        "f_used_ids": [
+          "sha256:6462f3f9047c854694573ba24ae87f3ea3c955a979ea04f4dc448af94edb8c8d",
+          "sha256:84a19abe57e23a022be9db4a35655a43efdf48b385506d93a930451b97d007e8",
+          "sha256:7153ed6db6a98dd31c540f06a9acc89723cf77df543b5975e73f801bd5d89783"
+        ],
+        "model_bindings": {
+          "f_sha256": "b36b2cf87f379034224c314794efc6ec59266dd4cf4752383965c41fb63661e0",
+          "g_archive_sha256": "5af947711279765838adb02e7dc09c2a9525a89e90db3e23e4f68a865ed88eff"
+        }
+      }
+    },
+    {
+      "case_id": "fd:E0:2425:2025-01-01:Brentford:Arsenal",
+      "head": "fulltext_mlp_seed20261027",
+      "prediction": {
+        "p_before": [
+          0.12954601645469666,
+          0.19393886625766754,
+          0.6765151619911194
+        ],
+        "p_after": [
+          0.13408665359020233,
+          0.20008186995983124,
+          0.665831446647644
+        ],
+        "selected_ids": [
+          "sha256:84a19abe57e23a022be9db4a35655a43efdf48b385506d93a930451b97d007e8"
+        ],
+        "unselected_ids": [
+          "sha256:6462f3f9047c854694573ba24ae87f3ea3c955a979ea04f4dc448af94edb8c8d",
+          "sha256:7153ed6db6a98dd31c540f06a9acc89723cf77df543b5975e73f801bd5d89783",
+          "sha256:38de591bd0de1195c85e9d92678acc9b51353f114e9108c5099f2ab1b5404154",
+          "sha256:b2b58e96d3a733ab59ae4780cf369c19cca22094a490edf616f19d9e34591819"
+        ],
+        "stop_reason": "predicted_gain_below_frozen_threshold",
+        "budget": 3,
+        "threshold": 0.01,
+        "body_adoptions": 1,
+        "physical_match_id": "fd:E0:2425:2025-01-01:Brentford:Arsenal",
+        "f_used_ids": [
+          "sha256:84a19abe57e23a022be9db4a35655a43efdf48b385506d93a930451b97d007e8"
+        ],
+        "model_bindings": {
+          "f_sha256": "b36b2cf87f379034224c314794efc6ec59266dd4cf4752383965c41fb63661e0",
+          "g_archive_sha256": "5af947711279765838adb02e7dc09c2a9525a89e90db3e23e4f68a865ed88eff"
+        }
+      }
+    }
+  ]
+}
