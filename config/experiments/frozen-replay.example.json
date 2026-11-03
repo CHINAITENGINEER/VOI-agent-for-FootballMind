@@ -1,0 +1,17 @@
+{
+  "schema": "footballmind-frozen-replay-experiment-v1",
+  "experiment_id": "frozen-development-replay-v1",
+  "output_dir": "frozen-development-replay-v1",
+  "expected_manifest_sha256": "da8779e7341275007f2222d66ef768852abc09fa55c2665e21732e126cf7951b",
+  "dataset_role": "g_dev",
+  "case_ids": [
+    "fd:E0:2425:2025-01-01:Brentford:Arsenal"
+  ],
+  "heads": [
+    "state_ridge",
+    "fixed_order",
+    "fulltext_mlp_seed20261027"
+  ],
+  "max_reads": 3,
+  "settle": false
+}

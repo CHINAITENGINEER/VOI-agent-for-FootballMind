@@ -83,11 +83,13 @@ def make_budget(values: dict[str, Any] | None) -> Any:
 
 
 class DemoApplication:
-    def __init__(self, store_dir: str | Path = "var/parallel/agent/round2/runs", factory: Callable[..., Any] = make_workflow,
+    def __init__(self, store_dir: str | Path | None = None, factory: Callable[..., Any] = make_workflow,
                  *, model_catalog=None, platform_export=None, service=None,
-                 archive_root: str | Path = "football_spider/platform_data/raw"):
+                 archive_root: str | Path = "football_spider/platform_data/raw", workspace_config=None):
         from football_agent.model_catalog import ModelCatalog
-        self.store_dir = Path(store_dir).resolve()
+        from footballmind.config import load_config
+        self.workspace_config = workspace_config or load_config()
+        self.store_dir = Path(store_dir if store_dir is not None else self.workspace_config.runs_dir).resolve()
         self.factory = factory
         self.model_catalog = model_catalog if model_catalog is not None else ModelCatalog()
         self.platform_export = str(Path(platform_export).resolve()) if platform_export is not None else None
@@ -103,14 +105,14 @@ class DemoApplication:
     def defense(self):
         if self._defense is None:
             from .defense import DefenseApplication
-            self._defense = DefenseApplication()
+            self._defense = DefenseApplication(release_dir=self.workspace_config.release_dir)
         return self._defense
 
     def live_g(self):
         with self.lock:
             if self._live_g is None:
                 from .live_postread import LivePostreadApplication
-                self._live_g = LivePostreadApplication(self.store_dir / "live-g")
+                self._live_g = LivePostreadApplication(self.store_dir / "live-g", workspace_config=self.workspace_config)
             return self._live_g
 
     def research_g(self):
@@ -206,6 +208,8 @@ class DemoApplication:
                     raise ValueError("Live GET accepts no query parameters")
                 if path == "/api/live-g/catalog":
                     return self.live_g().catalog()
+                if path == "/api/live-g/readiness":
+                    return self.live_g().readiness()
                 match = re.fullmatch(r"/api/live-g/runs/(lg-[a-f0-9]{32})(/view|/report)?", path)
                 if match:
                     return self.live_g().get(match[1])
@@ -457,19 +461,23 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="FootballMind 本地工具工作流与事件回放")
     parser.add_argument("--host", default="127.0.0.1")
     parser.add_argument("--port", type=int, default=8765)
-    parser.add_argument("--store-dir", default="var/parallel/agent/round2/runs")
+    parser.add_argument("--store-dir", help="Override the configured run directory")
+    parser.add_argument("--config", help="Workspace JSON configuration file")
     parser.add_argument("--model-catalog", help="服务端模型白名单 JSON")
     parser.add_argument("--platform-export", help="服务端配置的已完成平台导出")
     parser.add_argument("--archive-root", default="football_spider/platform_data/raw")
     parser.add_argument("--enable-platform-refresh", action="store_true", help="启用既有spftll采集服务，每次最多2个请求")
     args = parser.parse_args()
+    from footballmind.config import load_config
+    workspace = load_config(args.config)
     from football_agent.model_catalog import ModelCatalog
     service = None
     if args.enable_platform_refresh:
         from football_agent.collector_refresh import PlatformRefreshAdapter
         service = PlatformRefreshAdapter(args.archive_root)
     server = create_server(args.host, args.port, DemoApplication(args.store_dir, model_catalog=ModelCatalog(args.model_catalog),
-                          platform_export=args.platform_export, archive_root=args.archive_root, service=service))
+                          platform_export=args.platform_export, archive_root=args.archive_root, service=service,
+                          workspace_config=workspace))
     print(f"FootballMind: http://{args.host}:{server.server_port} (Ctrl+C 停止)", flush=True)
     try:
         server.serve_forever()

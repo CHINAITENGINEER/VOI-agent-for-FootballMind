@@ -4,6 +4,8 @@
 
 本仓库是现有项目的协作开发快照，包含前后端、采集适配器、研究与训练代码、测试，以及可离线运行的冻结演示包。没有重新训练或替换模型。
 
+长期开发的统一配置、环境诊断和冻结实验入口见 [研究底座使用说明](docs/development/research-foundation.md)。本机差异写进被 Git 忽略的 `config/workspace.local.json`，路径不再依赖修改在线模型源码。
+
 ## 快速启动（冻结历史演示，无需 API Key）
 
 推荐 Python 3.13，当前开发环境为 Windows。首次安装 PyTorch 等依赖需要下载较大的软件包。
@@ -13,7 +15,8 @@ git clone https://github.com/CHINAITENGINEER/VOI-agent-for-FootballMind.git
 cd VOI-agent-for-FootballMind
 python -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements-dev.txt
-.\.venv\Scripts\python.exe start_footballmind_defense.py --page defense
+.\.venv\Scripts\python.exe -m footballmind doctor --mode offline
+.\.venv\Scripts\python.exe -m footballmind serve --page defense
 ```
 
 默认打开 http://127.0.0.1:8766/defense.html 。历史模式使用仓库内冻结模型、正文和已编码向量，不需要重新抓取新闻或下载 Qwen 权重。启动器自动检查冻结包，端口占用时可改用后续端口，以启动输出为准。
@@ -21,10 +24,11 @@ python -m venv .venv
 ## 在线全文分析
 
 ```powershell
-.\.venv\Scripts\python.exe start_footballmind_defense.py --page live
+.\.venv\Scripts\python.exe -m footballmind doctor --mode online
+.\.venv\Scripts\python.exe -m footballmind serve --page live
 ```
 
-默认页面为 http://127.0.0.1:8766/live.html 。在线全文编码还需要本地 Qwen3-Embedding-0.6B 权重，仓库不包含该大型第三方模型。**在线启动检查通过不等于编码模型就绪**。当前默认模型/缓存路径在 `demo/live_postread_model.py` 中仍使用原开发机的 E 盘路径，详见 [协作与模型环境](docs/COLLABORATION.md)。在未完成环境配置前，请先使用冻结历史演示。
+默认页面为 http://127.0.0.1:8766/live.html 。在线全文编码还需要本地 Qwen3-Embedding-0.6B 权重，仓库不包含该大型第三方模型。复制 `config/workspace.example.json` 为 `config/workspace.local.json` 并配置 `encoder_dir` 与 `cache_dir`。启动器会先检查本地编码文件与依赖；缺失时不会报告在线就绪。文件就绪检查不执行完整正文推理，来源可用性由实际请求另行记录。详见 [协作与模型环境](docs/COLLABORATION.md)。
 
 在线采集依赖公开来源的可用性。研究代码保留部分旧版 DeepSeek 路径，其凭据只能通过环境变量配置；全文向量 f/g 路径直接进行本地推理，不需要为它设置 DeepSeek Key。
 
@@ -60,6 +64,8 @@ python -m demo --help
 ```
 
 完整测试中部分用例依赖原开发机归档或可选库，不能将本地资源缺失当成算法结果。CI 仅运行不依赖外部采集的针对性测试。
+
+开发入口默认选择 `state_ridge`，它是原开发集完整策略选择项，主要控制继续/停止；全文 MLP 可显式选择。冻结历史演示内部的原默认值保持在原 bundle 中，所有策略仍是研究模型。
 
 ## 数据和凭据
 

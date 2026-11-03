@@ -25,6 +25,7 @@ from .live_g import (LiveGApplication, LiveBackend, TERMINAL, ROOT, now, utc,
 from .live_candidate_time import candidate_time_scope
 from .live_f_consumption import pipeline_summary
 from .live_postread_model import LivePostreadModel, F_SHA, G_SHA, DEFAULT_HEAD
+from footballmind.config import load_config
 
 MODE = 'postread_fulltext_v1'
 VERSION = 'footballmind-live-postread-v1'
@@ -33,7 +34,7 @@ PREFETCH_BUDGET = 20
 RUN_MINUTES = 30
 PREFETCH_MINUTES = 5
 ONLINE_TOKEN_BUDGET = 4096
-CODE_FILES = ('demo/live_postread.py', 'demo/live_postread_model.py', 'demo/live_g.py',
+CODE_FILES = ('footballmind/config.py', 'demo/live_postread.py', 'demo/live_postread_model.py', 'demo/live_g.py',
     'demo/live_sources.py', 'demo/live_article_projection.py', 'demo/live_venezia_body.py', 'demo/live_dutch_body.py', 'demo/live_spanish_body.py',
     'demo/live_official_directory_cards.py', 'demo/live_candidate_time.py', 'demo/live_coverage.py')
 LOADED_AT = now()
@@ -51,8 +52,10 @@ LIMITATIONS = [
 
 class LivePostreadApplication(LiveGApplication):
     """Reuse proven source/identity contracts, replace selection and prediction."""
-    def __init__(self, store_dir, *, root=ROOT, backend=None, clock=now, model=None):
+    def __init__(self, store_dir, *, root=ROOT, backend=None, clock=now, model=None, workspace_config=None):
         self.root, self.store_dir = Path(root), Path(store_dir)
+        self.workspace_config = workspace_config or load_config(workspace_root=self.root)
+        self.default_head = model.head if model is not None else self.workspace_config.default_head
         self.backend = backend or LiveBackend(catalog_root=self.store_dir / 'espn')
         self.clock = clock
         self.lock = threading.RLock()
@@ -61,8 +64,25 @@ class LivePostreadApplication(LiveGApplication):
         self.auto_catalog = backend is None
         self.refresh_not_before = None
         self.model = model
-        self.bindings = {'f': F_SHA, 'g': G_SHA, 'g_head': DEFAULT_HEAD,
+        self.bindings = {'f': F_SHA, 'g': G_SHA, 'g_head': self.default_head,
                          'pipeline_mode': MODE, 'external_semantic_api_required': False}
+
+    def readiness(self):
+        """Pure local status: no fixture refresh, source probe or model load."""
+        ready = (LivePostreadModel.readiness(workspace_config=self.workspace_config)
+                 if self.model is None or isinstance(self.model, LivePostreadModel)
+                 else {'ready': True, 'injected_model': True})
+        bindings = {'loaded_at': LOADED_AT, 'process_id': os.getpid(),
+            'code_sha256': dict(LOADED_SHA),
+            'reload_required': any(digest(ROOT / p) != value for p, value in LOADED_SHA.items())}
+        return {'pipeline_mode': MODE, 'encoder_ready': ready['ready'],
+                'encoder_status': 'local_artifacts_present' if ready['ready'] else 'local_artifact_missing',
+                'encoder_reason': None if ready['ready'] else '本地模型、编码器或依赖不完整；运行 doctor 查看缺项',
+                'model_readiness': ready, 'runtime_bindings': bindings,
+                'configuration_fingerprint': self.workspace_config.fingerprint(),
+                'default_model_name': self.default_head, 'service_alive': True,
+                'sources_status': 'not_probed', 'network_requests': 0,
+                'inference_executed': False}
 
     def catalog(self):
         result = super().catalog()
@@ -77,21 +97,18 @@ class LivePostreadApplication(LiveGApplication):
             match['article_source_status'] = 'registered_directories' if p['seed_urls'] else 'search_only'
             match['article_retrieval_verified'] = False
         result['coverage'] = summarize(result['matches'])
-        ready = LivePostreadModel.readiness() if self.model is None else {'ready': True}
+        readiness = self.readiness()
         result.update(schema_version=VERSION, pipeline_mode=MODE, limitations=LIMITATIONS,
-            encoder_ready=ready['ready'], encoder_status='local_ready' if ready['ready'] else 'local_artifact_missing',
-            encoder_reason=None if ready['ready'] else '本地冻结模型或 Qwen 文件不完整',
             provider_required=False, max_reads=20, default_max_reads=20,
             source_request_budget=SOURCE_BUDGET, prefetch_body_budget=PREFETCH_BUDGET,
             provider_request_budget=0, run_timeout_minutes=RUN_MINUTES,
             minimum_start_lead_minutes=5, prefetch_minutes=PREFETCH_MINUTES, local_encoding_token_budget=ONLINE_TOKEN_BUDGET,
-            default_cost_loss_units=0.0, default_model_name=DEFAULT_HEAD,
+            default_cost_loss_units=0.0, default_model_name=self.default_head,
             model_choices=[{'id': DEFAULT_HEAD, 'label': '冻结全文 g · MLP seed27'},
                            {'id': 'state_ridge', 'label': '冻结状态 Ridge 对照'},
                            {'id': 'fixed_order', 'label': '固定顺序对照 · 不用 g'}])
-        result['runtime_bindings'] = {'loaded_at': LOADED_AT, 'process_id': os.getpid(),
-            'code_sha256': dict(LOADED_SHA),
-            'reload_required': any(digest(ROOT / p) != value for p, value in LOADED_SHA.items())}
+        # Catalog discovery can use sources; only readiness() is a no-network API.
+        result.update({k: v for k, v in readiness.items() if k != 'network_requests'})
         return result
 
     @staticmethod
@@ -134,7 +151,7 @@ class LivePostreadApplication(LiveGApplication):
             raise ValueError('仅接受比赛、采用上限、增量处理成本和冻结策略')
         limit = payload.get('max_reads', 20)
         cost = payload.get('cost_loss_units', 0.0)
-        head = payload.get('model_name', DEFAULT_HEAD)
+        head = payload.get('model_name', self.default_head)
         if type(limit) is not int or not 1 <= limit <= 20:
             raise ValueError('正文采用上限必须为1至20整数')
         if type(cost) not in (float, int) or not math.isfinite(cost) or not 0 <= cost <= .01:
@@ -274,7 +291,7 @@ class LivePostreadApplication(LiveGApplication):
         try:
             self._check(run)
             if self.model is None or self.model.head != run['model_name']:
-                self.model = LivePostreadModel(head=run['model_name'])
+                self.model = LivePostreadModel(head=run['model_name'], workspace_config=self.workspace_config)
             model = self.model
             run['model_bindings'] = {**model.bindings, 'f': F_SHA, 'g': G_SHA}
             save(folder / 'model-bindings.json', run['model_bindings'])

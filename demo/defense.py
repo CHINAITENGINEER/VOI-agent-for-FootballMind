@@ -31,6 +31,7 @@ class DefenseApplication:
     def catalog(self):
         with self.lock:
             status=dict(frozen_research_demo=True,release_id=RELEASE_ID,workspace_root=str(ROOT.resolve()),
+                release_dir=str(self.release_dir),
                 network_required=False,presentation_default='fulltext_mlp_seed20261027',development_selected_policy='state_ridge',
                 max_reads=MAX_READS,default_max_reads=MAX_READS,original_frozen_budget=3,
                 policies=[dict(id='fulltext_mlp_seed20261027',label='全文研究候选 · MLP seed27',basis='在三个全文 MLP 中按开发集收益 MSE 选择；不是整体最优策略'),

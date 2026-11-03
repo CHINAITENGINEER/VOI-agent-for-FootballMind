@@ -7,7 +7,7 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from demo.live_postread_model import LivePostreadModel, RELEASE, MODEL_PATH, F_SHA, G_SHA
+from demo.live_postread_model import LivePostreadModel, RELEASE, MODEL_PATH, F_SHA, G_SHA, DEFAULT_HEAD
 
 
 def test_optional_body_budget_rejects_before_encoder_inference():
@@ -71,7 +71,8 @@ def test_optional_body_budget_rejects_before_loading_encoder_weights():
 def model(tmp_path_factory):
     if not LivePostreadModel.readiness()['ready']:
         pytest.skip('Frozen local release/snapshot not installed; no download attempted')
-    return LivePostreadModel(cache_root=tmp_path_factory.mktemp('lpm'))
+    # This suite exercises the full-text head; workspace default may be state-only.
+    return LivePostreadModel(cache_root=tmp_path_factory.mktemp('lpm'), head=DEFAULT_HEAD)
 
 
 @pytest.fixture
@@ -83,7 +84,7 @@ def panel(model):
     docs = []
     for item in case['documents']:
         doc = deepcopy(item)
-        doc['text'] = (RELEASE / doc['body_file']).read_bytes().decode('utf-8')
+        doc['text'] = (model.release_dir / doc['body_file']).read_bytes().decode('utf-8')
         docs.append(doc)
     vectors = {d['text_sha256']: model.backend.vectors[d['text_sha256']].copy() for d in docs}
     return fixture, case['prior'], docs, vectors

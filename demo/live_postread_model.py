@@ -18,14 +18,17 @@ import threading
 from types import SimpleNamespace
 
 import numpy as np
+from footballmind.config import (load_config, RELEASE_ID, ENCODER_REVISION, F_SHA256, G_SHA256)
 
 ROOT = Path(__file__).resolve().parents[1]
-RELEASE = ROOT / 'var/releases/footballmind-defense-20261025-rc1'
-REVISION = '97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3'
-MODEL_PATH = Path('E:/FootballMind/models/huggingface/models--Qwen--Qwen3-Embedding-0.6B/snapshots') / REVISION
-CACHE_ROOT = Path('E:/FootballMind/embeddings/live-postread-qwen-v1')
-F_SHA = 'b36b2cf87f379034224c314794efc6ec59266dd4cf4752383965c41fb63661e0'
-G_SHA = '5af947711279765838adb02e7dc09c2a9525a89e90db3e23e4f68a865ed88eff'
+# Portable compatibility names only. Resolve selected configuration at call time,
+# so importing the module cannot override an explicit --config with environment.
+RELEASE = ROOT / 'var/releases' / RELEASE_ID
+REVISION = ENCODER_REVISION
+MODEL_PATH = ROOT / 'var/models/Qwen3-Embedding-0.6B/snapshots' / REVISION
+CACHE_ROOT = ROOT / 'var/cache/embeddings/live-postread-qwen-v1'
+F_SHA = F_SHA256
+G_SHA = G_SHA256
 DEFAULT_HEAD = 'fulltext_mlp_seed20261027'
 ALLOWED_HEADS = {DEFAULT_HEAD, 'state_ridge', 'fixed_order'}
 FORBIDDEN_FIELDS = {'outcome', 'outcome_class', 'y_true', 'realized_gain', 'gain',
@@ -97,9 +100,10 @@ class LivePostreadModel:
     """
 
     @classmethod
-    def readiness(cls, release_dir=None, model_path=None):
-        release = Path(release_dir or RELEASE).resolve()
-        snapshot = Path(model_path or MODEL_PATH).resolve()
+    def readiness(cls, release_dir=None, model_path=None, *, workspace_config=None):
+        workspace = workspace_config or load_config()
+        release = Path(release_dir or workspace.release_dir).resolve()
+        snapshot = Path(model_path or workspace.encoder_dir).resolve()
         required = [release / 'footballmind_defense.py', release / 'bundle-config.json',
                     release / 'manifest.json', release / 'models/f/model.pt',
                     release / 'models/g/g-models.joblib',
@@ -110,22 +114,34 @@ class LivePostreadModel:
         config_error = None
         try:
             config = json.loads((release / 'bundle-config.json').read_text(encoding='utf-8'))
+            if not isinstance(config, dict):
+                raise ValueError('Frozen bundle configuration must be an object')
             identity_ok = identity_ok and config.get('f_model_sha256') == F_SHA and config.get('g_model_sha256') == G_SHA
         except (OSError, ValueError) as exc:
             config_error = type(exc).__name__
-        return {'ready': not missing and identity_ok and config_error is None,
+        from importlib.metadata import version, PackageNotFoundError
+        dependencies_missing = []
+        for package in ('torch', 'transformers', 'numpy', 'scikit-learn', 'joblib'):
+            try:
+                version(package)
+            except PackageNotFoundError:
+                dependencies_missing.append(package)
+        return {'ready': not missing and identity_ok and config_error is None and not dependencies_missing,
                 'release_dir': str(release), 'model_path': str(snapshot),
                 'missing_files': missing, 'identity_matches': identity_ok,
-                'config_error': config_error, 'weights_loaded': False,
+                'config_error': config_error, 'dependencies_missing': dependencies_missing,
+                'configuration_fingerprint': workspace.fingerprint(), 'weights_loaded': False,
                 'full_digest_validation': 'performed on model load, not readiness',
                 'network_requests': 0, 'external_api_required': False}
 
-    def __init__(self, release_dir=None, model_path=None, cache_root=None, head=DEFAULT_HEAD):
+    def __init__(self, release_dir=None, model_path=None, cache_root=None, head=None, *, workspace_config=None):
+        workspace = workspace_config or load_config()
+        head = workspace.default_head if head is None else head
         if head not in ALLOWED_HEADS:
             raise ValueError('Unknown or unfrozen post-read head')
-        self.release_dir = Path(release_dir or RELEASE).resolve()
-        self.model_path = Path(model_path or MODEL_PATH).resolve()
-        ready = self.readiness(self.release_dir, self.model_path)
+        self.release_dir = Path(release_dir or workspace.release_dir).resolve()
+        self.model_path = Path(model_path or workspace.encoder_dir).resolve()
+        ready = self.readiness(self.release_dir, self.model_path, workspace_config=workspace)
         if not ready['ready']:
             raise FileNotFoundError('Local frozen post-read artifacts unavailable: ' + json.dumps(ready, ensure_ascii=False))
         self.backend = _load_release(self.release_dir)
@@ -144,7 +160,7 @@ class LivePostreadModel:
         self.long_contract = EncoderContract(**contracts['long_contract'])
         self.encoder_class = LocalSemanticEncoder
         self.encoder = None
-        self.cache_root = Path(cache_root or CACHE_ROOT)
+        self.cache_root = Path(cache_root or workspace.cache_dir)
         self.caches = {c.fingerprint(): SemanticCache(self.cache_root, c) for c in [self.contract, self.long_contract]}
         self.metadata_names = list(METADATA_NAMES)
         if self.metadata_names != list(self.f.config.metadata_names) or self.metadata_names != self.g['metadata_names']:
@@ -155,6 +171,7 @@ class LivePostreadModel:
         self.lock = threading.RLock()
         self._bindings = {'schema': 'footballmind-live-postread-model-v1',
             'release_id': self.backend.config['bundle_id'], 'release_manifest_sha256': _sha_file(self.release_dir / 'manifest.json'),
+            'configuration_fingerprint': workspace.fingerprint(),
             'f_model_sha256': F_SHA, 'g_model_sha256': G_SHA, 'g_head': head,
             'threshold': self.threshold, 'encoder': asdict(self.contract),
             'long_encoder': asdict(self.long_contract), 'encoder_native_dimension': 1024,

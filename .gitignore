@@ -37,3 +37,4 @@ Thumbs.db
 *.zip
 *.mp4
 *.wav
+/config/workspace.local.json

@@ -13,7 +13,9 @@
 - `python -m demo --host 127.0.0.1 --port 8766` 以前台方式启动服务，便于看日志与停止。
 - `start_footballmind.py` 为旧 human trial 入口，不作为当前演示首选。
 
-## 在线编码依赖
+## 统一配置与在线编码依赖
+
+当前主入口为 `python -m footballmind doctor|serve|experiment`，完整说明见 [研究底座使用说明](development/research-foundation.md)。配置优先级：`--config` > `FOOTBALLMIND_CONFIG` > 当前工作区 `config/workspace.local.json` > 可迁移默认目录。配置与模型元数据无秘密字段；密钥仍只保留在环境变量中。
 
 `demo/live_postread_model.py` 中当前冻结编码器版本为：
 
@@ -22,15 +24,15 @@ Qwen/Qwen3-Embedding-0.6B
 revision: 97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3
 ```
 
-默认快照目录：
+原开发机快照目录（仅作为本机配置示例）：
 
 ```text
 E:/FootballMind/models/huggingface/models--Qwen--Qwen3-Embedding-0.6B/snapshots/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3
 ```
 
-默认缓存目录：`E:/FootballMind/embeddings/live-postread-qwen-v1`。
+原开发机缓存目录：`E:/FootballMind/embeddings/live-postread-qwen-v1`。
 
-当前实现支持 `LivePostreadModel` 构造参数指定 `model_path`、`cache_root` 与 `release_dir`，但常规服务器入口仍采用默认值，尚未提供统一的环境变量配置。在不同磁盘机器开发时，应配置对应路径或提交独立可复核的路径配置改造。不要声称已自动适配所有机器。
+现在将这些路径写进 `config/workspace.local.json` 的 `encoder_dir`、`cache_dir` 和 `release_dir`。普通服务器、启动器与诊断使用同一配置。没有本机配置时默认使用工作区内的 `var/models`、`var/cache` 与 `var/runs`，不探测或偷偷回退到另一块磁盘。配置支持迁移路径，当前模型算法版本与 SHA 仍固定；升级模型需独立实现和验证。
 
 ## 冻结包与大数据
 
